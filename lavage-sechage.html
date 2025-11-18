@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavage et Séchage - NexusChop</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/menu-content-styles.css">
+  <link rel="stylesheet" href="./assets/css/high-tech-mega-menu.css">
+  
+  <!--
+    - logo styling
+  -->
+  <style>
+    .header-logo {
+      font-size: 24px !important;
+      font-weight: bold !important;
+      color: #333 !important;
+    }
+    
+    .orange-letter {
+      color: #ff6600 !important;
+    }
+    
+    /* Carousel styling */
+    .banner-btn {
+      background: #ff6600 !important;
+      color: white !important;
+      border: none !important;
+      padding: 12px 24px !important;
+      border-radius: 5px !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .banner-btn:hover {
+      background: #ff5200 !important;
+      color: white !important;
+    }
+    
+    /* Hover effects in orange */
+    .menu-title:hover {
+      color: #ff6600 !important;
+    }
+    
+    .banner-subtitle:hover {
+      color: #ff6600 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .banner-title:hover {
+      color: #ff8800 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .orange-letter:hover {
+      color: #ff8800 !important;
+    }
+    
+    /* Page header styling */
+    .page-header {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .page-title {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .page-subtitle {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Social media icon colors */
+    .social-link ion-icon[name="logo-facebook"] {
+      color: #1877f2 !important;
+    }
+    
+    .social-link ion-icon[name="logo-twitter"] {
+      color: #1da1f2 !important;
+    }
+    
+    .social-link ion-icon[name="logo-instagram"] {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .social-link ion-icon[name="logo-linkedin"] {
+      color: #0077b5 !important;
+    }
+    
+    /* Social media hover effects */
+    .social-link:hover ion-icon[name="logo-facebook"] {
+      color: #1464d2 !important;
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-twitter"] {
+      color: #0c87c8 !important;
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-instagram"] {
+      filter: brightness(1.2);
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-linkedin"] {
+      color: #005a8f !important;
+      transform: scale(1.1);
+    }
+
+    /* Static delivery message styling */
+    .header-alert-news {
+      overflow: visible !important;
+      white-space: normal !important;
+    }
+    
+    .header-alert-news p {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p style="color: #333; font-weight: normal;">
+            <b>Livraison gratuite Cette semaine pour toute commande supérieure à</b> <span style="color: #ff6600; font-weight: bold;">1000 XAF</span>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="xaf" selected>XAF</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="fr" selected>Fran&ccedil;ais</option>
+            <option value="en-US">English</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <span class="orange-letter">N</span>exus<span class="orange-letter">C</span>hop
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Recherchez lave-linge, séche-linge...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.html" class="menu-title">Accueil</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Catégories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="high-tech">High-Tech</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="objets-connectes.html" data-subcategory="objets-connectes">Objets connectés</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="audio-hifi.html" data-subcategory="audio-hifi">Audio, Hifi</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="tv-home-cinema.html" data-subcategory="tv-home-cinema">TV, Home Cinéma</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="jeux-video.html" data-subcategory="jeux-video">Jeux vidéo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="telephonie.html" data-subcategory="telephonie">Téléphonie</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="photo-camescope.html" data-subcategory="photo-camescope">Photo, caméscope</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Informatique</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="laptops.html">Laptops</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="tablettes.html">Tablettes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="composants.html">Composants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="stockage.htm">Stockage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="accessoires.html">Accessoires</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Modes et vêtements</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="femme.html">Femme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="homme.html">Homme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="enfants.html">Enfants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bagages.html">Bagages</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electroménager</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="lavage-sechage.html">Lavage et séchage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="froid.html">Froid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="cuisson.html">Cuisson</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="entretien-maison.html">Entretien maison</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="laptops.html">Laptops</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="composants.html">Composants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="stockage.htm">Stockage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="accessoires.html">Accessoires</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="femme.html">Femme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="homme.html">Homme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="enfants.html">Enfants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="bagages.html">Bagages</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="lavage-sechage.html">Lavage et séchage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="froid.html">Froid</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="cuisson.html">Cuisson</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="entretien-maison.html">Entretien maison</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - PAGE HEADER
+    -->
+
+    <div class="page-header">
+
+      <div class="container">
+
+        <h1 class="page-title">Lavage et Séchage</h1>
+        <p class="page-subtitle">Découvrez nos lave-linges et séche-linges pour un entretien optimal de votre linge</p>
+
+      </div>
+
+    </div>
+
+    <!--
+      - PRODUCT GRID
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+        <div class="product-main">
+
+          <h2 class="title">Lave-linges et Séche-linges</h2>
+
+          <div class="product-grid">
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.jpg" alt="Lave-linge LG" width="300" class="product-img default">
+                <img src="categories/lavage.jpg" alt="Lave-linge LG" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge LG 9kg Front Load</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 485,000</p>
+                  <del>XAF 650,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.png" alt="Lave-linge Samsung" width="300" class="product-img default">
+                <img src="categories/lavage.png" alt="Lave-linge Samsung" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge Samsung EcoBubble 8kg</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 425,000</p>
+                  <del>XAF 550,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.jpg" alt="Séche-linge Bosch" width="300" class="product-img default">
+                <img src="categories/lavage.jpg" alt="Séche-linge Bosch" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Séche-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Séche-linge Bosch 7kg Heat Pump</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 685,000</p>
+                  <del>XAF 850,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.png" alt="Lave-linge HOOVER" width="300" class="product-img default">
+                <img src="categories/lavage.png" alt="Lave-linge HOOVER" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge HOOVER 10kg H-Wash 300</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 575,000</p>
+                  <del>XAF 750,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.jpg" alt="Lave-linge Candy" width="300" class="product-img default">
+                <img src="categories/lavage.jpg" alt="Lave-linge Candy" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge Candy RapidÓ 9kg</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 365,000</p>
+                  <del>XAF 485,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.png" alt="Séche-linge Miele" width="300" class="product-img default">
+                <img src="categories/lavage.png" alt="Séche-linge Miele" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Séche-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Séche-linge Miele Heat Pump 7kg</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 1,250,000</p>
+                  <del>XAF 1,500,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.jpg" alt="Lave-linge Beko" width="300" class="product-img default">
+                <img src="categories/lavage.jpg" alt="Lave-linge Beko" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-20%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge Beko 8kg WUE 8636 XGG</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 295,000</p>
+                  <del>XAF 365,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/lavage.png" alt="Lave-linge Whirlpool" width="300" class="product-img default">
+                <img src="categories/lavage.png" alt="Lave-linge Whirlpool" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Lave-linges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lave-linge Whirlpool 9kg FreshCare+</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 485,000</p>
+                  <del>XAF 620,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Lavage et Séchage</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Catégories :</h3>
+
+          <a href="#" class="footer-category-link">Lave-linges frontaux</a>
+          <a href="#" class="footer-category-link">Lave-linges top</a>
+          <a href="#" class="footer-category-link">Séche-linges à condensation</a>
+          <a href="#" class="footer-category-link">Séche-linges heat pump</a>
+          <a href="#" class="footer-category-link">Lave-linge séchant</a>
+          <a href="#" class="footer-category-link">Accessoires lavage</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">NexusChop</a> tous droits réservés.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./assets/js/global-search.js"></script>
+</body>
+
+</html>

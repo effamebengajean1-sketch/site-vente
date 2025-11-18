@@ -1,0 +1,433 @@
+{
+  "high-tech": {
+    "id": 3,
+    "name": "High-Tech",
+    "slug": "high-tech",
+    "description": "Technologies innovantes et électronique",
+    "image": "images/categories/high-tech.jpg",
+    "children": [
+      {
+        "id": 3.1,
+        "name": "Objets connectés",
+        "slug": "objets-connectes"
+      },
+      {
+        "id": 3.2,
+        "name": "Audio, Hifi",
+        "slug": "audio-hifi"
+      },
+      {
+        "id": 3.3,
+        "name": "TV, Home Cinéma",
+        "slug": "tv-home-cinema"
+      },
+      {
+        "id": 3.4,
+        "name": "Jeux vidéo",
+        "slug": "jeux-video"
+      },
+      {
+        "id": 3.5,
+        "name": "Téléphonie",
+        "slug": "telephonie"
+      },
+      {
+        "id": 3.6,
+        "name": "Photo, caméscope",
+        "slug": "photo-camescope"
+      }
+    ],
+    "featured_products": [
+      {
+        "id": "ht001",
+        "name": "iPhone 12 Pro Max 256GB",
+        "category": "Téléphonie",
+        "subcategory": "telephonie",
+        "price": "1,048,000",
+        "originalPrice": "1,310,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/iphone12promax_1.jpg",
+        "badge": "featured"
+      },
+      {
+        "id": "ht002",
+        "name": "Samsung Galaxy S21 Ultra",
+        "category": "Téléphonie",
+        "subcategory": "telephonie",
+        "price": "785,000",
+        "originalPrice": "980,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/samsunggalxys21_1.jpg",
+        "badge": "trending"
+      },
+      {
+        "id": "ht003",
+        "name": "Sony Alpha ZV-E10 Vlog Camera",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "654,000",
+        "originalPrice": "916,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/sonyalphazve10_1.jpg",
+        "badge": "new"
+      },
+      {
+        "id": "ht004",
+        "name": "Canon EOS M50 Hybride",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "589,000",
+        "originalPrice": "851,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/canonhybrideeosm50_1.jpg",
+        "badge": "best-seller"
+      },
+      {
+        "id": "ht005",
+        "name": "Bose 500 Barre de Son",
+        "category": "Audio, Hifi",
+        "subcategory": "audio-hifi",
+        "price": "392,000",
+        "originalPrice": "523,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/bose500_.jpg",
+        "badge": "featured"
+      },
+      {
+        "id": "ht006",
+        "name": "Samsung TV 55\" 4K Smart TV",
+        "category": "TV, Home Cinéma",
+        "subcategory": "tv-home-cinema",
+        "price": "589,000",
+        "originalPrice": "851,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/tvsamsung_1.jpg",
+        "badge": "smart-tv"
+      },
+      {
+        "id": "ht007",
+        "name": "JBL Flip 5 Enceinte Bluetooth",
+        "category": "Audio, Hifi",
+        "subcategory": "audio-hifi",
+        "price": "97,600",
+        "originalPrice": "130,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/jblflip_1.jpg",
+        "badge": "trending"
+      },
+      {
+        "id": "ht008",
+        "name": "Garmin Venu Montre Connectée",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "261,000",
+        "originalPrice": "327,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/garminvenu_1.jpg",
+        "badge": "new"
+      }
+    ],
+    "products": [
+      {
+        "id": "ht101",
+        "name": "iPhone 12 Pro Max 128GB",
+        "category": "Téléphonie",
+        "subcategory": "telephonie",
+        "price": "950,000",
+        "originalPrice": "1,200,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/iphone12promax_1.jpg"
+      },
+      {
+        "id": "ht102",
+        "name": "Samsung Galaxy S21",
+        "category": "Téléphonie",
+        "subcategory": "telephonie",
+        "price": "550,000",
+        "originalPrice": "750,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/samsunggalxys21_1.jpg"
+      },
+      {
+        "id": "ht103",
+        "name": "Alcatel F890",
+        "category": "Téléphonie",
+        "subcategory": "telephonie",
+        "price": "262,000",
+        "originalPrice": "327,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/alcatelf890_1.jpg"
+      },
+      {
+        "id": "ht201",
+        "name": "Sony Alpha ZV-E10",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "654,000",
+        "originalPrice": "916,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/sonyalphazve10_1.jpg"
+      },
+      {
+        "id": "ht202",
+        "name": "Canon EOS M50",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "589,000",
+        "originalPrice": "851,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/canonhybrideeosm50_1.jpg"
+      },
+      {
+        "id": "ht203",
+        "name": "Pentax K70 Reflex",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "523,000",
+        "originalPrice": "720,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/reflexpentaxk70_1.jpg"
+      },
+      {
+        "id": "ht204",
+        "name": "Panasonic Lumix F4",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "851,000",
+        "originalPrice": "1,178,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/panasoniclumixf4_1.jpg"
+      },
+      {
+        "id": "ht301",
+        "name": "Bose 500 Barre de Son",
+        "category": "Audio, Hifi",
+        "subcategory": "audio-hifi",
+        "price": "392,000",
+        "originalPrice": "523,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/bose500_.jpg"
+      },
+      {
+        "id": "ht302",
+        "name": "JBL Flip 5",
+        "category": "Audio, Hifi",
+        "subcategory": "audio-hifi",
+        "price": "97,600",
+        "originalPrice": "130,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/jblflip_1.jpg"
+      },
+      {
+        "id": "ht303",
+        "name": "Barre de Son Premium",
+        "category": "Audio, Hifi",
+        "subcategory": "audio-hifi",
+        "price": "228,000",
+        "originalPrice": "327,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/barredeson_1.jpg"
+      },
+      {
+        "id": "ht401",
+        "name": "Samsung TV 55\" 4K",
+        "category": "TV, Home Cinéma",
+        "subcategory": "tv-home-cinema",
+        "price": "589,000",
+        "originalPrice": "851,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/tvsamsung_1.jpg"
+      },
+      {
+        "id": "ht402",
+        "name": "Sony 65\" 4K HDR",
+        "category": "TV, Home Cinéma",
+        "subcategory": "tv-home-cinema",
+        "price": "982,000",
+        "originalPrice": "1,310,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/sony_x90j_1.jpg"
+      },
+      {
+        "id": "ht403",
+        "name": "NVIDIA Shield TV Pro",
+        "category": "TV, Home Cinéma",
+        "subcategory": "tv-home-cinema",
+        "price": "458,000",
+        "originalPrice": "491,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/nvidia_shield.jpg"
+      },
+      {
+        "id": "ht501",
+        "name": "PlayStation 4 FIFA 21",
+        "category": "Jeux vidéo",
+        "subcategory": "jeux-video",
+        "price": "261,000",
+        "originalPrice": "392,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg"
+      },
+      {
+        "id": "ht502",
+        "name": "Xbox Series S",
+        "category": "Jeux vidéo",
+        "subcategory": "jeux-video",
+        "price": "491,000",
+        "originalPrice": "557,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg"
+      },
+      {
+        "id": "ht601",
+        "name": "Garmin Venu",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "261,000",
+        "originalPrice": "327,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/garminvenu_1.jpg"
+      },
+      {
+        "id": "ht602",
+        "name": "Oculus Quest 2",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "786,000",
+        "originalPrice": "982,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/oculusquest2_1.jpg"
+      },
+      {
+        "id": "ht603",
+        "name": "Drone DJI Mini 2",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "275,000",
+        "originalPrice": "65,500",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/outi234_1.jpg"
+      },
+      {
+        "id": "ht604",
+        "name": "Caméra de Sécurité HD",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "327,000",
+        "originalPrice": "222,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/secu237_1.jpg"
+      },
+      {
+        "id": "ht605",
+        "name": "Robot Aspirateur Intelligent",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "392,000",
+        "originalPrice": "523,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/robotscuisseur.jpg"
+      },
+      {
+        "id": "ht606",
+        "name": "Smartphone Huawei P30 Lite",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "550,000",
+        "originalPrice": "196,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/huaweip30lite_1.jpg"
+      },
+      {
+        "id": "ht701",
+        "name": "Alarme Maison Intelligente",
+        "category": "Objets connectés",
+        "subcategory": "objets-connectes",
+        "price": "196,000",
+        "originalPrice": "294,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/alarmemaison_1.jpg"
+      },
+      {
+        "id": "ht801",
+        "name": "iPad Air 4ème Génération",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "458,000",
+        "originalPrice": "589,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/elec249_1.jpg"
+      },
+      {
+        "id": "ht802",
+        "name": "Laptop Gaming Acer Helios 300",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "982,000",
+        "originalPrice": "1,310,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/laptop_gaming_acerhelios300_1.jpg"
+      },
+      {
+        "id": "ht803",
+        "name": "Dell Inspiron 15",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "589,000",
+        "originalPrice": "720,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/laptop_win_dellinspiron_1.jpg"
+      },
+      {
+        "id": "ht804",
+        "name": "MacBook Pro 2019 13\"",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "1,310,000",
+        "originalPrice": "1,638,000",
+        "rating": 5,
+        "image": "Projet 1 - MarketPlace/produits/apple_mp2019_1.jpg"
+      },
+      {
+        "id": "ht805",
+        "name": "Mini PC Intel SEi8",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "458,000",
+        "originalPrice": "589,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/minipcsei8_1.jpg"
+      },
+      {
+        "id": "ht806",
+        "name": "HP All-in-One 24\"",
+        "category": "Informatique",
+        "subcategory": "informatique",
+        "price": "850,000",
+        "originalPrice": "982,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/allinonehp24_df0102ns_1.jpg"
+      },
+      {
+        "id": "ht901",
+        "name": "Caméra Action HERO 8",
+        "category": "Photo, caméscope",
+        "subcategory": "photo-camescope",
+        "price": "852,000",
+        "originalPrice": "1,245,000",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/camactionher08_1.jpg"
+      },
+      {
+        "id": "ht902",
+        "name": "Adaptateur Dongle iPhone",
+        "category": "Accessoires",
+        "subcategory": "telephonie",
+        "price": "19,600",
+        "originalPrice": "32,700",
+        "rating": 4,
+        "image": "Projet 1 - MarketPlace/produits/adapteurdongleiphone_1.jpg"
+      }
+    ]
+  }
+}

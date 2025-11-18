@@ -1,0 +1,470 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Modes et vêtements",
+      "slug": "modes-vetements",
+      "description": "Vêtements, chaussures et accessoires pour toute la famille",
+      "image": "images/categories/mode.jpg",
+      "children": [
+        {
+          "id": 1.1,
+          "name": "Femme",
+          "slug": "femme",
+          "children": [
+            {"id": 1.11, "name": "Chaussures", "slug": "chaussures-femme", "productCount": 245},
+            {"id": 1.12, "name": "Vêtements", "slug": "vetements-femme", "productCount": 567},
+            {"id": 1.13, "name": "Accessoires", "slug": "accessoires-femme", "productCount": 123},
+            {"id": 1.14, "name": "Sacs", "slug": "sacs-femme", "productCount": 89},
+            {"id": 1.15, "name": "Montres", "slug": "montres-femme", "productCount": 67},
+            {"id": 1.16, "name": "Bijoux", "slug": "bijoux-femme", "productCount": 156}
+          ]
+        },
+        {
+          "id": 1.2,
+          "name": "Homme",
+          "slug": "homme",
+          "children": [
+            {"id": 1.21, "name": "Chaussures", "slug": "chaussures-homme", "productCount": 198},
+            {"id": 1.22, "name": "Vêtements", "slug": "vetements-homme", "productCount": 432},
+            {"id": 1.23, "name": "Accessoires", "slug": "accessoires-homme", "productCount": 98},
+            {"id": 1.24, "name": "Sacs", "slug": "sacs-homme", "productCount": 76},
+            {"id": 1.25, "name": "Montres", "slug": "montres-homme", "productCount": 54},
+            {"id": 1.26, "name": "Bijoux", "slug": "bijoux-homme", "productCount": 87}
+          ]
+        },
+        {
+          "id": 1.3,
+          "name": "Enfants",
+          "slug": "enfants",
+          "children": [
+            {"id": 1.31, "name": "Chaussures", "slug": "chaussures-enfants", "productCount": 134},
+            {"id": 1.32, "name": "Vêtements", "slug": "vetements-enfants", "productCount": 298},
+            {"id": 1.33, "name": "Accessoires", "slug": "accessoires-enfants", "productCount": 67},
+            {"id": 1.34, "name": "Sacs", "slug": "sacs-enfants", "productCount": 45},
+            {"id": 1.35, "name": "Montres", "slug": "montres-enfants", "productCount": 23},
+            {"id": 1.36, "name": "Bijoux", "slug": "bijoux-enfants", "productCount": 38}
+          ]
+        },
+        {
+          "id": 1.4,
+          "name": "Bagages",
+          "slug": "bagages",
+          "children": [
+            {"id": 1.41, "name": "Sac à dos", "slug": "sac-a-dos", "productCount": 78},
+            {"id": 1.42, "name": "Business", "slug": "bagages-business", "productCount": 45},
+            {"id": 1.43, "name": "Voyages", "slug": "bagages-voyages", "productCount": 67},
+            {"id": 1.44, "name": "Accessoires", "slug": "accessoires-bagages", "productCount": 34}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Electroménager",
+      "slug": "electromenager",
+      "description": "Appareils électroménagers pour la maison",
+      "image": "images/categories/electromenager.jpg",
+      "children": [
+        {
+          "id": 2.1,
+          "name": "Lavage et séchage",
+          "slug": "lavage-sechage",
+          "children": [
+            {"id": 2.11, "name": "Lave-linge", "slug": "lave-linge", "productCount": 56},
+            {"id": 2.12, "name": "Lave-vaisselle", "slug": "lave-vaisselle", "productCount": 34},
+            {"id": 2.13, "name": "Sèche-linge", "slug": "seche-linge", "productCount": 28}
+          ]
+        },
+        {
+          "id": 2.2,
+          "name": "Froid",
+          "slug": "electromenager-froid",
+          "children": [
+            {"id": 2.21, "name": "Réfrigérateurs", "slug": "refrigerateurs", "productCount": 45},
+            {"id": 2.22, "name": "Réfrigérateurs congélateur bas", "slug": "refrigerateurs-congelateur-bas", "productCount": 23},
+            {"id": 2.23, "name": "Réfrigérateurs multi-portes", "slug": "refrigerateurs-multi-portes", "productCount": 18},
+            {"id": 2.24, "name": "Réfrigérateurs encastrables", "slug": "refrigerateurs-encastrables", "productCount": 15},
+            {"id": 2.25, "name": "Congélateurs", "slug": "congelateurs", "productCount": 32},
+            {"id": 2.26, "name": "Caves à vin", "slug": "caves-a-vin", "productCount": 12},
+            {"id": 2.27, "name": "Accessoires", "slug": "accessoires-froid", "productCount": 67}
+          ]
+        },
+        {
+          "id": 2.3,
+          "name": "Cuisson",
+          "slug": "cuisson",
+          "children": [
+            {"id": 2.31, "name": "Multi-cuiseurs", "slug": "multi-cuiseurs", "productCount": 34},
+            {"id": 2.32, "name": "Friteuses", "slug": "friteuses", "productCount": 28},
+            {"id": 2.33, "name": "Machines à boisson", "slug": "machines-a-boisson", "productCount": 45},
+            {"id": 2.34, "name": "Fours", "slug": "fours", "productCount": 39},
+            {"id": 2.35, "name": "Tables de cuisson", "slug": "tables-de-cuisson", "productCount": 27},
+            {"id": 2.36, "name": "Tables induction", "slug": "tables-induction", "productCount": 23},
+            {"id": 2.37, "name": "Tables gaz", "slug": "tables-gaz", "productCount": 19},
+            {"id": 2.38, "name": "Cuisinières", "slug": "cuisinieres", "productCount": 31},
+            {"id": 2.39, "name": "Micro-ondes - Micro-four", "slug": "micro-ondes", "productCount": 42},
+            {"id": 2.310, "name": "Machines à gâteaux", "slug": "machines-a-gateaux", "productCount": 16},
+            {"id": 2.311, "name": "Machines à glaces", "slug": "machines-a-glaces", "productCount": 14}
+          ]
+        },
+        {
+          "id": 2.4,
+          "name": "Entretien maison",
+          "slug": "entretien-maison",
+          "children": [
+            {"id": 2.41, "name": "Couture", "slug": "couture", "productCount": 23},
+            {"id": 2.42, "name": "Repassage", "slug": "repassage", "productCount": 34},
+            {"id": 2.43, "name": "Aspirateurs", "slug": "aspirateurs", "productCount": 56},
+            {"id": 2.44, "name": "Nettoyeur vapeur", "slug": "nettoyeur-vapeur", "productCount": 18},
+            {"id": 2.45, "name": "Buanderie", "slug": "buanderie", "productCount": 27},
+            {"id": 2.46, "name": "Défroisser", "slug": "defroisser", "productCount": 12}
+          ]
+        },
+        {
+          "id": 2.5,
+          "name": "Beauté, Hygiène, santé",
+          "slug": "beaute-hygiene-sante",
+          "children": [
+            {"id": 2.51, "name": "Soin cheveux", "slug": "soin-cheveux", "productCount": 89},
+            {"id": 2.52, "name": "Soin corps et visage", "slug": "soin-corps-visage", "productCount": 76},
+            {"id": 2.53, "name": "Hygiène dentaire", "slug": "hygiene-dentaire", "productCount": 45},
+            {"id": 2.54, "name": "Massage", "slug": "massage", "productCount": 34},
+            {"id": 2.55, "name": "Sport", "slug": "appareils-sport", "productCount": 28}
+          ]
+        },
+        {
+          "id": 2.6,
+          "name": "Climatisation, ventilation",
+          "slug": "climatisation-ventilation",
+          "children": [
+            {"id": 2.61, "name": "Ventilateur", "slug": "ventilateur", "productCount": 34},
+            {"id": 2.62, "name": "Refroidisseur d'air", "slug": "refroidisseur-air", "productCount": 18},
+            {"id": 2.63, "name": "Climatiseur split", "slug": "climatiseur-split", "productCount": 27},
+            {"id": 2.64, "name": "Climatiseur armoire", "slug": "climatiseur-armoire", "productCount": 15}
+          ]
+        },
+        {
+          "id": 2.7,
+          "name": "Art culinaire",
+          "slug": "art-culinaire",
+          "children": [
+            {"id": 2.71, "name": "Autocuiseur, cocotte-minute", "slug": "autocuiseur", "productCount": 23},
+            {"id": 2.72, "name": "Cocotte", "slug": "cocotte", "productCount": 18},
+            {"id": 2.73, "name": "Poêle", "slug": "poele", "productCount": 45},
+            {"id": 2.74, "name": "Casserole", "slug": "casserole", "productCount": 38},
+            {"id": 2.75, "name": "Couverts", "slug": "couverts", "productCount": 67},
+            {"id": 2.76, "name": "Verre", "slug": "verre", "productCount": 52},
+            {"id": 2.77, "name": "Service de table", "slug": "service-de-table", "productCount": 34},
+            {"id": 2.78, "name": "Carafe", "slug": "carafe", "productCount": 19},
+            {"id": 2.79, "name": "Ménagère", "slug": "menagere", "productCount": 26}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "High-Tech",
+      "slug": "high-tech",
+      "description": "Technologies innovantes et électronique",
+      "image": "images/categories/high-tech.jpg",
+      "children": [
+        {
+          "id": 3.1,
+          "name": "Objets connectés",
+          "slug": "objets-connectes",
+          "children": [
+            {"id": 3.11, "name": "Drones", "slug": "drones", "productCount": 34},
+            {"id": 3.12, "name": "Smart Watch", "slug": "smart-watch", "productCount": 67},
+            {"id": 3.13, "name": "Réalité virtuelle", "slug": "realite-virtuelle", "productCount": 23},
+            {"id": 3.14, "name": "Santé connectée", "slug": "sante-connectee", "productCount": 45},
+            {"id": 3.15, "name": "Systèmes multi room", "slug": "systemes-multi-room", "productCount": 18},
+            {"id": 3.16, "name": "Maison connectée", "slug": "maison-connectee", "productCount": 56},
+            {"id": 3.17, "name": "Accessoires GPS", "slug": "accessoires-gps", "productCount": 29}
+          ]
+        },
+        {
+          "id": 3.2,
+          "name": "Audio, Hifi",
+          "slug": "audio-hifi",
+          "children": [
+            {"id": 3.21, "name": "Casques et écouteurs", "slug": "casques-ecouteurs", "productCount": 89},
+            {"id": 3.22, "name": "Enceintes portables", "slug": "enceintes-portables", "productCount": 45},
+            {"id": 3.23, "name": "Enceintes", "slug": "enceintes", "productCount": 67},
+            {"id": 3.24, "name": "Chaine Hi-Fi", "slug": "chaine-hifi", "productCount": 23},
+            {"id": 3.25, "name": "Lecteurs audios", "slug": "lecteurs-audio", "productCount": 18},
+            {"id": 3.26, "name": "Amplificateurs", "slug": "amplificateurs", "productCount": 27},
+            {"id": 3.27, "name": "Audio embarqués", "slug": "audio-embarques", "productCount": 34}
+          ]
+        },
+        {
+          "id": 3.3,
+          "name": "Tv, Home Cinéma",
+          "slug": "tv-home-cinema",
+          "children": [
+            {"id": 3.31, "name": "Téléviseurs", "slug": "televiseurs", "productCount": 78},
+            {"id": 3.32, "name": "Vidéoprojecteurs", "slug": "videoprojecteurs", "productCount": 23},
+            {"id": 3.33, "name": "Barres de son", "slug": "barres-de-son", "productCount": 45},
+            {"id": 3.34, "name": "TNT et satellite", "slug": "tnt-satellite", "productCount": 34},
+            {"id": 3.35, "name": "Meubles et Supports TV", "slug": "supports-tv", "productCount": 56},
+            {"id": 3.36, "name": "Lecteurs", "slug": "lecteurs-video", "productCount": 29},
+            {"id": 3.37, "name": "Accessoires TV et vidéo", "slug": "accessoires-tv", "productCount": 67},
+            {"id": 3.38, "name": "Décodeur, Récepteur", "slug": "decodeur-recepteur", "productCount": 38}
+          ]
+        },
+        {
+          "id": 3.4,
+          "name": "Jeux vidéo",
+          "slug": "jeux-video",
+          "children": [
+            {"id": 3.41, "name": "Consoles", "slug": "consoles", "productCount": 45},
+            {"id": 3.42, "name": "Jeux PC", "slug": "jeux-pc", "productCount": 89},
+            {"id": 3.43, "name": "Jeux PlayStation", "slug": "jeux-playstation", "productCount": 67},
+            {"id": 3.44, "name": "Jeux Xbox", "slug": "jeux-xbox", "productCount": 54},
+            {"id": 3.45, "name": "Jeux Nintendo", "slug": "jeux-nintendo", "productCount": 48},
+            {"id": 3.46, "name": "Accessoires et manettes", "slug": "accessoires-jeux", "productCount": 76},
+            {"id": 3.47, "name": "Autres", "slug": "autres-jeux", "productCount": 23}
+          ]
+        },
+        {
+          "id": 3.5,
+          "name": "Téléphonie",
+          "slug": "telephonie",
+          "children": [
+            {"id": 3.51, "name": "Smartphones", "slug": "smartphones", "productCount": 98},
+            {"id": 3.52, "name": "Téléphones fixes", "slug": "telephones-fixes", "productCount": 34},
+            {"id": 3.53, "name": "Energie et connectique", "slug": "energie-connectique", "productCount": 67},
+            {"id": 3.54, "name": "Accessoires", "slug": "accessoires-telephonie", "productCount": 89}
+          ]
+        },
+        {
+          "id": 3.6,
+          "name": "Photo, caméscope",
+          "slug": "photo-camescope",
+          "children": [
+            {"id": 3.61, "name": "Objectifs", "slug": "objectifs", "productCount": 45},
+            {"id": 3.62, "name": "Caméscopes", "slug": "camescopes", "productCount": 23},
+            {"id": 3.63, "name": "Reflex", "slug": "reflex", "productCount": 38},
+            {"id": 3.64, "name": "Hybrides", "slug": "hybrides", "productCount": 42},
+            {"id": 3.65, "name": "Compacts et Bridges", "slug": "compacts-bridges", "productCount": 29},
+            {"id": 3.66, "name": "Caméra d'action", "slug": "camera-action", "productCount": 34},
+            {"id": 3.67, "name": "Caméra étanche", "slug": "camera-etanche", "productCount": 18},
+            {"id": 3.68, "name": "Accessoires", "slug": "accessoires-photo", "productCount": 76}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Informatique",
+      "slug": "informatique",
+      "description": "Ordinateurs, composants et accessoires informatiques",
+      "image": "images/categories/informatique.jpg",
+      "children": [
+        {
+          "id": 4.1,
+          "name": "Pc fixes, écran",
+          "slug": "pc-fixes-ecran",
+          "children": [
+            {"id": 4.11, "name": "All-in-One", "slug": "all-in-one", "productCount": 34},
+            {"id": 4.12, "name": "Unité centrale", "slug": "unite-centrale", "productCount": 45},
+            {"id": 4.13, "name": "Mini-Pc", "slug": "mini-pc", "productCount": 23},
+            {"id": 4.14, "name": "Ecran", "slug": "ecran", "productCount": 67},
+            {"id": 4.15, "name": "Tours Gaming", "slug": "tours-gaming", "productCount": 28},
+            {"id": 4.16, "name": "Imprimante et scanner", "slug": "imprimante-scanner", "productCount": 56}
+          ]
+        },
+        {
+          "id": 4.2,
+          "name": "Laptops",
+          "slug": "laptops",
+          "children": [
+            {"id": 4.21, "name": "Windows", "slug": "windows", "productCount": 89},
+            {"id": 4.22, "name": "Chromebook", "slug": "chromebook", "productCount": 23},
+            {"id": 4.23, "name": "Tactile", "slug": "tactile", "productCount": 45},
+            {"id": 4.24, "name": "Gaming", "slug": "gaming", "productCount": 67},
+            {"id": 4.25, "name": "Apple", "slug": "apple", "productCount": 54},
+            {"id": 4.26, "name": "Accessoires PC", "slug": "accessoires-pc", "productCount": 98}
+          ]
+        },
+        {
+          "id": 4.3,
+          "name": "Tablettes",
+          "slug": "tablettes",
+          "children": [
+            {"id": 4.31, "name": "Tablettes graphiques", "slug": "tablettes-graphiques", "productCount": 34},
+            {"id": 4.32, "name": "Tablettes Windows", "slug": "tablettes-windows", "productCount": 23},
+            {"id": 4.33, "name": "Tablettes Android", "slug": "tablettes-android", "productCount": 45},
+            {"id": 4.34, "name": "Ipad", "slug": "ipad", "productCount": 38},
+            {"id": 4.35, "name": "Etuis, housse & protection", "slug": "etuis-housse", "productCount": 67},
+            {"id": 4.36, "name": "Claviers & stylets", "slug": "claviers-stylets", "productCount": 29}
+          ]
+        },
+        {
+          "id": 4.4,
+          "name": "Composants",
+          "slug": "composants",
+          "children": [
+            {"id": 4.41, "name": "Processeurs", "slug": "processeurs", "productCount": 45},
+            {"id": 4.42, "name": "Cartes graphiques", "slug": "cartes-graphiques", "productCount": 56},
+            {"id": 4.43, "name": "Cartes mères", "slug": "cartes-meres", "productCount": 34},
+            {"id": 4.44, "name": "Mémoire RAM", "slug": "memoire-ram", "productCount": 67},
+            {"id": 4.45, "name": "Stockage interne", "slug": "stockage-interne", "productCount": 78},
+            {"id": 4.46, "name": "Alimentation", "slug": "alimentation", "productCount": 29},
+            {"id": 4.47, "name": "Boitiers", "slug": "boitiers", "productCount": 38},
+            {"id": 4.48, "name": "Refroidissement", "slug": "refroidissement", "productCount": 45}
+          ]
+        },
+        {
+          "id": 4.5,
+          "name": "Stockage",
+          "slug": "stockage",
+          "children": [
+            {"id": 4.51, "name": "SSD", "slug": "ssd", "productCount": 67},
+            {"id": 4.52, "name": "Disques dur internes", "slug": "disques-dur-internes", "productCount": 45},
+            {"id": 4.53, "name": "Disques dur externes", "slug": "disques-dur-externes", "productCount": 56},
+            {"id": 4.54, "name": "Cartes SD", "slug": "cartes-sd", "productCount": 34},
+            {"id": 4.55, "name": "Cartes Micro - SD", "slug": "cartes-micro-sd", "productCount": 29},
+            {"id": 4.56, "name": "Clé USB", "slug": "cle-usb", "productCount": 89},
+            {"id": 4.57, "name": "NAS", "slug": "nas", "productCount": 18}
+          ]
+        },
+        {
+          "id": 4.6,
+          "name": "Réseau",
+          "slug": "reseau",
+          "children": [
+            {"id": 4.61, "name": "Adapteurs CPL", "slug": "adapteurs-cpl", "productCount": 23},
+            {"id": 4.62, "name": "Récepteurs WIFI", "slug": "recepteurs-wifi", "productCount": 34},
+            {"id": 4.63, "name": "NAS", "slug": "nas-reseau", "productCount": 18},
+            {"id": 4.64, "name": "Adapteurs Wifi", "slug": "adapteurs-wifi", "productCount": 45},
+            {"id": 4.65, "name": "Switches", "slug": "switches", "productCount": 29},
+            {"id": 4.66, "name": "Solutions de streaming", "slug": "solutions-streaming", "productCount": 23},
+            {"id": 4.67, "name": "Modems", "slug": "modems", "productCount": 18},
+            {"id": 4.68, "name": "Routeurs", "slug": "routeurs", "productCount": 34}
+          ]
+        },
+        {
+          "id": 4.7,
+          "name": "Accessoires",
+          "slug": "accessoires-informatique",
+          "children": [
+            {"id": 4.71, "name": "Souris", "slug": "souris", "productCount": 89},
+            {"id": 4.72, "name": "Claviers", "slug": "claviers", "productCount": 67},
+            {"id": 4.73, "name": "Casques et Webcams", "slug": "casques-webcams", "productCount": 45},
+            {"id": 4.74, "name": "Enceintes PC", "slug": "enceintes-pc", "productCount": 34},
+            {"id": 4.75, "name": "Câbles", "slug": "cables", "productCount": 56},
+            {"id": 4.76, "name": "Sacs", "slug": "sacs-informatique", "productCount": 29},
+            {"id": 4.77, "name": "Tous les accessoires", "slug": "tous-accessoires", "productCount": 123}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Meuble et décoration",
+      "slug": "meuble-decoration",
+      "description": "Meubles et articles de décoration pour votre intérieur",
+      "image": "images/categories/meuble-decoration.jpg",
+      "children": [
+        {
+          "id": 5.1,
+          "name": "Salon",
+          "slug": "salon",
+          "children": [
+            {"id": 5.11, "name": "Fauteuils", "slug": "fauteuils", "productCount": 45},
+            {"id": 5.12, "name": "Tables basses", "slug": "tables-basses", "productCount": 34},
+            {"id": 5.13, "name": "Meuble TV", "slug": "meuble-tv", "productCount": 29},
+            {"id": 5.14, "name": "Bibliothèque", "slug": "bibliotheque", "productCount": 38},
+            {"id": 5.15, "name": "Buffet", "slug": "buffet", "productCount": 23},
+            {"id": 5.16, "name": "Tables à manger", "slug": "tables-a-manger", "productCount": 41},
+            {"id": 5.17, "name": "Chaises", "slug": "chaises", "productCount": 56}
+          ]
+        },
+        {
+          "id": 5.2,
+          "name": "Canapé",
+          "slug": "canape",
+          "children": [
+            {"id": 5.21, "name": "Canapés fixe", "slug": "canapes-fixe", "productCount": 34},
+            {"id": 5.22, "name": "Canapés convertibles", "slug": "canapes-convertibles", "productCount": 28},
+            {"id": 5.23, "name": "Canapés d'angle", "slug": "canapes-angle", "productCount": 45},
+            {"id": 5.24, "name": "Canapés droits", "slug": "canapes-droits", "productCount": 39},
+            {"id": 5.25, "name": "Canapés premium", "slug": "canapes-premium", "productCount": 23},
+            {"id": 5.26, "name": "Canapés de relaxation", "slug": "canapes-relaxation", "productCount": 31},
+            {"id": 5.27, "name": "Banquettes", "slug": "banquettes", "productCount": 18}
+          ]
+        },
+        {
+          "id": 5.3,
+          "name": "Cuisine",
+          "slug": "cuisine-meuble",
+          "children": [
+            {"id": 5.31, "name": "Buffets de cuisine", "slug": "buffets-cuisine", "productCount": 23},
+            {"id": 5.32, "name": "Désertes de cuisine", "slug": "desertes-cuisine", "productCount": 18},
+            {"id": 5.33, "name": "Poubelles", "slug": "poubelles", "productCount": 34},
+            {"id": 5.34, "name": "Tables cuisine", "slug": "tables-cuisine", "productCount": 29},
+            {"id": 5.35, "name": "Chaises cuisine", "slug": "chaises-cuisine", "productCount": 45},
+            {"id": 5.36, "name": "Casiers de rangements", "slug": "casiers-rangements", "productCount": 38},
+            {"id": 5.37, "name": "Ensembles complets", "slug": "ensembles-complets", "productCount": 27}
+          ]
+        },
+        {
+          "id": 5.4,
+          "name": "Luminaire",
+          "slug": "luminaire",
+          "children": [
+            {"id": 5.41, "name": "Lustres", "slug": "lustres", "productCount": 34},
+            {"id": 5.42, "name": "Plafonniers", "slug": "plafonniers", "productCount": 45},
+            {"id": 5.43, "name": "Lampadaires", "slug": "lampadaires", "productCount": 29},
+            {"id": 5.44, "name": "Appliques", "slug": "appliques", "productCount": 38},
+            {"id": 5.45, "name": "Eclairage solaire", "slug": "eclairage-solaire", "productCount": 23},
+            {"id": 5.46, "name": "Lanternes", "slug": "lanternes", "productCount": 18},
+            {"id": 5.47, "name": "Eclairage murales", "slug": "eclairage-murales", "productCount": 27},
+            {"id": 5.48, "name": "Ampoules LED", "slug": "ampoules-led", "productCount": 89},
+            {"id": 5.49, "name": "Economie d'énergie", "slug": "economie-energie", "productCount": 45},
+            {"id": 5.410, "name": "Projecteurs et lampadaires", "slug": "projecteurs-lampadaires", "productCount": 34},
+            {"id": 5.411, "name": "Luminaires enfants", "slug": "luminaires-enfants", "productCount": 23},
+            {"id": 5.412, "name": "Guirlandes lumineuses", "slug": "guirlandes-lumineuses", "productCount": 29}
+          ]
+        },
+        {
+          "id": 5.5,
+          "name": "Décoration",
+          "slug": "decoration",
+          "children": [
+            {"id": 5.51, "name": "Cadres photos", "slug": "cadres-photos", "productCount": 45},
+            {"id": 5.52, "name": "Bourgies", "slug": "bourgies", "productCount": 34},
+            {"id": 5.53, "name": "Coussins", "slug": "coussins", "productCount": 67},
+            {"id": 5.54, "name": "Rideaux", "slug": "rideaux", "productCount": 38},
+            {"id": 5.55, "name": "Horloges", "slug": "horloges", "productCount": 29},
+            {"id": 5.56, "name": "Tapis", "slug": "tapis", "productCount": 56},
+            {"id": 5.57, "name": "Vases", "slug": "vases", "productCount": 41},
+            {"id": 5.58, "name": "Miroirs", "slug": "miroirs", "productCount": 48},
+            {"id": 5.59, "name": "Albums photo", "slug": "albums-photo", "productCount": 23},
+            {"id": 5.510, "name": "Décoration de fenêtres", "slug": "decoration-fenetres", "productCount": 18},
+            {"id": 5.511, "name": "Accessoires de décoration", "slug": "accessoires-decoration", "productCount": 89}
+          ]
+        },
+        {
+          "id": 5.6,
+          "name": "Rangements",
+          "slug": "rangements",
+          "children": [
+            {"id": 5.61, "name": "Buanderie", "slug": "buanderie-rangement", "productCount": 23},
+            {"id": 5.62, "name": "Paniers et boites de rangement", "slug": "paniers-boites", "productCount": 67},
+            {"id": 5.63, "name": "Déchets et recyclage", "slug": "dechets-recyclage", "productCount": 34},
+            {"id": 5.64, "name": "Rangement pour la cuisine", "slug": "rangement-cuisine", "productCount": 45},
+            {"id": 5.65, "name": "Rangement pour vêtements", "slug": "rangement-vetements", "productCount": 56},
+            {"id": 5.66, "name": "Casiers, étagères et tiroirs", "slug": "casiers-etageres", "productCount": 78},
+            {"id": 5.67, "name": "Salle bain", "slug": "rangement-salle-bain", "productCount": 29}
+          ]
+        },
+        {
+          "id": 5.7,
+          "name": "Chambre, linge",
+          "slug": "chambre-linge",
+          "children": [
+            {"id": 5.71, "name": "Lit adulte", "slug": "lit-adulte", "productCount": 45},
+            {"id": 5.72, "name": "Lit enfants", "slug": "lit-enfants", "productCount": 38},
+            {"id": 5.73, "name": "Table à chevet", "slug": "table-chev

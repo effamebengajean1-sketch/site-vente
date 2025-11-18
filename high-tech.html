@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Tech - NexusChop</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/menu-content-styles.css">
+  <link rel="stylesheet" href="./assets/css/high-tech-mega-menu.css">
+
+  <!--
+    - logo styling
+  -->
+  <style>
+    .header-logo {
+      font-size: 24px !important;
+      font-weight: bold !important;
+      color: #333 !important;
+    }
+
+    .orange-letter {
+      color: #ff6600 !important;
+    }
+
+    /* Carousel styling */
+    .banner-btn {
+      background: #ff6600 !important;
+      color: white !important;
+      border: none !important;
+      padding: 12px 24px !important;
+      border-radius: 5px !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .banner-btn:hover {
+      background: #ff5200 !important;
+      color: white !important;
+    }
+
+    /* Hover effects in orange */
+    .menu-title:hover {
+      color: #ff6600 !important;
+    }
+
+    .banner-subtitle:hover {
+      color: #ff6600 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .banner-title:hover {
+      color: #ff8800 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .orange-letter:hover {
+      color: #ff8800 !important;
+    }
+
+    /* Improved banner text styling */
+    .banner-subtitle {
+      font-family: 'Arial', 'Helvetica', sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important;
+      letter-spacing: 1px !important;
+    }
+
+    .banner-title {
+      font-family: 'Arial', 'Helvetica', sans-serif !important;
+      font-size: 32px !important;
+      font-weight: 700 !important;
+      color: #ff6600 !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+      letter-spacing: 1px !important;
+      margin-bottom: 15px !important;
+    }
+
+    .banner-text {
+      font-family: 'Arial', 'Helvetica', sans-serif !important;
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important;
+      margin-bottom: 20px !important;
+    }
+
+    .banner-content {
+      text-align: left !important;
+      padding: 20px !important;
+    }
+
+    /* Navbar optimization */
+    .desktop-menu-category-list {
+      font-size: 12px !important;
+    }
+
+    .menu-title {
+      font-size: 12px !important;
+      padding: 6px 8px !important;
+      margin: 0 !important;
+      white-space: nowrap !important;
+    }
+
+    .menu-category {
+      margin: 0 1px !important;
+    }
+
+    .desktop-menu-category-list li {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Social media icon colors */
+    .social-link ion-icon[name="logo-facebook"] {
+      color: #1877f2 !important;
+    }
+
+    .social-link ion-icon[name="logo-twitter"] {
+      color: #1da1f2 !important;
+    }
+
+    .social-link ion-icon[name="logo-instagram"] {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .social-link ion-icon[name="logo-linkedin"] {
+      color: #0077b5 !important;
+    }
+
+    /* Social media hover effects */
+    .social-link:hover ion-icon[name="logo-facebook"] {
+      color: #1464d2 !important;
+      transform: scale(1.1);
+    }
+
+    .social-link:hover ion-icon[name="logo-twitter"] {
+      color: #0c87c8 !important;
+      transform: scale(1.1);
+    }
+
+    .social-link:hover ion-icon[name="logo-instagram"] {
+      filter: brightness(1.2);
+      transform: scale(1.1);
+    }
+
+    .social-link:hover ion-icon[name="logo-linkedin"] {
+      color: #005a8f !important;
+      transform: scale(1.1);
+    }
+
+    /* Static delivery message styling */
+    .header-alert-news {
+      overflow: visible !important;
+      white-space: normal !important;
+    }
+
+    .header-alert-news p {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>NexusStor</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="Projet 1 - MarketPlace/produits/samsunggalxys21_1.jpg" alt="Samsung Galaxy S21" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Quelqu'un vient d'acheter
+      </p>
+
+      <p class="toast-title">
+        Samsung Galaxy S21
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p style="color: #333; font-weight: normal;">
+            <b>Livraison gratuite Cette semaine pour toute commande supérieure à</b> <span style="color: #ff6600; font-weight: bold;">1000 XAF</span>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="xaf" selected>XAF</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="fr" selected>Fran&ccedil;ais</option>
+            <option value="en-US">English</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="index.html" class="header-logo">
+          <span class="orange-letter">N</span>exus<span class="orange-letter">C</span>hop
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un produit...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.html" class="menu-title" data-menu="home">Accueil</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Catégories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="high-tech.html">High-Tech</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Objets connectés</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Audio, Hifi</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">TV, Home Cinéma</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Jeux vidéo</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Téléphonie</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Photo, caméscope</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Informatique</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Pc fixes, écran</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Laptops</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Tablettes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Composants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Stockage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Accessoires</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Modes et vêtements</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Femme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Homme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Enfants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Bagages</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electroménager</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Lavage et séchage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Froid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Cuisson</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Entretien maison</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Beauté, Hygiène, santé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Climatisation, ventilation</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Pc fixes, écran</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Laptops</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Composants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Stockage</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Lavage et séchage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Froid</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Cuisson</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Entretien maison</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#meuble-decoration" class="menu-title" data-menu="meuble-decoration">Meuble et décoration</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Salon</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Canapé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Luminaire</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Rangements</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Femme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Homme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Enfants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Bagages</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#blog" class="menu-title" data-menu="blog">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#offres-speciales" class="menu-title" data-menu="offres-speciales">Offres spéciales</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="index.html" class="menu-title" data-menu="home">Accueil</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="high-tech.html" class="menu-title">High-Tech</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#meuble-decoration" class="menu-title" data-menu="meuble-decoration">Meuble et décoration</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#blog" class="menu-title" data-menu="blog">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#offres-speciales" class="menu-title" data-menu="offres-speciales">Offres spéciales</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title" style="color: #ff6600;">Fran&ccedil;ais</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title" style="color: #ff6600;">XAF</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!--
+    - MAIN CONTENT - HIGH TECH MEGA MENU
+  -->
+
+  <main>
+    <div id="high-tech-content">
+      <!-- High Tech Mega Menu will be loaded here -->
+    </div>
+  </main>
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Répertoire des marques</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">High-Tech :</h3>
+
+          <a href="#" class="footer-category-link">Smartphones</a>
+          <a href="#" class="footer-category-link">Ordinateurs</a>
+          <a href="#" class="footer-category-link">Tablettes</a>
+          <a href="#" class="footer-category-link">Objets connectés</a>
+          <a href="#" class="footer-category-link">Montres connectées</a>
+          <a href="#" class="footer-category-link">Écouteurs</a>
+          <a href="#" class="footer-category-link">Drones</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Informatique :</h3>
+
+          <a href="#" class="footer-category-link">Processeurs</a>
+          <a href="#" class="footer-category-link">Cartes graphiques</a>
+          <a href="#" class="footer-category-link">RAM</a>
+          <a href="#" class="footer-category-link">Stockage</a>
+          <a href="#" class="footer-category-link">Cartes mères</a>
+          <a href="#" class="footer-category-link">Refroidissement</a>
+          <a href="#" class="footer-category-link">Alimentations</a>
+          <a href="#" class="footer-category-link">Boîtiers</a>
+          <a href="#" class="footer-category-link">Composants</a>
+          <a href="#" class="footer-category-link">Accessoires PC</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Audio & Vidéo :</h3>
+
+          <a href="#" class="footer-category-link">Casques</a>
+          <a href="#" class="footer-category-link">Enceintes</a>
+          <a href="#" class="footer-category-link">Caméras</a>
+          <a href="#" class="footer-category-link">Téléviseurs</a>
+          <a href="#" class="footer-category-link">Barres de son</a>
+          <a href="#" class="footer-category-link">Microphones</a>
+          <a href="#" class="footer-category-link">Éclairage studio</a>
+          <a href="#" class="footer-category-link">Trépieds</a>
+          <a href="#" class="footer-category-link">Objectifs</a>
+          <a href="#" class="footer-category-link">Accessoires audio</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Gaming :</h3>
+
+          <a href="#" class="footer-category-link">Consoles</a>
+          <a href="#" class="footer-category-link">Manettes</a>
+          <a href="#" class="footer-category-link">Jeux</a>
+          <a href="#" class="footer-category-link">Accessoires gaming</a>
+          <a href="#" class="footer-category-link">Chaises gaming</a>
+          <a href="#" class="footer-category-link">Souris</a>
+          <a href="#" class="footer-category-link">Claviers</a>
+          <a href="#" class="footer-category-link">Casques gaming</a>
+          <a href="#" class="footer-category-link">Écrans gaming</a>
+          <a href="#" class="footer-category-link">PC gaming</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Health</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Watches</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              Yaouné-Bonas
+              Cameroun
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+237698385186" class="footer-nav-link">698 38 51 86</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:nsounjou1@gmail.com" class="footer-nav-link">nsounjou1@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">NexusShop</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="menu-logic.js"></script>
+  <script src="high-tech-mega-menu.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // Load High Tech mega menu on page load
+    document.addEventListener('DOMContentLoaded', async function() {
+      const contentElement = document.getElementById('high-tech-content');
+
+      // Load the High Tech mega menu
+      const highTechMenu = new HighTechMegaMenu();
+      await highTechMenu.init();
+
+      if (window.highTechMenu) {
+        window.highTechMenu.showHighTechContent(contentElement);
+      } else {
+        contentElement.innerHTML = '<div class="container"><p>Chargement du menu High-Tech...</p></div>';
+      }
+    });
+  </script>
+
+  <script src="./assets/js/global-search.js"></script>
+</body>
+
+</html>
