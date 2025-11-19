@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canapé - NexusChop</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/menu-content-styles.css">
+  <link rel="stylesheet" href="./assets/css/high-tech-mega-menu.css">
+  
+  <!--
+    - logo styling
+  -->
+  <style>
+    .header-logo {
+      font-size: 24px !important;
+      font-weight: bold !important;
+      color: #333 !important;
+    }
+    
+    .orange-letter {
+      color: #ff6600 !important;
+    }
+    
+    /* Carousel styling */
+    .banner-btn {
+      background: #ff6600 !important;
+      color: white !important;
+      border: none !important;
+      padding: 12px 24px !important;
+      border-radius: 5px !important;
+      font-weight: bold !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .banner-btn:hover {
+      background: #ff5200 !important;
+      color: white !important;
+    }
+    
+    /* Hover effects in orange */
+    .menu-title:hover {
+      color: #ff6600 !important;
+    }
+    
+    .banner-subtitle:hover {
+      color: #ff6600 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .banner-title:hover {
+      color: #ff8800 !important;
+      transform: scale(1.05) !important;
+      transition: all 0.3s ease !important;
+    }
+    
+    .orange-letter:hover {
+      color: #ff8800 !important;
+    }
+    
+    /* Page header styling */
+    .page-header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .page-title {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .page-subtitle {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Social media icon colors */
+    .social-link ion-icon[name="logo-facebook"] {
+      color: #1877f2 !important;
+    }
+    
+    .social-link ion-icon[name="logo-twitter"] {
+      color: #1da1f2 !important;
+    }
+    
+    .social-link ion-icon[name="logo-instagram"] {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .social-link ion-icon[name="logo-linkedin"] {
+      color: #0077b5 !important;
+    }
+    
+    /* Social media hover effects */
+    .social-link:hover ion-icon[name="logo-facebook"] {
+      color: #1464d2 !important;
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-twitter"] {
+      color: #0c87c8 !important;
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-instagram"] {
+      filter: brightness(1.2);
+      transform: scale(1.1);
+    }
+    
+    .social-link:hover ion-icon[name="logo-linkedin"] {
+      color: #005a8f !important;
+      transform: scale(1.1);
+    }
+
+    /* Static delivery message styling */
+    .header-alert-news {
+      overflow: visible !important;
+      white-space: normal !important;
+    }
+    
+    .header-alert-news p {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-btn" data-modal-close-btn>
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="modal-content">
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>NexusChop</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p style="color: #333; font-weight: normal;">
+            <b>Livraison gratuite Cette semaine pour toute commande supérieure à</b> <span style="color: #ff6600; font-weight: bold;">1000 XAF</span>
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="xaf" selected>XAF</option>
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="fr" selected>Fran&ccedil;ais</option>
+            <option value="en-US">English</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="index.html" class="header-logo">
+          <span class="orange-letter">N</span>exus<span class="orange-letter">C</span>hop
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Recherchez canapés, fauteuils, salons...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="index.html" class="menu-title">Accueil</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Catégories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="high-tech">High-Tech</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="objets-connectes.html" data-subcategory="objets-connectes">Objets connectés</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="audio-hifi.html" data-subcategory="audio-hifi">Audio, Hifi</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="tv-home-cinema.html" data-subcategory="tv-home-cinema">TV, Home Cinéma</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="pc-fixes-ecran.html" data-subcategory="pc-fixes-ecran">PC fixes, écran</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="composants.html" data-subcategory="composants">Composants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="laptops.html" data-subcategory="laptops">Laptops</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="photo-camescope.html" data-subcategory="photo-camescope">Photo, caméscope</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="jeux-video.html" data-subcategory="jeux-video">Jeux vidéo</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="electromenager">Electroménager</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="cuisson.html" data-subcategory="cuisson">Cuisson</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="froid.html" data-subcategory="froid">Froid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="lavage-sechage.html" data-subcategory="lavage-sechage">Lavage et séchage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="entretien-maison.html" data-subcategory="entretien-maison">Entretien maison</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="beaute-hygiene-sante.html" data-subcategory="beaute-hygiene-sante">Beauté, Hygiène, santé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="climatisation-ventilation.html" data-subcategory="climatisation-ventilation">Climatisation, ventilation</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="furniture">Meubles & Décoration</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="salon.html" data-subcategory="salon">Salon</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="canape.html" data-subcategory="canape">Canapé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="luminaire.html" data-subcategory="luminaire">Luminaire</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="rangements.html" data-subcategory="rangements">Rangements</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="fashion">Mode et vêtements</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="homme.html" data-subcategory="homme">Homme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="femme.html" data-subcategory="femme">Femme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="enfants.html" data-subcategory="enfants">Enfants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bagages.html" data-subcategory="bagages">Bagages</a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </li>
+
+          <li class="menu-category">
+            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="laptops.html">Laptops</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="composants.html">Composants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="stockage.htm">Stockage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="accessoires.html">Accessoires</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="femme.html">Femme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="homme.html">Homme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="enfants.html">Enfants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="bagages.html">Bagages</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="lavage-sechage.html">Lavage et séchage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="froid.html">Froid</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="cuisson.html">Cuisson</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="entretien-maison.html">Entretien maison</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#furniture" class="menu-title" data-menu="furniture">Meubles & Décoration</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="salon.html">Salon</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="canape.html">Canapé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="luminaire.html">Luminaire</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="rangements.html">Rangements</a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!--
+    - MAIN
+  -->
+
+  <main class="main">
+
+    <!--
+      - BREADCRUMB
+    -->
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li><a href="index.html" class="breadcrumb-link">Accueil</a></li>
+          <li><span class="breadcrumb-link breadcrumb-current">Canapé</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">Canapé</h1>
+        <p class="page-subtitle">Découvrez notre collection de canapés et fauteuils confortables</p>
+      </div>
+    </div>
+
+    <!--
+      - PRODUCT CONTAINER
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Catégories</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon" width="20" height="20" class="menu-title-img">
+
+                    <a href="salon.html" class="menu-title">Salon</a>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="salon.html" class="sidebar-submenu-title">
+                      Salon
+                      <span class="stock">(xx)</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Canapé" width="20" height="20" class="menu-title-img">
+
+                    <a href="canape.html" class="menu-title">Canapé</a>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="canape.html" class="sidebar-submenu-title">
+                      Canapé
+                      <span class="stock">(xx)</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="images_electro_menager/GAMME DE TELEVISION SMART.jpg" alt="Luminaire" width="20" height="20" class="menu-title-img">
+
+                    <a href="luminaire.html" class="menu-title">Luminaire</a>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="luminaire.html" class="sidebar-submenu-title">
+                      Luminaire
+                      <span class="stock">(xx)</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Rangements" width="20" height="20" class="menu-title-img">
+
+                    <a href="rangements.html" class="menu-title">Rangements</a>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="rangements.html" class="sidebar-submenu-title">
+                      Rangements
+                      <span class="stock">(xx)</span>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h3 class="showcase-heading">Canapés & Fauteuils</h3>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <div class="showcase-banner">
+
+                      <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Canapé de Luxe en Cuir Italien" width="300" class="product-img default">
+                      <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Canapé de Luxe en Cuir Italien" width="300" class="product-img hover">
+
+                      <p class="showcase-badge angle pink">new</p>
+
+                      <div class="showcase-actions">
+
+                        <button class="btn-action" onclick="toggleWishlist('canape-luxe-cuir')">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="showQuickView('canape-luxe-cuir')">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="compareProduct('canape-luxe-cuir')">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="ajouterAuPanier({id: 'canape-luxe-cuir', title: 'Canapé de Luxe en Cuir Italien', price: 180000, image: 'images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg', category: 'Canapé'})">
+                          <ion-icon name="bag-add-outline"></ion-icon>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                      <a href="#" class="showcase-category">Canapés</a>
+
+                      <a href="#">
+                        <h3 class="showcase-title">Canapé de Luxe en Cuir Italien</h3>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">XAF 180,000</p>
+                        <del>XAF 220,000</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <div class="showcase-banner">
+
+                      <img src="images_electro_menager/SALON ROYALE.jpg" alt="Canapé Royale" width="300" class="product-img default">
+                      <img src="images_electro_menager/SALON ROYALE.jpg" alt="Canapé Royale" width="300" class="product-img hover">
+
+                      <p class="showcase-badge angle black">sale</p>
+
+                      <div class="showcase-actions">
+
+                        <button class="btn-action" onclick="toggleWishlist('canape-royale')">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="showQuickView('canape-royale')">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="compareProduct('canape-royale')">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="ajouterAuPanier({id: 'canape-royale', title: 'Canapé Royale', price: 145000, image: 'images_electro_menager/SALON ROYALE.jpg', category: 'Canapé'})">
+                          <ion-icon name="bag-add-outline"></ion-icon>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                      <a href="#" class="showcase-category">Canapés</a>
+
+                      <a href="#">
+                        <h3 class="showcase-title">Canapé Royale</h3>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">XAF 145,000</p>
+                        <del>XAF 175,000</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <div class="showcase-banner">
+
+                      <img src="images_electro_menager/CHAISE IMPERIAL.jpg" alt="Fauteuil Impérial" width="300" class="product-img default">
+                      <img src="images_electro_menager/CHAISE IMPERIAL.jpg" alt="Fauteuil Impérial" width="300" class="product-img hover">
+
+                      <p class="showcase-badge angle black">sale</p>
+
+                      <div class="showcase-actions">
+
+                        <button class="btn-action" onclick="toggleWishlist('fauteuil-imperial')">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="showQuickView('fauteuil-imperial')">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="compareProduct('fauteuil-imperial')">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="ajouterAuPanier({id: 'fauteuil-imperial', title: 'Fauteuil Impérial', price: 65000, image: 'images_electro_menager/CHAISE IMPERIAL.jpg', category: 'Canapé'})">
+                          <ion-icon name="bag-add-outline"></ion-icon>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                      <a href="#" class="showcase-category">Fauteuils</a>
+
+                      <a href="#">
+                        <h3 class="showcase-title">Fauteuil Impérial</h3>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">XAF 65,000</p>
+                        <del>XAF 80,000</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <div class="showcase-banner">
+
+                      <img src="images_electro_menager/GAMME DE TABOURET POUR SALON.jpg" alt="Tabouret pour Salon" width="300" class="product-img default">
+                      <img src="images_electro_menager/GAMME DE TABOURET POUR SALON.jpg" alt="Tabouret pour Salon" width="300" class="product-img hover">
+
+                      <p class="showcase-badge angle black">sale</p>
+
+                      <div class="showcase-actions">
+
+                        <button class="btn-action" onclick="toggleWishlist('tabouret-salon')">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="showQuickView('tabouret-salon')">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="compareProduct('tabouret-salon')">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <button class="btn-action" onclick="ajouterAuPanier({id: 'tabouret-salon', title: 'Tabouret pour Salon', price: 35000, image: 'images_electro_menager/GAMME DE TABOURET POUR SALON.jpg', category: 'Canapé'})">
+                          <ion-icon name="bag-add-outline"></ion-icon>
+                        </button>
+
+                      </div>
+
+                    </div>
+
+                    <div class="showcase-content">
+
+                      <a href="#" class="showcase-category">Tabourets</a>
+
+                      <a href="#">
+                        <h3 class="showcase-title">Tabouret pour Salon</h3>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">XAF 35,000</p>
+                        <del>XAF 45,000</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Catalogue de marques</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="nav-title">High-Tech</h3>
+
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Smartphone</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Tablette</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Laptop</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Smart TV</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="nav-title">Electroménager</h3>
+
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Réfrigérateur</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Machine à laver</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Four</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Aspirateur</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="nav-title">Meubles & Décoration</h3>
+
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="salon.html" class="footer-category-link">Salon</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="canape.html" class="footer-category-link">Canapé</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="luminaire.html" class="footer-category-link">Luminaire</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="rangements.html" class="footer-category-link">Rangements</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="salon.html" class="footer-nav-link">Salon</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="canape.html" class="footer-nav-link">Canapé</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="luminaire.html" class="footer-nav-link">Luminaire</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="rangements.html" class="footer-nav-link">Rangements</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14811, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">NexusChop</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/high-tech-mega-menu.js"></script>
+  <script src="./assets/js/menu-logic.js"></script>
+  <script src="./assets/js/main-page-product-actions.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

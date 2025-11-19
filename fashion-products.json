@@ -1,0 +1,198 @@
+{
+  "fashion": {
+    "id": 1,
+    "name": "Mode & Vêtements",
+    "slug": "fashion",
+    "description": "Mode, vêtements et accessoires tendance",
+    "image": "images/categories/fashion.jpg",
+    "children": [
+      {
+        "id": 1.1,
+        "name": "Vestes",
+        "slug": "vestes"
+      },
+      {
+        "id": 1.2,
+        "name": "Shorts",
+        "slug": "shorts"
+      },
+      {
+        "id": 1.3,
+        "name": "Chaussures Sport",
+        "slug": "sportif"
+      },
+      {
+        "id": 1.4,
+        "name": "Bottes",
+        "slug": "bottes"
+      },
+      {
+        "id": 1.5,
+        "name": "Chaussures Habillées",
+        "slug": "officiel"
+      },
+      {
+        "id": 1.6,
+        "name": "Chaussures Décontractées",
+        "slug": "occasionnel"
+      }
+    ],
+    "featured_products": [
+      {
+        "id": "f001",
+        "name": "Mens Winter Leathers Jackets",
+        "category": "Vestes",
+        "subcategory": "vestes",
+        "price": 30000,
+        "originalPrice": 45000,
+        "rating": 4,
+        "image": "assets/images/products/jacket-3.jpg",
+        "badge": "featured"
+      },
+      {
+        "id": "f002",
+        "name": "Short de survêtement en molleton français Better Basics",
+        "category": "Shorts",
+        "subcategory": "shorts",
+        "price": 12000,
+        "originalPrice": 18000,
+        "rating": 4,
+        "image": "assets/images/products/shorts-1.jpg",
+        "badge": "new"
+      },
+      {
+        "id": "f003",
+        "name": "Chaussures de tekking à air comprimé - blanches",
+        "category": "Chaussures Sport",
+        "subcategory": "sportif",
+        "price": 31200,
+        "originalPrice": 33000,
+        "rating": 4,
+        "image": "assets/images/products/sports-6.jpg",
+        "badge": "trending"
+      }
+    ],
+    "products": [
+      {
+        "id": "f101",
+        "name": "Mens Winter Leathers Jackets",
+        "category": "Vestes",
+        "subcategory": "vestes",
+        "price": 30000,
+        "originalPrice": 45000,
+        "rating": 4,
+        "image": "assets/images/products/jacket-3.jpg"
+      },
+      {
+        "id": "f102",
+        "name": "Veste en cuir premium",
+        "category": "Vestes",
+        "subcategory": "vestes",
+        "price": 55000,
+        "originalPrice": 75000,
+        "rating": 5,
+        "image": "assets/images/products/jacket-1.jpg"
+      },
+      {
+        "id": "f201",
+        "name": "Short de survêtement en molleton français Better Basics",
+        "category": "Shorts",
+        "subcategory": "shorts",
+        "price": 12000,
+        "originalPrice": 18000,
+        "rating": 4,
+        "image": "assets/images/products/shorts-1.jpg"
+      },
+      {
+        "id": "f202",
+        "name": "Short sport Adidas",
+        "category": "Shorts",
+        "subcategory": "shorts",
+        "price": 8500,
+        "originalPrice": 12000,
+        "rating": 4,
+        "image": "assets/images/products/shorts-2.jpg"
+      },
+      {
+        "id": "f301",
+        "name": "Chaussures de tekking à air comprimé - blanches",
+        "category": "Chaussures Sport",
+        "subcategory": "sportif",
+        "price": 31200,
+        "originalPrice": 33000,
+        "rating": 4,
+        "image": "assets/images/products/sports-6.jpg"
+      },
+      {
+        "id": "f302",
+        "name": "Chaussures de course Nike",
+        "category": "Chaussures Sport",
+        "subcategory": "sportif",
+        "price": 28000,
+        "originalPrice": 35000,
+        "rating": 5,
+        "image": "assets/images/products/sports-1.jpg"
+      },
+      {
+        "id": "f401",
+        "name": "Boot With Suede Detail",
+        "category": "Bottes",
+        "subcategory": "bottes",
+        "price": 12000,
+        "originalPrice": 18000,
+        "rating": 4,
+        "image": "assets/images/products/shoe-3.jpg"
+      },
+      {
+        "id": "f402",
+        "name": "Botte en cuir classic",
+        "category": "Bottes",
+        "subcategory": "bottes",
+        "price": 35000,
+        "originalPrice": 45000,
+        "rating": 5,
+        "image": "assets/images/products/shoe-4.jpg"
+      },
+      {
+        "id": "f501",
+        "name": "men's leather formal wear shoes",
+        "category": "Chaussures Habillées",
+        "subcategory": "officiel",
+        "price": 33600,
+        "originalPrice": 46800,
+        "rating": 5,
+        "image": "assets/images/products/shoe-1.jpg"
+      },
+      {
+        "id": "f502",
+        "name": "Chaussures Oxford en cuir",
+        "category": "Chaussures Habillées",
+        "subcategory": "officiel",
+        "price": 42000,
+        "originalPrice": 56000,
+        "rating": 5,
+        "image": "assets/images/products/shoe-5.jpg"
+      },
+      {
+        "id": "f601",
+        "name": "casual men's brown shoes",
+        "category": "Chaussures Décontractées",
+        "subcategory": "occasionnel",
+        "price": 30000,
+        "originalPrice": 33000,
+        "rating": 4,
+        "image": "assets/images/products/shoe-2.jpg"
+      },
+      {
+        "id": "f602",
+        "name": "Sneakers décontractées",
+        "category": "Chaussures Décontractées",
+        "subcategory": "occasionnel",
+        "price": 25000,
+        "originalPrice": 32000,
+        "rating": 4,
+        "image": "assets/images/products/shoe-6.jpg"
+      }
+    ]
+  }
+}

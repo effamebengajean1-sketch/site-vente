@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Panier - Debug</title>
+</head>
+<body>
+    <h1>Test de Fonctionnement du Panier</h1>
+    <div id="debug-info"></div>
+
+    <!-- Scripts dans l'ordre correct -->
+    <script src="./assets/js/panier.js"></script>
+    <script src="./assets/js/panier-integration.js"></script>
+    
+    <script>
+        // Test immédiat après le chargement des scripts
+        setTimeout(() => {
+            const debugDiv = document.getElementById('debug-info');
+            
+            let debugInfo = '<h2>Diagnostic du Panier</h2>';
+            
+            // Vérifier si les fonctions sont disponibles
+            debugInfo += '<h3>1. Fonctions Disponibles:</h3>';
+            debugInfo += '<ul>';
+            debugInfo += `<li>window.panier: ${window.panier ? '✅ Disponible' : '❌ Non disponible'}</li>`;
+            debugInfo += `<li>window.ajouterAuPanier: ${typeof window.ajouterAuPanier ? '✅ Disponible' : '❌ Non disponible'}</li>`;
+            debugInfo += `<li>window.panierIntegration: ${window.panierIntegration ? '✅ Disponible' : '❌ Non disponible'}</li>`;
+            debugInfo += '</ul>';
+            
+            // Test de détection des produits
+            debugInfo += '<h3>2. Test de Détection des Produits:</h3>';
+            if (window.panierIntegration && window.panierIntegration.debugProducts) {
+                window.panierIntegration.debugProducts();
+                debugInfo += '<li>✅ Fonction debugProducts exécutée (voir console)</li>';
+            } else {
+                debugInfo += '<li>❌ Fonction debugProducts non disponible</li>';
+            }
+            
+            // Test de fonctionnalité
+            debugInfo += '<h3>3. Test de Fonctionnalité:</h3>';
+            if (window.panierIntegration && window.panierIntegration.testCartFunctionality) {
+                window.panierIntegration.testCartFunctionality();
+                debugInfo += '<li>✅ Fonction testCartFunctionality exécutée (voir console)</li>';
+            } else {
+                debugInfo += '<li>❌ Fonction testCartFunctionality non disponible</li>';
+            }
+            
+            debugDiv.innerHTML = debugInfo;
+            
+            // Test manuel d'ajout au panier
+            if (window.panier && window.ajouterAuPanier) {
+                debugInfo += '<h3>4. Test Manuel:</h3>';
+                debugInfo += '<button onclick="testManualAdd()">Tester Ajout Manuel</button>';
+            }
+        }, 1000);
+        
+        function testManualAdd() {
+            const testProduct = {
+                id: 'test-product-123',
+                title: 'Produit Test',
+                price: 50000,
+                image: 'test-image.jpg',
+                category: 'Test'
+            };
+            
+            console.log('Test d\'ajout manuel:', testProduct);
+            window.ajouterAuPanier(testProduct);
+            alert('Test d\'ajout effectué ! Vérifiez la console.');
+        }
+    </script>
+</body>
+</html>

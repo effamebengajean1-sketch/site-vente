@@ -534,26 +534,26 @@
 
               <div class="showcase-banner">
 
-                <img src="categories/froid.jpg" alt="Réfrigérateur Samsung" width="300" class="product-img default">
-                <img src="categories/froid.jpg" alt="Réfrigérateur Samsung" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/images_electromenager/images/FRIGO.jpg" alt="Réfrigérateur Samsung" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/images_electromenager/images/FRIGO.jpg" alt="Réfrigérateur Samsung" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
                 <div class="showcase-actions">
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="toggleWishlist('refrigerateur-samsung-450l')">
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('refrigerateur-samsung-450l')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="compareProduct('refrigerateur-samsung-450l')">
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'refrigerateur-samsung-450l', title: 'Réfrigérateur Samsung 450L No Frost', price: 485000, image: 'Projet 1 - MarketPlace/images_electromenager/images/FRIGO.jpg', category: 'Froid'})">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -590,26 +590,26 @@
 
               <div class="showcase-banner">
 
-                <img src="categories/froid.png" alt="Réfrigérateur LG" width="300" class="product-img default">
-                <img src="categories/froid.png" alt="Réfrigérateur LG" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/images_electromenager/images/CONGELATEUR ALLEMAND.jpg" alt="Congélateur LG" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/images_electromenager/images/CONGELATEUR ALLEMAND.jpg" alt="Congélateur LG" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
                 <div class="showcase-actions">
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="toggleWishlist('congelateur-lg-500l')">
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('congelateur-lg-500l')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="compareProduct('congelateur-lg-500l')">
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'congelateur-lg-500l', title: 'Congélateur LG 500L DoorCooling+', price: 575000, image: 'Projet 1 - MarketPlace/images_electromenager/images/CONGELATEUR ALLEMAND.jpg', category: 'Froid'})">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -1037,6 +1037,8 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script src="./assets/js/global-search.js"></script>
+  <script src="./assets/js/panier.js"></script>
+  <script src="./assets/js/panier-integration.js"></script>
 </body>
 
 </html>
