@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Panier Alibaba - NexusChop</title>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 20px;
+        }
+        
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .test-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+        }
+        
+        .test-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ff6a00;
+        }
+        
+        .test-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid #e8e8e8;
+            margin-bottom: 10px;
+            border-radius: 2px;
+        }
+        
+        .test-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #e8e8e8;
+        }
+        
+        .test-btn {
+            background: #ff6a00;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: normal;
+            transition: all 0.2s ease;
+        }
+        
+        .test-btn:hover {
+            background: #ff5500;
+        }
+        
+        .checkout-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        
+        .cart-count {
+            background: #ff6a00;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 style="color: #ff6a00; text-align: center;">Test Panier - Style Alibaba</h1>
+        
+        <div class="test-section">
+            <h2 class="test-title">Ajouter des produits au panier</h2>
+            
+            <div class="test-item">
+                <img src="https://via.placeholder.com/60x60/ff6a00/white?text=TV" alt="TV Samsung">
+                <div style="flex: 1;">
+                    <div style="font-size: 13px; font-weight: normal; margin-bottom: 4px;">Téléviseur Samsung 55 inch 4K</div>
+                    <div style="font-size: 14px; font-weight: bold; color: #ff6a00; margin-bottom: 8px;">589 000 XAF</div>
+                </div>
+                <button class="test-btn" onclick="testAddProduct('tv-samsung-55', 'Téléviseur Samsung 55 inch 4K', 589000)">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                    Ajouter
+                </button>
+            </div>
+            
+            <div class="test-item">
+                <img src="https://via.placeholder.com/60x60/007bff/white?text=PC" alt="PC Dell">
+                <div style="flex: 1;">
+                    <div style="font-size: 13px; font-weight: normal; margin-bottom: 4px;">Dell Inspiron 15 3000</div>
+                    <div style="font-size: 14px; font-weight: bold; color: #ff6a00; margin-bottom: 8px;">654 000 XAF</div>
+                </div>
+                <button class="test-btn" onclick="testAddProduct('dell-inspiron-15', 'Dell Inspiron 15 3000', 654000)">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                    Ajouter
+                </button>
+            </div>
+            
+            <div class="test-item">
+                <img src="https://via.placeholder.com/60x60/28a745/white?text=Phone" alt="iPhone">
+                <div style="flex: 1;">
+                    <div style="font-size: 13px; font-weight: normal; margin-bottom: 4px;">iPhone 12 Pro Max</div>
+                    <div style="font-size: 14px; font-weight: bold; color: #ff6a00; margin-bottom: 8px;">1 200 000 XAF</div>
+                </div>
+                <button class="test-btn" onclick="testAddProduct('iphone-12-pro-max', 'iPhone 12 Pro Max', 1200000)">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                    Ajouter
+                </button>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2 class="test-title">État du Panier</h2>
+            <p>Nombre d'articles: <span id="cart-count" class="cart-count">0</span></p>
+            <button class="checkout-btn" onclick="goToCart()">
+                <ion-icon name="card-outline"></ion-icon>
+                Passer au paiement
+            </button>
+        </div>
+        
+        <div class="test-section">
+            <h2 class="test-title">Tests à effectuer</h2>
+            <ul style="font-size: 11px; line-height: 1.6;">
+                <li>✅ Vérifier que les produits s'ajoutent au panier</li>
+                <li>✅ Vérifier que le compteur de panier se met à jour</li>
+                <li>✅ Vérifier que le bouton "Passer au paiement" fonctionne</li>
+                <li>✅ Vérifier que le design est compact comme Alibaba</li>
+                <li>✅ Vérifier que tous les éléments sont réduits</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="assets/js/panier.js"></script>
+    <script>
+        function testAddProduct(id, title, price) {
+            // Simuler un produit avec image placeholder
+            const product = {
+                id: id,
+                title: title,
+                price: price,
+                image: 'https://via.placeholder.com/60x60/cccccc/333333?text=Product'
+            };
+            
+            if (window.panier) {
+                window.panier.addItem(product);
+            } else {
+                console.error('Panier non initialisé');
+            }
+        }
+        
+        function goToCart() {
+            window.location.href = 'panier.html';
+        }
+        
+        // Mettre à jour le compteur toutes les secondes
+        setInterval(() => {
+            if (window.panier) {
+                const count = window.panier.getItemCount();
+                document.getElementById('cart-count').textContent = count;
+                document.getElementById('cart-count').style.display = count > 0 ? 'inline-block' : 'none';
+            }
+        }, 1000);
+        
+        // Vérifier l'état au chargement
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.panier) {
+                const count = window.panier.getItemCount();
+                document.getElementById('cart-count').textContent = count;
+                document.getElementById('cart-count').style.display = count > 0 ? 'inline-block' : 'none';
+            }
+        });
+    </script>
+</body>
+</html>

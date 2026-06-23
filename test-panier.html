@@ -47,6 +47,35 @@
         
         .product-card:hover {
             transform: translateY(-5px);
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .product-card {
+            position: relative;
+        }
+        
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 102, 0, 0.05);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        
+        .product-card:hover::before {
+            opacity: 1;
+        }
+        
+        .product-card .btn-add-cart {
+            position: relative;
+            z-index: 1;
         }
         
         .product-image {
@@ -193,7 +222,7 @@
     
     <h2>🏆 Produits de Test - Catégorie Mode</h2>
     <div class="product-grid" id="fashion-products">
-        <div class="product-card">
+        <div class="product-card" data-product-id="f001" onclick="viewProductDetail('f001')">
             <img src="assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" class="product-image">
             <div class="product-title">Mens Winter Leathers Jackets</div>
             <div class="product-category">Vestes</div>
@@ -201,10 +230,10 @@
                 <span class="current-price">30,000 XAF</span>
                 <span class="original-price">45,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('f001')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('f001')">Ajouter au Panier</button>
         </div>
         
-        <div class="product-card">
+        <div class="product-card" data-product-id="f002" onclick="viewProductDetail('f002')">
             <img src="assets/images/products/shorts-1.jpg" alt="Short de survêtement" class="product-image">
             <div class="product-title">Short de survêtement en molleton français Better Basics</div>
             <div class="product-category">Shorts</div>
@@ -212,10 +241,10 @@
                 <span class="current-price">12,000 XAF</span>
                 <span class="original-price">18,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('f002')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('f002')">Ajouter au Panier</button>
         </div>
         
-        <div class="product-card">
+        <div class="product-card" data-product-id="f003" onclick="viewProductDetail('f003')">
             <img src="assets/images/products/sports-6.jpg" alt="Chaussures de tekking" class="product-image">
             <div class="product-title">Chaussures de tekking à air comprimé - blanches</div>
             <div class="product-category">Chaussures Sport</div>
@@ -223,13 +252,13 @@
                 <span class="current-price">31,200 XAF</span>
                 <span class="original-price">33,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('f003')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('f003')">Ajouter au Panier</button>
         </div>
     </div>
     
     <h2>💻 Produits de Test - Catégorie High-Tech</h2>
     <div class="product-grid" id="hightech-products">
-        <div class="product-card">
+        <div class="product-card" data-product-id="ht403" onclick="viewProductDetail('ht403')">
             <img src="Projet 1 - MarketPlace/produits/nvidia_shield.jpg" alt="NVIDIA Shield TV Pro" class="product-image">
             <div class="product-title">NVIDIA Shield TV Pro</div>
             <div class="product-category">TV, Home Cinéma</div>
@@ -237,10 +266,10 @@
                 <span class="current-price">458,000 XAF</span>
                 <span class="original-price">491,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('ht403')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('ht403')">Ajouter au Panier</button>
         </div>
         
-        <div class="product-card">
+        <div class="product-card" data-product-id="ht502" onclick="viewProductDetail('ht502')">
             <img src="Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg" alt="Xbox Series S" class="product-image">
             <div class="product-title">Xbox Assassin's Creed</div>
             <div class="product-category">Jeux vidéo</div>
@@ -248,10 +277,10 @@
                 <span class="current-price">491,000 XAF</span>
                 <span class="original-price">557,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('ht502')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('ht502')">Ajouter au Panier</button>
         </div>
         
-        <div class="product-card">
+        <div class="product-card" data-product-id="ht603" onclick="viewProductDetail('ht603')">
             <img src="Projet 1 - MarketPlace/produits/outi234_1.jpg" alt="Drone DJI Mini 2" class="product-image">
             <div class="product-title">Drone DJI Mini 2</div>
             <div class="product-category">Objets connectés</div>
@@ -259,10 +288,10 @@
                 <span class="current-price">275,000 XAF</span>
                 <span class="original-price">65,500 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('ht603')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('ht603')">Ajouter au Panier</button>
         </div>
         
-        <div class="product-card">
+        <div class="product-card" data-product-id="ht802" onclick="viewProductDetail('ht802')">
             <img src="Projet 1 - MarketPlace/produits/laptop_gaming_acerhelios300_1.jpg" alt="Laptop Gaming Acer Helios" class="product-image">
             <div class="product-title">Laptop Gaming Acer Helios 300</div>
             <div class="product-category">Informatique</div>
@@ -270,7 +299,7 @@
                 <span class="current-price">982,000 XAF</span>
                 <span class="original-price">1,310,000 XAF</span>
             </div>
-            <button class="btn-add-cart" onclick="addToCartTest('ht802')">Ajouter au Panier</button>
+            <button class="btn-add-cart" onclick="event.stopPropagation(); addToCartTest('ht802')">Ajouter au Panier</button>
         </div>
     </div>
     
@@ -290,6 +319,11 @@
     <script src="main-page-product-actions.js"></script>
     
     <script>
+        function viewProductDetail(productId) {
+            // Rediriger vers la page détail du produit
+            window.location.href = `produit-detail.html?id=${productId}`;
+        }
+        
         function addToCartTest(productId) {
             const product = window.getProductById(productId);
             if (product) {

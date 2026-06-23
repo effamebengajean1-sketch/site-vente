@@ -1,0 +1,204 @@
+// Lightbox Enhancement SCSS
+// Styles supplémentaires pour la lightbox et les animations
+
+// Amélioration du comportement lightbox
+.lightbox-modal {
+  .lightbox-content {
+    .lightbox-nav {
+      &.prev,
+      &.next {
+        transform: translateY(-50%) scale(0.8);
+        opacity: 0;
+        transition: all var(--transition-normal);
+      }
+    }
+    
+    .lightbox-close {
+      transform: scale(0.8);
+      opacity: 0;
+      transition: all var(--transition-normal);
+    }
+  }
+  
+  &.active .lightbox-content {
+    .lightbox-nav {
+      &.prev,
+      &.next {
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+      }
+    }
+    
+    .lightbox-close {
+      transform: scale(1);
+      opacity: 1;
+    }
+    
+    #lightbox-image {
+      animation: lightbox-zoom-in 0.4s ease-out;
+    }
+  }
+}
+
+// Animations pour la lightbox
+@keyframes lightbox-zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightbox-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// Keyboard navigation indicators
+.lightbox-modal.showing-nav {
+  .lightbox-content .lightbox-nav {
+    &.prev {
+      animation: lightbox-slide-in 0.3s ease-out;
+    }
+    
+    &.next {
+      animation: lightbox-slide-in 0.3s ease-out reverse;
+    }
+  }
+}
+
+// Image loading indicator dans la lightbox
+.lightbox-loading {
+  .lightbox-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite;
+    z-index: 2;
+  }
+  
+  #lightbox-image {
+    opacity: 0.3;
+  }
+}
+
+// Swipe gestures indicators (pour mobile)
+.lightbox-swipe-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  pointer-events: none;
+  animation: swipe-pulse 2s infinite;
+  
+  &.left {
+    left: 20px;
+  }
+  
+  &.right {
+    right: 20px;
+  }
+}
+
+@keyframes swipe-pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+// Performance optimization pour les images
+.lightbox-image-optimized {
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+// Zoom transition effects
+.zoom-transition {
+  transition: transform var(--transition-slow), filter var(--transition-normal);
+  
+  &:hover {
+    filter: brightness(1.1) contrast(1.1);
+  }
+}
+
+// Fullscreen mode for lightbox
+.lightbox-fullscreen {
+  .lightbox-content {
+    max-width: 100vw;
+    max-height: 100vh;
+    
+    #lightbox-image {
+      max-width: 100vw;
+      max-height: 100vh;
+    }
+  }
+  
+  .lightbox-caption {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+  }
+}
+
+// Keyboard shortcuts helper
+.lightbox-help {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--white);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 20px;
+  font-size: var(--font-size-xs);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+  backdrop-filter: blur(10px);
+  
+  &.visible {
+    opacity: 1;
+  }
+  
+  .help-key {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin: 0 2px;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+// Accessibility improvements
+.lightbox-modal {
+  .lightbox-nav,
+  .lightbox-close {
+    &:focus {
+      outline: 2px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+  }
+}

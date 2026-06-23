@@ -1,0 +1,371 @@
+{
+  "furniture": {
+    "id": 5,
+    "name": "Meuble et décoration",
+    "slug": "meuble-decoration",
+    "description": "Meubles et articles de décoration pour votre intérieur",
+    "image": "images/categories/meuble-decoration.jpg",
+    "children": [
+      {
+        "id": 5.1,
+        "name": "Salon",
+        "slug": "salon"
+      },
+      {
+        "id": 5.2,
+        "name": "Canapé",
+        "slug": "canape"
+      },
+      {
+        "id": 5.3,
+        "name": "Cuisine",
+        "slug": "cuisine-meuble"
+      },
+      {
+        "id": 5.4,
+        "name": "Luminaire",
+        "slug": "luminaire"
+      },
+      {
+        "id": 5.5,
+        "name": "Décoration",
+        "slug": "decoration"
+      },
+      {
+        "id": 5.6,
+        "name": "Rangements",
+        "slug": "rangements"
+      },
+      {
+        "id": 5.7,
+        "name": "Chambre, linge",
+        "slug": "chambre-linge"
+      },
+      {
+        "id": 5.8,
+        "name": "Bureau",
+        "slug": "bureau"
+      }
+    ],
+    "featured_products": [
+      {
+        "id": "fur001",
+        "name": "Salon Complet Moderne",
+        "category": "Salon",
+        "subcategory": "salon",
+        "price": 1950000,
+        "originalPrice": 2610000,
+        "rating": 5,
+        "image": "images meuble/salon.webp",
+        "badge": "featured"
+      },
+      {
+        "id": "fur002",
+        "name": "Canapé Fixe Confort Premium",
+        "category": "Canapé",
+        "subcategory": "canape",
+        "price": 1300000,
+        "originalPrice": 1638000,
+        "rating": 5,
+        "image": "images meuble/Canapés fixe.jpg",
+        "badge": "best-seller"
+      },
+      {
+        "id": "fur003",
+        "name": "Table à Manger Extensible",
+        "category": "Salon",
+        "subcategory": "tables-a-manger",
+        "price": 654000,
+        "originalPrice": 851000,
+        "rating": 5,
+        "image": "images meuble/Tables a manger.jpg",
+        "badge": "trending"
+      },
+      {
+        "id": "fur004",
+        "name": "Meuble TV Design",
+        "category": "Salon",
+        "subcategory": "meuble-tv",
+        "price": 327000,
+        "originalPrice": 458000,
+        "rating": 4,
+        "image": "images meuble/Meuble TV.jpg",
+        "badge": "new"
+      },
+      {
+        "id": "fur005",
+        "name": "Bibliothèque Moderne",
+        "category": "Salon",
+        "subcategory": "bibliotheque",
+        "price": 491000,
+        "originalPrice": 654000,
+        "rating": 5,
+        "image": "images meuble/bibliothèque.webp",
+        "badge": "featured"
+      },
+      {
+        "id": "fur006",
+        "name": "Cuisine Complète Modulaire",
+        "category": "Cuisine",
+        "subcategory": "cuisine-meuble",
+        "price": 1960000,
+        "originalPrice": 2610000,
+        "rating": 5,
+        "image": "images meuble/cuisine-meuble.webp",
+        "badge": "premium"
+      }
+    ],
+    "products": [
+      {
+        "id": "fur101",
+        "name": "Armoire en Bois Massif",
+        "category": "Rangements",
+        "subcategory": "casiers-etageres",
+        "price": 589000,
+        "originalPrice": 720000,
+        "rating": 5,
+        "image": "images meuble/armoire en bois.jpg"
+      },
+      {
+        "id": "fur102",
+        "name": "Bibliothèque Murale",
+        "category": "Salon",
+        "subcategory": "bibliotheque",
+        "price": 391000,
+        "originalPrice": 523000,
+        "rating": 4,
+        "image": "images meuble/bibliothèque.webp"
+      },
+      {
+        "id": "fur103",
+        "name": "Buffet de Cuisine Moderne",
+        "category": "Cuisine",
+        "subcategory": "buffets-cuisine",
+        "price": 654000,
+        "originalPrice": 851000,
+        "rating": 5,
+        "image": "images meuble/buffet de cuisine.jpg"
+      },
+      {
+        "id": "fur104",
+        "name": "Buffet Salon Élégant",
+        "category": "Salon",
+        "subcategory": "buffet",
+        "price": 458000,
+        "originalPrice": 589000,
+        "rating": 4,
+        "image": "images meuble/buffet.jpg"
+      },
+      {
+        "id": "fur105",
+        "name": "Bureau Complet Gaming",
+        "category": "Bureau",
+        "subcategory": "bureau",
+        "price": 852000,
+        "originalPrice": 1178000,
+        "rating": 5,
+        "image": "images meuble/Bureau complet.jpg"
+      },
+      {
+        "id": "fur106",
+        "name": "Canapé Convertible 3 Places",
+        "category": "Canapé",
+        "subcategory": "canapes-convertibles",
+        "price": 982000,
+        "originalPrice": 1310000,
+        "rating": 5,
+        "image": "images meuble/Canapés convertible.jpg"
+      },
+      {
+        "id": "fur107",
+        "name": "Canapé Fixe Moderne",
+        "category": "Canapé",
+        "subcategory": "canapes-fixe",
+        "price": 851000,
+        "originalPrice": 1118000,
+        "rating": 4,
+        "image": "images meuble/Canapés fixe.jpg"
+      },
+      {
+        "id": "fur108",
+        "name": "Casiers de Rangement Modulaires",
+        "category": "Rangements",
+        "subcategory": "casiers-rangements",
+        "price": 327000,
+        "originalPrice": 458000,
+        "rating": 4,
+        "image": "images meuble/Casiers da rangements.jpg"
+      },
+      {
+        "id": "fur109",
+        "name": "Chaises de Cuisine Set de 4",
+        "category": "Cuisine",
+        "subcategory": "chaises-cuisine",
+        "price": 261000,
+        "originalPrice": 327000,
+        "rating": 4,
+        "image": "images meuble/chaises cuisine.webp"
+      },
+      {
+        "id": "fur110",
+        "name": "Chaise de Bureau Ergonomique",
+        "category": "Bureau",
+        "subcategory": "bureau",
+        "price": 196000,
+        "originalPrice": 261000,
+        "rating": 4,
+        "image": "images meuble/Chaises.jpg"
+      },
+      {
+        "id": "fur111",
+        "name": "Armoire de Chambre Moderne",
+        "category": "Chambre, linge",
+        "subcategory": "rangement-vetements",
+        "price": 589000,
+        "originalPrice": 720000,
+        "rating": 5,
+        "image": "images meuble/classeur de chambre.jpg"
+      },
+      {
+        "id": "fur112",
+        "name": "Ensemble Cuisine Moderne",
+        "category": "Cuisine",
+        "subcategory": "cuisine-meuble",
+        "price": 1638000,
+        "originalPrice": 1960000,
+        "rating": 5,
+        "image": "images meuble/cuisine-meuble.webp"
+      },
+      {
+        "id": "fur113",
+        "name": "Décoration Murale Art Moderne",
+        "category": "Décoration",
+        "subcategory": "accessoires-decoration",
+        "price": 58900,
+        "originalPrice": 85000,
+        "rating": 4,
+        "image": "images meuble/decoration muraille.jpg"
+      },
+      {
+        "id": "fur114",
+        "name": "Desserte de Cuisine Mobile",
+        "category": "Cuisine",
+        "subcategory": "desertes-cuisine",
+        "price": 327000,
+        "originalPrice": 458000,
+        "rating": 4,
+        "image": "images meuble/Desertes de cuisine.webp"
+      },
+      {
+        "id": "fur115",
+        "name": "Ensemble Complet Salon",
+        "category": "Salon",
+        "subcategory": "salon",
+        "price": 2294000,
+        "originalPrice": 2940000,
+        "rating": 5,
+        "image": "images meuble/Ensembles complets.jpeg"
+      },
+      {
+        "id": "fur116",
+        "name": "Fauteuil Relax Design",
+        "category": "Salon",
+        "subcategory": "fauteuils",
+        "price": 458000,
+        "originalPrice": 589000,
+        "rating": 5,
+        "image": "images meuble/fauteuils.jpeg"
+      },
+      {
+        "id": "fur117",
+        "name": "Lit Double Moderne",
+        "category": "Chambre, linge",
+        "subcategory": "lit-adulte",
+        "price": 654000,
+        "originalPrice": 851000,
+        "rating": 5,
+        "image": "images meuble/lit.jpg"
+      },
+      {
+        "id": "fur118",
+        "name": "Meuble TV avec Rangement",
+        "category": "Salon",
+        "subcategory": "meuble-tv",
+        "price": 523000,
+        "originalPrice": 654000,
+        "rating": 4,
+        "image": "images meuble/Meuble TV.jpg"
+      },
+      {
+        "id": "fur119",
+        "name": "Pot de Fleur Décoratif",
+        "category": "Décoration",
+        "subcategory": "vases",
+        "price": 32700,
+        "originalPrice": 45800,
+        "rating": 4,
+        "image": "images meuble/pot de fleur.jpg"
+      },
+      {
+        "id": "fur120",
+        "name": "Réveil de Salon Design",
+        "category": "Décoration",
+        "subcategory": "horloges",
+        "price": 85000,
+        "originalPrice": 131000,
+        "rating": 4,
+        "image": "images meuble/reveil fixe de salon.jpg"
+      },
+      {
+        "id": "fur121",
+        "name": "Salon Complet Contemporain",
+        "category": "Salon",
+        "subcategory": "salon",
+        "price": 1960000,
+        "originalPrice": 2610000,
+        "rating": 5,
+        "image": "images meuble/salon.webp"
+      },
+      {
+        "id": "fur122",
+        "name": "Table à Manger 6 Places",
+        "category": "Salon",
+        "subcategory": "tables-a-manger",
+        "price": 654000,
+        "originalPrice": 851000,
+        "rating": 5,
+        "image": "images meuble/Tables a manger.jpg"
+      },
+      {
+        "id": "fur123",
+        "name": "Table Basse Design",
+        "category": "Salon",
+        "subcategory": "tables-basses",
+        "price": 327000,
+        "originalPrice": 458000,
+        "rating": 4,
+        "image": "images meuble/Tables basses.webp"
+      },
+      {
+        "id": "fur124",
+        "name": "Table de Cuisine Rectangulaire",
+        "category": "Cuisine",
+        "subcategory": "tables-cuisine",
+        "price": 458000,
+        "originalPrice": 589000,
+        "rating": 4,
+        "image": "images meuble/tables cuisine.webp"
+      },
+      {
+        "id": "fur125",
+        "name": "Table de Bureau Simple",
+        "category": "Bureau",
+        "subcategory": "bureau",
+        "price": 327000,
+        "originalPrice": 458000,
+        "rating": 4,
+        "image": "images meuble/Tables de bureau.jpg"
+      }
+    ]
+  }
+}

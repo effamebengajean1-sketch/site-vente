@@ -13,9 +13,9 @@
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
   <!--
-    - custom css link
+    - custom css link (removed to avoid conflicts)
   -->
-  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style-prefix.css"> -->
   
   <!--
     - ionicons
@@ -25,12 +25,15 @@
 
   <style>
     :root {
-      --primary-color: #ff6600;
-      --primary-hover: #ff5200;
+      --primary-color: #ff6a00;
+      --primary-hover: #ff5500;
+      --success-color: #28a745;
+      --danger-color: #dc3545;
       --text-dark: #333;
       --text-light: #666;
-      --border-color: #e0e0e0;
-      --bg-light: #f8f8f8;
+      --border-color: #e8e8e8;
+      --bg-light: #fafafa;
+      --shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
     * {
@@ -40,88 +43,112 @@
     }
 
     body {
-      font-family: 'Arial', 'Helvetica', sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Arial', sans-serif;
+      background: #fafafa;
       color: var(--text-dark);
-      line-height: 1.6;
+      line-height: 1.4;
+      min-height: 100vh;
+      font-size: 12px;
     }
 
     /* Header */
     .cart-header {
-      background: white;
-      padding: 20px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: #ffffff !important;
+      color: #333333 !important;
+      padding: 10px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 100;
+      border-bottom: 1px solid #e8e8e8;
     }
 
     .cart-header-content {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .header-logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: var(--text-dark);
+      font-size: 24px !important;
+      font-weight: bold !important;
+      color: #333 !important;
       text-decoration: none;
-    }
-
-    .orange-letter {
-      color: var(--primary-color);
-    }
-
-    .continue-shopping-btn {
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       gap: 8px;
     }
 
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--primary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+    }
+
+    .orange-letter {
+      color: #ff6600 !important;
+    }
+
+    .continue-shopping-btn {
+      background: #ff6600 !important;
+      color: #ffffff !important; /* Orange par défaut */
+      border: 2px solid #ff6600 !important;
+      border-radius: 8px !important;
+      padding: 10px !important;
+      transition: all 0.3s ease !important;
+      font-weight: 600 !important;
+    }
+
     .continue-shopping-btn:hover {
-      background: var(--primary-hover);
-      transform: translateY(-2px);
+      background: #ff5500 !important;
+      border-color: #ff5500 !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 4px 8px rgba(255, 102, 0, 0.3) !important;
     }
 
     /* Main Container */
     .cart-container {
       max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 15px auto;
+      padding: 0 15px;
       display: grid;
-      grid-template-columns: 1fr 400px;
-      gap: 30px;
+      grid-template-columns: 1fr 300px;
+      gap: 20px;
     }
 
     /* Cart Items Section */
     .cart-items-section {
       background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      padding: 15px;
+      box-shadow: var(--shadow);
     }
 
     .section-title {
-      font-size: 24px;
+      font-size: 16px;
       font-weight: bold;
       color: var(--text-dark);
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid var(--primary-color);
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title ion-icon {
+      font-size: 18px;
+      color: var(--primary-color);
     }
 
     #cart-list {
@@ -131,84 +158,173 @@
 
     .cart-item {
       border-bottom: 1px solid var(--border-color);
-      padding: 20px 0;
+      padding: 12px 0;
+      transition: all 0.2s ease;
+    }
+
+    .cart-item:hover {
+      background: var(--bg-light);
     }
 
     .cart-item:last-child {
       border-bottom: none;
     }
 
+    .category-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px;
+      padding: 8px;
+    }
+
+    .cart-item {
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      padding: 8px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .cart-item:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 2px 4px rgba(255, 106, 0, 0.1);
+    }
+
     .cart-item-content {
       display: flex;
-      gap: 20px;
-      align-items: flex-start;
+      flex-direction: column;
+      gap: 6px;
+      height: 100%;
     }
 
     .cart-item-image {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: 80px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 4px;
       border: 1px solid var(--border-color);
+      transition: transform 0.2s ease;
+    }
+
+    .cart-item-image:hover {
+      transform: scale(1.02);
     }
 
     .cart-item-details {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
     }
 
     .cart-item-title {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 11px;
+      font-weight: normal;
       color: var(--text-dark);
-      margin-bottom: 8px;
+      margin-bottom: 2px;
+      line-height: 1.2;
     }
 
     .cart-item-price {
-      font-size: 20px;
+      font-size: 12px;
       font-weight: bold;
       color: var(--primary-color);
-      margin-bottom: 12px;
+      margin-bottom: 4px;
     }
 
     .cart-item-quantity {
       display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 4px;
+    }
+
+    .cart-item-quantity label {
+      font-size: 9px;
+      color: var(--text-light);
+    }
+
+    .quantity-controls {
+      display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 1px;
+      background: var(--bg-light);
+      border-radius: 1px;
+      padding: 1px;
+    }
+
+    .quantity-btn {
+      width: 20px !important;
+      height: 20px !important;
+      border: none;
+      background: white;
+      border-radius: 1px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px !important;
+      font-weight: bold;
+      color: var(--primary-color);
+      transition: all 0.2s ease;
+    }
+
+    .quantity-btn:hover {
+      background: var(--primary-color);
+      color: white;
     }
 
     .quantity-input {
-      width: 70px;
-      padding: 8px;
+      width: 25px;
+      padding: 1px;
       border: 1px solid var(--border-color);
-      border-radius: 5px;
-      font-size: 16px;
+      border-radius: 1px;
+      font-size: 10px;
       text-align: center;
+      font-weight: normal;
     }
 
     .cart-item-subtotal {
-      font-size: 16px;
+      font-size: 10px;
       color: var(--text-light);
-      font-weight: 600;
+      font-weight: normal;
     }
 
     .remove-btn {
-      background: #dc3545;
+      background: var(--danger-color);
       color: white;
       border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
+      padding: 3px 6px !important;
+      border-radius: 2px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 9px !important;
       display: flex;
       align-items: center;
-      gap: 5px;
-      transition: all 0.3s ease;
+      justify-content: center;
+      gap: 2px;
+      transition: all 0.2s ease;
+      font-weight: normal;
+      margin: 4px auto 0 !important;
+      width: fit-content;
     }
 
     .remove-btn:hover {
       background: #c82333;
-      transform: translateY(-2px);
+    }
+
+    /* Boutons intégrés dans la carte d'analyse */
+    .cart-actions {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .checkout-btn, .clear-cart-btn {
+      width: 100%;
+      margin: 0;
     }
 
     /* Empty Cart Message */
@@ -219,7 +335,7 @@
     }
 
     #empty-cart-message ion-icon {
-      font-size: 80px;
+      font-size: 100px;
       color: var(--border-color);
       margin-bottom: 20px;
     }
@@ -233,38 +349,76 @@
     /* Cart Summary */
     .cart-summary {
       background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      padding: 15px;
+      box-shadow: var(--shadow);
       height: fit-content;
       position: sticky;
-      top: 100px;
+      top: 80px;
     }
 
     .summary-title {
-      font-size: 20px;
+      font-size: 14px;
       font-weight: bold;
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid var(--primary-color);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .summary-row {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 15px;
-      font-size: 16px;
+      margin-bottom: 8px;
+      font-size: 12px;
+      padding: 6px;
+      background: var(--bg-light);
+      border-radius: 2px;
+    }
+
+    .summary-row span:first-child {
+      color: var(--text-light);
+    }
+
+    .summary-row span:last-child {
+      font-weight: 600;
+      color: var(--text-dark);
     }
 
     .summary-total {
       display: flex;
       justify-content: space-between;
-      font-size: 24px;
+      font-size: 14px;
       font-weight: bold;
       color: var(--primary-color);
-      padding-top: 15px;
-      border-top: 2px solid var(--border-color);
-      margin-top: 15px;
+      padding: 10px;
+      background: #fff5f0;
+      border-radius: 2px;
+      margin-top: 10px;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      background: var(--success-color);
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 10px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .checkout-btn:hover {
+      background: #218838;
     }
 
     .clear-cart-btn {
@@ -272,98 +426,624 @@
       background: #6c757d;
       color: white;
       border: none;
-      padding: 12px;
-      border-radius: 5px;
+      padding: 6px;
+      border-radius: 2px;
       cursor: pointer;
-      font-size: 16px;
-      font-weight: 600;
-      margin-top: 15px;
-      transition: all 0.3s ease;
+      font-size: 11px;
+      font-weight: normal;
+      margin-top: 8px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
     }
 
     .clear-cart-btn:hover {
       background: #5a6268;
     }
 
-    /* Payment Section */
-    #payment-info {
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-top: 30px;
-      grid-column: 1 / -1;
+    /* Modal Styles - Latéral depuis la droite */
+    .modal {
+      display: none !important;
+      position: fixed !important;
+      z-index: 99999 !important;
+      right: -600px !important; /* Caché à droite */
+      top: 0 !important;
+      width: 500px !important; /* Largeur fixe */
+      height: 100vh !important;
+      background-color: rgba(255, 255, 255, 0.98) !important;
+      backdrop-filter: blur(10px);
+      transition: right 0.4s ease-in-out;
+      box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+      overflow-y: auto;
     }
 
-    #payment-form {
+    .modal.active {
+      right: 0 !important; /* Slide depuis la droite */
+      display: block !important;
+    }
+
+    .modal-content {
+      padding: 20px;
+      background: white;
+      border-radius: 0;
+      height: 100%;
+      overflow-y: auto;
+      box-shadow: none;
+    }
+
+    /* Header du modal latéral */
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid var(--primary-color);
+      margin-bottom: 20px;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 10;
+    }
+
+    .close-modal {
+      background: var(--danger-color);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .close-modal:hover {
+      background: #c82333;
+      transform: scale(1.1);
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      animation: slideUp 0.3s ease;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .modal-header h2 {
+      font-size: 28px;
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .close-modal {
+      background: none;
+      border: none;
+      font-size: 32px;
+      cursor: pointer;
+      color: var(--text-light);
+      transition: all 0.3s ease;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .close-modal:hover {
+      background: var(--bg-light);
+      color: var(--danger-color);
+      transform: rotate(90deg);
+    }
+
+    .payment-methods {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .payment-method {
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .payment-method:hover {
+      border-color: var(--primary-color);
+      background: var(--bg-light);
+      transform: translateX(5px);
+    }
+
+    .payment-method.selected {
+      border-color: var(--primary-color);
+      background: linear-gradient(135deg, #fff5f0 0%, #ffe8d9 100%);
+      box-shadow: 0 4px 12px rgba(255, 102, 0, 0.2);
+    }
+
+    .payment-method input[type="radio"] {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .payment-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      background: white;
+      border: 2px solid var(--border-color);
+    }
+
+    .payment-method.selected .payment-icon {
+      border-color: var(--primary-color);
+    }
+
+    .payment-info h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: var(--text-dark);
+    }
+
+    .payment-info p {
+      font-size: 14px;
+      color: var(--text-light);
     }
 
     .form-group {
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 20px;
     }
 
-    .form-group.full-width {
-      grid-column: 1 / -1;
-    }
-
-    #payment-form label {
+    .form-group label {
+      display: block;
       font-weight: 600;
       margin-bottom: 8px;
       color: var(--text-dark);
     }
 
-    #payment-form input,
-    #payment-form textarea {
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
       padding: 12px;
-      border: 1px solid var(--border-color);
-      border-radius: 5px;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
       font-size: 16px;
       font-family: inherit;
-      transition: border-color 0.3s ease;
+      transition: all 0.3s ease;
     }
 
-    #payment-form input:focus,
-    #payment-form textarea:focus {
+    .form-group input:focus,
+    .form-group textarea:focus {
       outline: none;
       border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
     }
 
-    #payment-form textarea {
+    .form-group textarea {
       resize: vertical;
       min-height: 100px;
     }
 
-    .submit-order-btn {
-      grid-column: 1 / -1;
-      background: var(--primary-color);
+    .payment-details {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--bg-light);
+      border-radius: 10px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    .payment-details.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .submit-payment-btn {
+      width: 100%;
+      background: var(--success-color);
       color: white;
       border: none;
       padding: 15px;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
       font-size: 18px;
       font-weight: bold;
       transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .submit-payment-btn:hover {
+      background: #218838;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+    }
+
+    .order-summary {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .order-summary h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: var(--text-dark);
+    }
+
+    .order-summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .order-summary-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--primary-color);
+      padding-top: 15px;
+      border-top: 2px solid var(--border-color);
       margin-top: 10px;
     }
 
-    .submit-order-btn:hover {
-      background: var(--primary-hover);
-      transform: translateY(-2px);
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
-    /* Footer */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+
+    @keyframes slideOut {
+      from { transform: translateX(0); }
+      to { transform: translateX(100%); }
+    }
+
+    /* Footer spacing to prevent content overlap */
     footer {
-      background: var(--text-dark);
-      color: white;
+      margin-top: 30px;
+    }
+
+    /* Carte d'analyse intégrée dans le récapitulatif */
+    .cart-analytics-card-summary {
+      background: var(--bg-light);
+      border-radius: 4px;
+      padding: 15px;
+      margin: 15px 0;
+      border: 1px solid var(--border-color);
+    }
+
+    .analytics-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .analytics-title ion-icon {
+      font-size: 16px;
+      color: var(--primary-color);
+    }
+
+    .analytics-chart {
+      background: white;
+      border-radius: 2px;
+      padding: 8px;
+      margin-bottom: 12px;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+    }
+
+    .analytics-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px;
+      background: white;
+      border-radius: 2px;
+      text-align: center;
+      border: 1px solid var(--border-color);
+    }
+
+    .stat-label {
+      font-size: 9px;
+      color: var(--text-light);
+      margin-bottom: 3px;
+    }
+
+    .stat-value {
+      font-size: 10px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    /* Boutons plus grands */
+    .quantity-btn {
+      width: 28px !important;
+      height: 28px !important;
+      border: none;
+      background: white;
+      border-radius: 2px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px !important;
+      font-weight: bold;
+      color: var(--primary-color);
+      transition: all 0.2s ease;
+    }
+
+    .quantity-btn:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    .remove-btn {
+      background: var(--danger-color);
+      color: white;
+      border: none;
+      padding: 8px 12px !important;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 12px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+      font-weight: normal;
+      margin: 8px auto 0 !important;
+      width: fit-content;
+    }
+
+    .remove-btn:hover {
+      background: #c82333;
+    }
+
+    /* Boutons intégrés dans la carte d'analyse */
+    .cart-actions {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .checkout-btn, .clear-cart-btn {
+      width: 100%;
+      margin: 0;
+    }
+
+    /* Section catégorie */
+    .cart-category-section {
+      margin-bottom: 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+    }
+
+    .category-header {
+      background: var(--bg-light);
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .category-title {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--text-dark);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .category-count {
+      font-size: 11px;
+      color: var(--text-light);
+      background: white;
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+
+    .category-total {
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 968px) {
+      .analytics-stats {
+        grid-template-columns: 1fr;
+      }
+      
+      .category-items {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 6px;
+      }
+      
+      .cart-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .category-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 6px;
+      }
+      
+      .cart-item-image {
+        height: 70px;
+      }
+      
+      .cart-header-content {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .category-items {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+      }
+      
+      .cart-item-image {
+        height: 60px;
+      }
+    }
+
+    /* Clear Cart Modal Styles */
+    .clear-cart-modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      animation: fadeIn 0.3s ease;
+    }
+
+    .clear-cart-modal.active {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clear-cart-modal-content {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      animation: slideUp 0.3s ease;
+      border: 2px solid var(--danger-color);
+    }
+
+    .clear-cart-modal-header h3 {
+      font-size: 20px;
+      color: var(--text-dark);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .clear-cart-modal-body {
+      margin: 20px 0;
+    }
+
+    .clear-cart-modal-body p {
+      font-size: 16px;
+      color: var(--text-dark);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .clear-cart-modal-footer {
+      display: flex;
+      gap: 15px;
+      justify-content: flex-end;
+      margin-top: 25px;
+    }
+
+    .btn-cancel-clear, .btn-confirm-clear {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-cancel-clear {
+      background: #6c757d;
+      color: white;
+    }
+
+    .btn-cancel-clear:hover {
+      background: #5a6268;
+      transform: translateY(-1px);
+    }
+
+    .btn-confirm-clear {
+      background: var(--danger-color);
+      color: white;
+    }
+
+    .btn-confirm-clear:hover {
+      background: #c82333;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
     }
 
     /* Responsive */
@@ -376,12 +1056,8 @@
         position: static;
       }
 
-      #payment-info {
-        grid-column: 1;
-      }
-
-      #payment-form {
-        grid-template-columns: 1fr;
+      .modal-content {
+        padding: 30px 20px;
       }
     }
 
@@ -399,6 +1075,232 @@
         flex-direction: column;
         gap: 15px;
       }
+
+      .modal-content {
+        width: 95%;
+        padding: 20px;
+      }
+
+      .modal-header h2 {
+        font-size: 22px;
+      }
+    }
+
+    /* Footer Styles */
+    .footer-category {
+      background: #1a1a1a !important;
+      padding: 30px 0;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 40px;
+    }
+
+    .footer-category-title {
+      font-size: 18px;
+      color: #ff6600 !important;
+      font-weight: bold;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .footer-category-box {
+      background: #2d2d2d !important;
+      border-radius: 8px !important;
+      padding: 20px !important;
+      margin-bottom: 20px !important;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    .category-box-title {
+      color: #ff6600 !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      margin-bottom: 15px !important;
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-category-link {
+      color: #cccccc !important;
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      margin-bottom: 8px !important;
+      display: inline-block !important;
+      margin-right: 20px !important;
+      transition: color 0.3s ease !important;
+    }
+
+    .footer-category-link:hover {
+      color: #ff6600 !important;
+      background: transparent !important;
+    }
+
+    .footer-nav {
+      background: #1a1a1a !important;
+      padding: 40px 0;
+      border-top: 3px solid var(--primary-color);
+    }
+
+    .footer-nav-list {
+      display: inline-block !important;
+      vertical-align: top !important;
+      width: calc(20% - 16px) !important;
+      margin-right: 20px !important;
+      background: #2d2d2d !important;
+      border-radius: 8px !important;
+      padding: 20px !important;
+    }
+
+    .footer-nav-list:last-child {
+      margin-right: 0 !important;
+      width: 30% !important;
+    }
+
+    .footer-nav-list li {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-title {
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      color: #ff6600 !important;
+      margin-bottom: 15px !important;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+    }
+
+    .footer-nav-list ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-nav-item {
+      margin-bottom: 10px;
+    }
+
+    .footer-nav-link {
+      color: #cccccc !important;
+      font-size: 14px !important;
+      line-height: 1.8 !important;
+      display: block !important;
+      transition: color 0.3s ease !important;
+      text-decoration: none;
+      padding: 6px 0;
+      display: block;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      border-left: 3px solid transparent;
+      padding-left: 12px;
+    }
+
+    .footer-nav-link:hover {
+      color: #ff6600 !important;
+      border-left-color: var(--primary-color);
+      background: rgba(255, 106, 0, 0.05);
+      padding-left: 15px;
+    }
+
+    .footer-nav-item.flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 15px;
+      padding: 12px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #e8e8e8;
+    }
+
+    .footer-nav-item .icon-box {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .footer-nav-item .icon-box ion-icon {
+      font-size: 18px;
+      color: white;
+    }
+
+    .footer-nav-item .content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-nav-item .content p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .footer-bottom {
+      background: #1a1a1a !important;
+      color: #333333;
+      padding: 20px 0;
+      text-align: center;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .footer-bottom .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .payment-img img {
+      max-width: 300px;
+      height: auto;
+      filter: brightness(1.2);
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #666666;
+      margin: 0;
+    }
+
+    .copyright a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .copyright a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .footer-nav-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .footer-category-box {
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .footer-category-link {
+        font-size: 13px;
+        padding: 6px 12px;
+      }
     }
   </style>
 </head>
@@ -408,12 +1310,12 @@
   <header class="cart-header">
     <div class="cart-header-content">
       <a href="index.html" class="header-logo">
-        Nexus<span class="orange-letter">C</span>hop
+        <span class="orange-letter">N</span>exus<span class="orange-letter">C</span>hop
       </a>
-      <a href="index.html" class="continue-shopping-btn" id="continue-shopping-btn">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-        Continuer mes achats
-      </a>
+        <a href="index.html" class="continue-shopping-btn">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          Continuer mes achats
+        </a>
     </div>
   </header>
 
@@ -441,7 +1343,10 @@
 
     <!-- Cart Summary -->
     <div class="cart-summary" id="cart-total">
-      <h3 class="summary-title">Récapitulatif</h3>
+      <h3 class="summary-title">
+        <ion-icon name="receipt-outline"></ion-icon>
+        Récapitulatif
+      </h3>
       <div class="summary-row">
         <span>Sous-total:</span>
         <span id="subtotal-price">0 XAF</span>
@@ -450,67 +1355,578 @@
         <span>Livraison:</span>
         <span>Gratuite</span>
       </div>
+      <div class="summary-row">
+        <span>Articles:</span>
+        <span id="items-count">0</span>
+      </div>
       <div class="summary-total">
         <span>Total:</span>
-        <span id="total-price">0</span> <span>XAF</span>
+        <span><span id="total-price">0</span> XAF</span>
       </div>
-      <button class="clear-cart-btn" id="clear-cart-btn">
-        <ion-icon name="trash-outline"></ion-icon>
-        Vider le panier
-      </button>
+
+      <!-- Boutons d'action après le total -->
+      <div class="cart-actions">
+        <button type="button" class="checkout-btn" id="checkout-btn" onclick="openPaymentModal()">
+          <ion-icon name="card-outline"></ion-icon>
+          Passer au paiement
+        </button>
+        <button class="clear-cart-btn" id="clear-cart-btn">
+          <ion-icon name="trash-outline"></ion-icon>
+          Vider le panier
+        </button>
+      </div>
+
+      <!-- Carte d'analyse intégrée dans le récapitulatif -->
+      <div class="cart-analytics-card-summary">
+        <h3 class="analytics-title">
+          <ion-icon name="analytics-outline"></ion-icon>
+          Analyse de votre panier
+        </h3>
+        <div class="analytics-chart">
+          <canvas id="cartChart" width="250" height="150"></canvas>
+        </div>
+        <div class="analytics-stats">
+          <div class="stat-item">
+            <span class="stat-label">Valeur moyenne:</span>
+            <span class="stat-value" id="avg-value">0 XAF</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Article le plus cher:</span>
+            <span class="stat-value" id="max-item">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Catégories:</span>
+            <span class="stat-value" id="category-count">0</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Payment Information -->
-  <section id="payment-info">
-    <h2 class="section-title">
-      <ion-icon name="card-outline"></ion-icon>
-      Informations de livraison
-    </h2>
-    <form id="payment-form">
-      <div class="form-group">
-        <label for="name">Nom complet *</label>
-        <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>
+          <ion-icon name="card-outline"></ion-icon>
+          Finaliser la commande
+        </h2>
+        <button class="close-modal" id="close-modal" onclick="closePaymentModal()">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
       </div>
 
-      <div class="form-group">
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required placeholder="jean.dupont@example.com">
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h3>Récapitulatif de la commande</h3>
+        <div class="order-summary-row">
+          <span>Articles:</span>
+          <span id="modal-items-count">0</span>
+        </div>
+        <div class="order-summary-row">
+          <span>Sous-total:</span>
+          <span id="modal-subtotal">0 XAF</span>
+        </div>
+        <div class="order-summary-row">
+          <span>Livraison:</span>
+          <span>Gratuite</span>
+        </div>
+        <div class="order-summary-total">
+          <span>Total à payer:</span>
+          <span id="modal-total">0 XAF</span>
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="phone">Téléphone *</label>
-        <input type="tel" id="phone" name="phone" required placeholder="+241 XX XX XX XX">
-      </div>
+      <form id="payment-form">
+        <!-- Customer Information -->
+        <h3 style="margin-bottom: 20px; color: var(--text-dark);">Informations de livraison</h3>
+        
+        <div class="form-group">
+          <label for="customer-name">Nom complet *</label>
+          <input type="text" id="customer-name" name="name" required placeholder="Nsounjou">
+        </div>
 
-      <div class="form-group">
-        <label for="city">Ville *</label>
-        <input type="text" id="city" name="city" required placeholder="Libreville">
-      </div>
+        <div class="form-group">
+          <label for="customer-email">Email *</label>
+          <input type="email" id="customer-email" name="email" required placeholder="nsounjou@gmail.com">
+        </div>
 
-      <div class="form-group full-width">
-        <label for="address">Adresse de livraison *</label>
-        <textarea id="address" name="address" required placeholder="Quartier, rue, numéro..."></textarea>
-      </div>
+        <div class="form-group">
+          <label for="customer-phone">Téléphone *</label>
+          <input type="tel" id="customer-phone" name="phone" required placeholder="+237 XX XX XX XX">
+        </div>
 
-      <div class="form-group full-width">
-        <label for="notes">Notes de commande (optionnel)</label>
-        <textarea id="notes" name="notes" placeholder="Instructions spéciales pour la livraison..."></textarea>
-      </div>
+        <div class="form-group">
+          <label for="customer-address">Adresse de livraison *</label>
+          <textarea id="customer-address" name="address" required placeholder="Quartier, rue, numéro, ville (Yaoundé, Douala, Bafoussam...)"></textarea>
+        </div>
 
-      <button type="submit" class="submit-order-btn">
-        <ion-icon name="checkmark-circle-outline"></ion-icon>
-        Valider ma commande
-      </button>
-    </form>
-  </section>
+        <!-- Payment Method Selection -->
+        <h3 style="margin: 30px 0 20px; color: var(--text-dark);">Mode de paiement</h3>
+        
+        <div class="payment-methods">
+          <label class="payment-method" for="orange-money">
+            <input type="radio" id="orange-money" name="payment-method" value="orange-money" required>
+            <div class="payment-icon" style="background: #ff6600; color: white;">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="payment-info">
+              <h4>Orange Money</h4>
+              <p>Paiement mobile sécurisé</p>
+            </div>
+          </label>
+
+          <label class="payment-method" for="mtn-momo">
+            <input type="radio" id="mtn-momo" name="payment-method" value="mtn-momo">
+            <div class="payment-icon" style="background: #ffcc00; color: #000;">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="payment-info">
+              <h4>MTN Mobile Money</h4>
+              <p>Paiement mobile sécurisé</p>
+            </div>
+          </label>
+
+          <label class="payment-method" for="bank-card">
+            <input type="radio" id="bank-card" name="payment-method" value="bank-card">
+            <div class="payment-icon" style="background: #007bff; color: white;">
+              <ion-icon name="card-outline"></ion-icon>
+            </div>
+            <div class="payment-info">
+              <h4>Carte Bancaire</h4>
+              <p>Visa, Mastercard acceptées</p>
+            </div>
+          </label>
+
+          <label class="payment-method" for="cash-delivery">
+            <input type="radio" id="cash-delivery" name="payment-method" value="cash-delivery">
+            <div class="payment-icon" style="background: #28a745; color: white;">
+              <ion-icon name="cash-outline"></ion-icon>
+            </div>
+            <div class="payment-info">
+              <h4>Paiement à la livraison</h4>
+              <p>Payez en espèces lors de la réception</p>
+            </div>
+          </label>
+
+          <label class="payment-method" for="paypal">
+            <input type="radio" id="paypal" name="payment-method" value="paypal">
+            <div class="payment-icon" style="background: #0070ba; color: white;">
+              <ion-icon name="logo-paypal"></ion-icon>
+            </div>
+            <div class="payment-info">
+              <h4>PayPal</h4>
+              <p>Paiement sécurisé via PayPal</p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Payment Details for Orange Money -->
+        <div id="orange-money-details" class="payment-details">
+          <h4 style="margin-bottom: 15px;">Détails Orange Money</h4>
+          <div class="form-group">
+            <label for="orange-number">Numéro Orange Money *</label>
+            <input type="tel" id="orange-number" placeholder="+237 XX XX XX XX">
+          </div>
+          <p style="color: var(--text-light); font-size: 14px;">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            Vous recevrez un code de confirmation par SMS
+          </p>
+        </div>
+
+        <!-- Payment Details for MTN MoMo -->
+        <div id="mtn-momo-details" class="payment-details">
+          <h4 style="margin-bottom: 15px;">Détails MTN Mobile Money</h4>
+          <div class="form-group">
+            <label for="mtn-number">Numéro MTN MoMo *</label>
+            <input type="tel" id="mtn-number" placeholder="+237 XX XX XX XX">
+          </div>
+          <p style="color: var(--text-light); font-size: 14px;">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            Vous recevrez un code de confirmation par SMS
+          </p>
+        </div>
+
+        <!-- Payment Details for Bank Card -->
+        <div id="bank-card-details" class="payment-details">
+          <h4 style="margin-bottom: 15px;">Informations de carte bancaire</h4>
+          <div class="form-group">
+            <label for="card-number">Numéro de carte *</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="form-group">
+              <label for="card-expiry">Date d'expiration *</label>
+              <input type="text" id="card-expiry" placeholder="MM/AA" maxlength="5">
+            </div>
+            <div class="form-group">
+              <label for="card-cvv">CVV *</label>
+              <input type="text" id="card-cvv" placeholder="123" maxlength="3">
+            </div>
+          </div>
+          <p style="color: var(--text-light); font-size: 14px;">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            Paiement 100% sécurisé SSL
+          </p>
+        </div>
+
+        <!-- Payment Details for Cash on Delivery -->
+        <div id="cash-delivery-details" class="payment-details">
+          <h4 style="margin-bottom: 15px;">Paiement à la livraison</h4>
+          <p style="color: var(--text-light); font-size: 14px; line-height: 1.8;">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Vous paierez en espèces lors de la réception de votre commande.<br>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Assurez-vous d'avoir le montant exact.<br>
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Le livreur vous remettra un reçu.
+          </p>
+        </div>
+
+        <!-- Payment Details for PayPal -->
+        <div id="paypal-details" class="payment-details">
+          <h4 style="margin-bottom: 15px;">Paiement PayPal</h4>
+          <div class="form-group">
+            <label for="paypal-email">Email PayPal *</label>
+            <input type="email" id="paypal-email" placeholder="votre-email@exemple.com">
+          </div>
+          <p style="color: var(--text-light); font-size: 14px;">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            Paiement sécurisé via PayPal - Protection acheteur incluse
+          </p>
+        </div>
+
+        <button type="submit" class="submit-payment-btn">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          Confirmer la commande
+        </button>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 NexusChop - Votre marketplace de confiance</p>
+    <div class="footer-category">
+      <div class="container">
+        <h2 class="footer-category-title">Panier & Navigation</h2>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Nos Catégories :</h3>
+          <a href="telephonie.html" class="footer-category-link">Téléphonie</a>
+          <a href="pc-fixes-ecran.html" class="footer-category-link">Informatique</a>
+          <a href="objets-connectes.html" class="footer-category-link">High-Tech</a>
+          <a href="femme.html" class="footer-category-link">Mode Femme</a>
+          <a href="homme.html" class="footer-category-link">Mode Homme</a>
+          <a href="enfants.html" class="footer-category-link">Enfants</a>
+          <a href="cuisson.html" class="footer-category-link">Cuisine</a>
+          <a href="entretien-maison.html" class="footer-category-link">Entretien</a>
+          <a href="beaute-hygiene-sante.html" class="footer-category-link">Beauté & Santé</a>
+          <a href="climatisation-ventilation.html" class="footer-category-link">Climatisation</a>
+          <a href="accessoires.html" class="footer-category-link">Accessoires</a>
+          <a href="jeux-video.html" class="footer-category-link">Jeux Vidéo</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="payment-img">
+          <img src="./assets/images/payment-method.png" alt="Payment method" width="533" height="28">
+        </div>
+        <p class="copyright">
+          Copyright &copy; <a href="index.html">NexusChop</a> - Tous droits réservés. | 
+          <a href="panier.html">Votre Panier</a>
+        </p>
+      </div>
+    </div>
   </footer>
 
   <script src="assets/js/panier.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Extension du panier pour gérer les catégories et l'analyse
+    class PanierWithAnalytics extends Panier {
+      constructor() {
+        super(); // Important: appeler le constructeur parent
+      }
+
+      updatePanierPage() {
+        const cartList = document.getElementById('cart-list');
+        const totalPrice = document.getElementById('total-price');
+        const subtotalPrice = document.getElementById('subtotal-price');
+        const itemsCount = document.getElementById('items-count');
+        const emptyMessage = document.getElementById('empty-cart-message');
+        const cartTotal = document.getElementById('cart-total');
+
+        if (!cartList) return;
+
+        cartList.innerHTML = '';
+
+        if (this.items.length === 0) {
+          if (emptyMessage) emptyMessage.style.display = 'block';
+          if (cartTotal) cartTotal.style.display = 'none';
+          return;
+        }
+
+        if (emptyMessage) emptyMessage.style.display = 'none';
+        if (cartTotal) cartTotal.style.display = 'block';
+
+        // Grouper les produits par catégorie
+        const categorizedItems = this.groupItemsByCategory();
+        
+        // Afficher les produits par catégorie
+        Object.keys(categorizedItems).forEach(category => {
+          const categorySection = this.createCategorySection(category, categorizedItems[category]);
+          cartList.appendChild(categorySection);
+        });
+
+        const total = this.getTotal();
+        const count = this.getItemCount();
+        
+        if (totalPrice) totalPrice.textContent = total.toLocaleString();
+        if (subtotalPrice) subtotalPrice.textContent = total.toLocaleString() + ' XAF';
+        if (itemsCount) itemsCount.textContent = count;
+
+        // Mettre à jour les analyses
+        this.updateAnalytics();
+      }
+
+      // S'assurer que openPaymentModal est disponible
+      openPaymentModal() {
+        console.log('PanierWithAnalytics: openPaymentModal called');
+        console.log('Items in cart:', this.items.length);
+        
+        if (this.items.length === 0) {
+          this.showNotification('Votre panier est vide', 'warning');
+          return;
+        }
+
+        const modal = document.getElementById('payment-modal');
+        console.log('Modal element found:', !!modal);
+        
+        if (!modal) {
+          console.error('Payment modal not found!');
+          this.showNotification('Erreur: Modal de paiement non trouvé', 'error');
+          return;
+        }
+
+        const modalItemsCount = document.getElementById('modal-items-count');
+        const modalSubtotal = document.getElementById('modal-subtotal');
+        const modalTotal = document.getElementById('modal-total');
+
+        const total = this.getTotal();
+        const count = this.getItemCount();
+
+        console.log('Total:', total, 'Count:', count);
+
+        if (modalItemsCount) modalItemsCount.textContent = count;
+        if (modalSubtotal) modalSubtotal.textContent = total.toLocaleString() + ' XAF';
+        if (modalTotal) modalTotal.textContent = total.toLocaleString() + ' XAF';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        console.log('Modal should now be visible with active class');
+      }
+
+      // On garde juste l'héritage sans override setupEventListeners
+      // car la classe parent gère déjà tous les event listeners
+
+      groupItemsByCategory() {
+        const categories = {};
+        this.items.forEach(item => {
+          const category = this.getCategoryFromId(item.id);
+          if (!categories[category]) {
+            categories[category] = [];
+          }
+          categories[category].push(item);
+        });
+        return categories;
+      }
+
+      getCategoryFromId(productId) {
+        // Déterminer la catégorie en fonction de l'ID du produit
+        if (productId.includes('iphone') || productId.includes('samsung') || productId.includes('huawei')) {
+          return 'Téléphonie';
+        } else if (productId.includes('laptop') || productId.includes('pc') || productId.includes('dell') || productId.includes('hp')) {
+          return 'Informatique';
+        } else if (productId.includes('tv') || productId.includes('audio') || productId.includes('sony')) {
+          return 'High-Tech';
+        } else if (productId.includes('robe') || productId.includes('chemise') || productId.includes('costume')) {
+          return 'Mode';
+        } else if (productId.includes('mixeur') || productId.includes('refrigerateur') || productId.includes('machine')) {
+          return 'Électroménager';
+        } else {
+          return 'Autres';
+        }
+      }
+
+      createCategorySection(categoryName, items) {
+        const section = document.createElement('div');
+        section.className = 'cart-category-section';
+
+        const total = items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+        section.innerHTML = `
+          <div class="category-header">
+            <div class="category-title">
+              <ion-icon name="folder-outline"></ion-icon>
+              ${categoryName}
+            </div>
+            <div>
+              <span class="category-count">${items.length} article${items.length > 1 ? 's' : ''}</span>
+              <span class="category-total">${total.toLocaleString()} XAF</span>
+            </div>
+          </div>
+          <div class="category-items">
+            ${items.map(item => this.createCartItemHTML(item)).join('')}
+          </div>
+        `;
+
+        return section;
+      }
+
+      createCartItemHTML(item) {
+        return `
+          <div class="cart-item">
+            <div class="cart-item-content">
+              <img src="${item.image}" alt="${item.title}" class="cart-item-image" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDIwMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjNGNEY2Ii8+Cjwvc3ZnPg=='">
+              <div class="cart-item-details">
+                <div class="cart-item-title">${item.title}</div>
+                <div class="cart-item-price">${item.price.toLocaleString()} XAF</div>
+                <div class="cart-item-subtotal">Sous-total: ${(item.price * item.quantity).toLocaleString()} XAF</div>
+                <div class="cart-item-quantity">
+                  <label>Quantité:</label>
+                  <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="window.panier.decreaseQuantity('${item.id}')">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+                    <input type="number" min="1" value="${item.quantity}" 
+                           onchange="window.panier.updateQuantity('${item.id}', this.value)"
+                           class="quantity-input">
+                    <button class="quantity-btn" onclick="window.panier.increaseQuantity('${item.id}')">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button onclick="window.panier.removeItem('${item.id}')" class="remove-btn">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        `;
+      }
+
+      updateAnalytics() {
+        if (this.items.length === 0) {
+          // Masquer la carte d'analyse si le panier est vide
+          const analyticsCard = document.querySelector('.cart-analytics-card-summary');
+          if (analyticsCard) {
+            analyticsCard.style.display = 'none';
+          }
+          return;
+        }
+
+        // Afficher la carte d'analyse
+        const analyticsCard = document.querySelector('.cart-analytics-card-summary');
+        if (analyticsCard) {
+          analyticsCard.style.display = 'block';
+        }
+
+        // Calculer les statistiques
+        const total = this.getTotal();
+        const count = this.getItemCount();
+        const avgValue = count > 0 ? total / count : 0;
+        
+        // Trouver l'article le plus cher
+        const maxItem = this.items.reduce((max, item) => {
+          return (item.price * item.quantity) > (max.price * max.quantity) ? item : max;
+        });
+
+        // Compter les catégories
+        const categories = this.groupItemsByCategory();
+        const categoryCount = Object.keys(categories).length;
+
+        // Mettre à jour l'affichage
+        const avgValueEl = document.getElementById('avg-value');
+        const maxItemEl = document.getElementById('max-item');
+        const categoryCountEl = document.getElementById('category-count');
+
+        if (avgValueEl) avgValueEl.textContent = Math.round(avgValue).toLocaleString() + ' XAF';
+        if (maxItemEl) maxItemEl.textContent = maxItem ? maxItem.title : '-';
+        if (categoryCountEl) categoryCountEl.textContent = categoryCount;
+
+        // Créer le graphique
+        this.createCartChart(categories);
+      }
+
+      createCartChart(categories) {
+        const ctx = document.getElementById('cartChart');
+        if (!ctx) return;
+
+        // Détruire le graphique existant s'il existe
+        if (window.cartChartInstance) {
+          window.cartChartInstance.destroy();
+        }
+
+        const labels = Object.keys(categories);
+        const data = Object.values(categories).map(items => {
+          return items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        });
+
+        window.cartChartInstance = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: labels,
+            datasets: [{
+              data: data,
+              backgroundColor: [
+                '#ff6a00',
+                '#28a745',
+                '#007bff',
+                '#ffc107',
+                '#dc3545',
+                '#6f42c1'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false
+              }
+            }
+          }
+        });
+      }
+    }
+
+    // Remplacer l'instance du panier
+    window.panier = new PanierWithAnalytics();
+    
+    // Fonction pour ouvrir le modal de paiement
+    function openPaymentModal() {
+      const modal = document.getElementById('payment-modal');
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Fermer le modal
+    function closePaymentModal() {
+      const modal = document.getElementById('payment-modal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
 </body>
 
 </html>

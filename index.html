@@ -51,6 +51,33 @@
       color: white !important;
     }
     
+    /* Banner Actions - Nouveaux boutons d'exploration */
+    .banner-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    
+    .banner-btn.primary {
+      background: #ff6600 !important;
+      color: white !important;
+      border: none !important;
+      font-weight: 700 !important;
+    }
+    
+    .banner-btn.secondary {
+      background: rgba(255, 255, 255, 0.9) !important;
+      color: #ff6600 !important;
+      border: 2px solid #ff6600 !important;
+      font-weight: 600 !important;
+    }
+    
+    .banner-btn.secondary:hover {
+      background: #ff6600 !important;
+      color: white !important;
+    }
+    
     /* Hover effects in orange */
     .menu-title:hover {
       color: #ff6600 !important;
@@ -177,6 +204,398 @@
     .header-alert-news p {
       margin: 0 !important;
     }
+
+    /* Cart section dark styling */
+    .header-user-actions {
+      display: flex !important;
+      align-items: center !important;
+      gap: 15px !important;
+    }
+
+    .action-btn {
+      background: #ffffff !important; /* white background */
+      color: #ff66b2 !important; /* Pink icons */
+      border: 2px solid #e6e6e6 !important;
+      border-radius: 8px !important;
+      padding: 10px !important;
+      transition: all 0.18s ease !important;
+      position: relative !important;
+    }
+
+    .action-btn:hover {
+      background: #ff66b2 !important; /* pink fill on hover */
+      border-color: #ff66b2 !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+    }
+
+    .action-btn ion-icon {
+      font-size: 20px !important;
+      color: #ff66b2 !important; /* Pink icons */
+    }
+
+    .action-btn:hover ion-icon {
+      color: #ffffff !important;
+    }
+
+    .action-btn .count {
+      background: #ff66b2 !important; /* pink badge */
+      color: #ffffff !important;
+      border-radius: 50% !important;
+      font-size: 11px !important;
+      font-weight: 600 !important;
+      height: 18px !important;
+      line-height: 18px !important;
+      position: absolute !important;
+      right: -5px !important;
+      text-align: center !important;
+      top: -5px !important;
+      width: 18px !important;
+    }
+
+    /* Mobile cart section dark styling */
+    .mobile-bottom-navigation {
+      background: #1a1a1a !important;
+      border-top: 1px solid #333333 !important;
+    }
+
+    .mobile-bottom-navigation .action-btn {
+      background: #2a2a2a !important;
+      color: #ffffff !important;
+      border: none !important;
+      padding: 12px !important;
+    }
+
+    .mobile-bottom-navigation .action-btn:hover {
+      background: #ff6600 !important;
+      color: #ffffff !important;
+    }
+
+    .mobile-bottom-navigation .count {
+      background: #ff6600 !important;
+      color: #ffffff !important;
+      border-radius: 50% !important;
+      font-size: 10px !important;
+      font-weight: 600 !important;
+      height: 16px !important;
+      line-height: 16px !important;
+      position: absolute !important;
+      right: 5px !important;
+      text-align: center !important;
+      top: 5px !important;
+      width: 16px !important;
+    }
+
+    /* Footer Quick Links - Nouvelle section d'accès rapide */
+    .footer-quick-links {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 40px 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+    
+    .footer-quick-links-title {
+      text-align: center;
+      color: #333;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      background: linear-gradient(45deg, #ff6600, #ff8800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .quick-links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .quick-link-group h3 {
+      color: #333;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ff6600;
+    }
+    
+    .quick-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .quick-link {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      color: #666;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .quick-link:hover {
+      background: #ff6600;
+      color: white;
+      transform: translateX(5px);
+      box-shadow: 0 4px 8px rgba(255, 102, 0, 0.2);
+    }
+    
+    /* Responsive pour mobile */
+    @media (max-width: 768px) {
+      .quick-links-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .footer-quick-links {
+        padding: 30px 0;
+      }
+      
+      .footer-quick-links-title {
+        font-size: 20px;
+      }
+    }
+    
+    /* Newsletter Section Styling */
+    .footer-newsletter {
+      background: var(--eerie-black);
+      padding: 30px 0;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--onyx);
+    }
+
+    .footer-newsletter::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.03)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.03)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+      pointer-events: none;
+    }
+
+    .newsletter-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ff6600;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .newsletter-desc {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .newsletter-input-group {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      min-width: 250px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      background: white;
+      color: #333;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-input:focus {
+      outline: none;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+
+    .newsletter-input::placeholder {
+      color: #999;
+    }
+
+    .newsletter-btn {
+      background: linear-gradient(45deg, #ff69b4, #ff1493);
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(255,20,147,0.3);
+      white-space: nowrap;
+    }
+
+    .newsletter-btn:hover {
+      background: linear-gradient(45deg, #ff1493, #ff69b4);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255,20,147,0.4);
+    }
+
+    .newsletter-btn ion-icon {
+      font-size: 18px;
+    }
+
+    .newsletter-benefits {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .benefit-item ion-icon {
+      color: #ffd700;
+      font-size: 16px;
+    }
+
+    .newsletter-visual {
+      text-align: center;
+    }
+
+    .newsletter-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+    }
+
+    .newsletter-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .newsletter-placeholder-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    .newsletter-placeholder-text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .newsletter-placeholder-desc {
+      font-size: 14px;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .newsletter-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .newsletter-title {
+        font-size: 24px;
+      }
+
+      .newsletter-input-group {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .newsletter-input {
+        width: 100%;
+        max-width: 300px;
+        min-width: auto;
+      }
+
+      .newsletter-btn {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+      }
+
+      .newsletter-benefits {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .benefit-item {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-newsletter {
+        padding: 40px 0;
+      }
+
+      .newsletter-title {
+        font-size: 20px;
+      }
+
+      .newsletter-desc {
+        font-size: 14px;
+      }
+
+      .newsletter-input {
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+
+      .newsletter-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+
+      .newsletter-benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
   </style>
 
   <!--
@@ -195,48 +614,10 @@
   <div class="overlay" data-overlay></div>
 
   <!--
-    - MODAL
+    - MODAL - DISABLED
   -->
 
-  <div class="modal" data-modal>
-
-    <div class="modal-close-overlay" data-modal-overlay></div>
-
-    <div class="modal-content">
-
-      <button class="modal-close-btn" data-modal-close>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>NexusStor</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
+  <!-- Newsletter modal removed per user request -->
 
 
 
@@ -524,7 +905,7 @@
           </li>
 
           <li class="menu-category">
-            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+            <a href="#" class="menu-title" data-menu="informatique">Informatique</a>
 
             <ul class="dropdown-list">
 
@@ -557,19 +938,19 @@
             <ul class="dropdown-list">
 
               <li class="dropdown-item">
-                <a href="#">Lavage et séchage</a>
+                <a href="lavage-sechage.html">Lavage et séchage</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Froid</a>
+                <a href="froid.html">Froid</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Cuisson</a>
+                <a href="cuisson.html">Cuisson</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Entretien maison</a>
+                <a href="entretien-maison.html">Entretien maison</a>
               </li>
 
             </ul>
@@ -581,19 +962,19 @@
             <ul class="dropdown-list">
 
               <li class="dropdown-item">
-                <a href="#">Salon</a>
+                <a href="salon.html">Salon</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Canapé</a>
+                <a href="canape.html">Canapé</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Luminaire</a>
+                <a href="luminaire.html">Luminaire</a>
               </li>
 
               <li class="dropdown-item">
-                <a href="#">Rangements</a>
+                <a href="rangements.html">Rangements</a>
               </li>
 
             </ul>
@@ -682,7 +1063,7 @@
         </li>
 
         <li class="menu-category">
-          <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+          <a href="#" class="menu-title" data-menu="informatique">Informatiques</a>
         </li>
 
         <li class="menu-category">
@@ -824,7 +1205,11 @@
                 à partir de XAF <b>199</b>.99
               </p>
 
-              <a href="#" class="banner-btn">Acheter maintenant</a>
+              <div class="banner-actions">
+                <a href="laptops.html" class="banner-btn primary">Explorer les laptops</a>
+                <a href="audio-hifi.html" class="banner-btn secondary">Audio & Hi-Fi</a>
+                <a href="objets-connectes.html" class="banner-btn secondary">Objets connectés</a>
+              </div>
 
             </div>
 
@@ -844,7 +1229,11 @@
                 à partir de XAF <b>49</b>.99
               </p>
 
-              <a href="#" class="banner-btn">Acheter maintenant</a>
+              <div class="banner-actions">
+                <a href="photo-camescope.html" class="banner-btn primary">Appareils photo</a>
+                <a href="pc-fixes-ecran.html" class="banner-btn secondary">PC & Écrans</a>
+                <a href="composants.html" class="banner-btn secondary">Composants</a>
+              </div>
 
             </div>
 
@@ -864,7 +1253,11 @@
                 à partir de XAF <b>79</b>.99
               </p>
 
-              <a href="#" class="banner-btn">Acheter maintenant</a>
+              <div class="banner-actions">
+                <a href="salon.html" class="banner-btn primary">Salon</a>
+                <a href="luminaire.html" class="banner-btn secondary">Luminaires</a>
+                <a href="canape.html" class="banner-btn secondary">Canapés</a>
+              </div>
 
             </div>
 
@@ -919,7 +1312,7 @@
             <div class="category-content-box">
 
               <div class="category-content-flex">
-                <h3 class="category-item-title">Informatique</h3>
+                <h3 class="category-item-title">Informatiques</h3>
 
                 <p class="category-item-amount">(2140)</p>
               </div>
@@ -1105,7 +1498,7 @@
                     <img src="assets/images/info_2.jpg" alt="informatique" class="menu-title-img" width="20"
                       height="20">
 
-                    <p class="menu-title">Informatique</p>
+                    <p class="menu-title">Informatiques</p>
                   </div>
 
                   <div>
@@ -1316,14 +1709,14 @@
                 <ul class="sidebar-submenu-category-list" data-accordion>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="salon.html" class="sidebar-submenu-title">
                       <p class="product-name">Salon</p>
                       <data value="266" class="stock" title="Available Stock">266</data>
                     </a>
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="canape.html" class="sidebar-submenu-title">
                       <p class="product-name">Canapé</p>
                       <data value="218" class="stock" title="Available Stock">218</data>
                     </a>
@@ -1337,7 +1730,7 @@
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="luminaire.html" class="sidebar-submenu-title">
                       <p class="product-name">Luminaire</p>
                       <data value="410" class="stock" title="Available Stock">410</data>
                     </a>
@@ -1351,7 +1744,7 @@
                   </li>
 
                   <li class="sidebar-submenu-category">
-                    <a href="#" class="sidebar-submenu-title">
+                    <a href="rangements.html" class="sidebar-submenu-title">
                       <p class="product-name">Rangements</p>
                       <data value="332" class="stock" title="Available Stock">332</data>
                     </a>
@@ -3695,69 +4088,120 @@
 
   <footer>
 
+    <!-- Newsletter Section -->
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <h3 class="newsletter-title">Restez connecté avec NexusChop</h3>
+            <p class="newsletter-desc">
+              Inscrivez-vous à notre newsletter pour recevoir nos dernières offres, 
+              nouveautés et conseils d'experts directement dans votre boîte mail.
+            </p>
+            <form class="newsletter-form" action="#" method="POST" id="newsletterForm">
+              <div class="newsletter-input-group">
+                <input 
+                  type="email" 
+                  name="email" 
+                  class="newsletter-input" 
+                  placeholder="Votre adresse e-mail" 
+                  required
+                  id="newsletterEmail"
+                >
+                <button type="submit" class="newsletter-btn">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  S'abonner
+                </button>
+              </div>
+              <div class="newsletter-benefits">
+                <div class="benefit-item">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  <span>Offres exclusives</span>
+                </div>
+                <div class="benefit-item">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  <span>Nouveautés en avant-première</span>
+                </div>
+                <div class="benefit-item">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  <span>Conseils d'experts</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="newsletter-visual">
+            <img src="./assets/images/newsletter.png" alt="Newsletter NexusChop" class="newsletter-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <div class="footer-category">
 
       <div class="container">
 
-        <h2 class="footer-category-title">Répertoire des marques</h2>
+        <h2 class="footer-category-title">🎯 Catégories Populaires</h2>
 
         <div class="footer-category-box">
 
-          <h3 class="category-box-title">High-Tech :</h3>
-
-          <a href="#" class="footer-category-link">Smartphones</a>
-          <a href="#" class="footer-category-link">Ordinateurs</a>
-          <a href="#" class="footer-category-link">Tablettes</a>
-          <a href="#" class="footer-category-link">Objets connectés</a>
-          <a href="#" class="footer-category-link">Montres connectées</a>
-          <a href="#" class="footer-category-link">Écouteurs</a>
-          <a href="#" class="footer-category-link">Drones</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Informatique :</h3>
+          <h3 class="category-box-title">🎮 Gaming</h3>
         
-          <a href="#" class="footer-category-link">Processeurs</a>
-          <a href="#" class="footer-category-link">Cartes graphiques</a>
-          <a href="#" class="footer-category-link">RAM</a>
-          <a href="#" class="footer-category-link">Stockage</a>
-          <a href="#" class="footer-category-link">Cartes mères</a>
-          <a href="#" class="footer-category-link">Refroidissement</a>
-          <a href="#" class="footer-category-link">Alimentations</a>
-          <a href="#" class="footer-category-link">Boîtiers</a>
-          <a href="#" class="footer-category-link">Composants</a>
-          <a href="#" class="footer-category-link">Accessoires PC</a>
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Audio & Vidéo :</h3>
-        
-          <a href="#" class="footer-category-link">Casques</a>
-          <a href="#" class="footer-category-link">Enceintes</a>
-          <a href="#" class="footer-category-link">Caméras</a>
-          <a href="#" class="footer-category-link">Téléviseurs</a>
-          <a href="#" class="footer-category-link">Barres de son</a>
-          <a href="#" class="footer-category-link">Microphones</a>
-          <a href="#" class="footer-category-link">Éclairage studio</a>
-          <a href="#" class="footer-category-link">Trepieds</a>
-          <a href="#" class="footer-category-link">Objectifs</a>
-          <a href="#" class="footer-category-link">Accessoires audio</a>
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">Gaming :</h3>
-        
-          <a href="#" class="footer-category-link">Consoles</a>
-          <a href="#" class="footer-category-link">Manettes</a>
-          <a href="#" class="footer-category-link">Jeux</a>
+          <a href="jeux-video.html" class="footer-category-link">Consoles</a>
+          <a href="jeux-video.html" class="footer-category-link">Manettes</a>
+          <a href="jeux-video.html" class="footer-category-link">Jeux</a>
           <a href="#" class="footer-category-link">Accessoires gaming</a>
           <a href="#" class="footer-category-link">Chaises gaming</a>
           <a href="#" class="footer-category-link">Souris</a>
           <a href="#" class="footer-category-link">Claviers</a>
           <a href="#" class="footer-category-link">Casques gaming</a>
           <a href="#" class="footer-category-link">Écrans gaming</a>
-          <a href="#" class="footer-category-link">PC gaming</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">📱 High-Tech</h3>
+        
+          <a href="telephonie.html" class="footer-category-link">Smartphones</a>
+          <a href="laptops.html" class="footer-category-link">Ordinateurs</a>
+          <a href="tablettes.html" class="footer-category-link">Tablettes</a>
+          <a href="objets-connectes.html" class="footer-category-link">Objets connectés</a>
+          <a href="#" class="footer-category-link">Montres connectées</a>
+          <a href="audio-hifi.html" class="footer-category-link">Écouteurs</a>
+          <a href="objets-connectes.html" class="footer-category-link">Drones</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">🔧 Informatique</h3>
+        
+          <a href="composants.html" class="footer-category-link">Processeurs</a>
+          <a href="composants.html" class="footer-category-link">Cartes graphiques</a>
+          <a href="composants.html" class="footer-category-link">RAM</a>
+          <a href="composants.html" class="footer-category-link">Stockage</a>
+          <a href="composants.html" class="footer-category-link">Cartes mères</a>
+          <a href="composants.html" class="footer-category-link">Refroidissement</a>
+          <a href="composants.html" class="footer-category-link">Alimentations</a>
+          <a href="pc-fixes-ecran.html" class="footer-category-link">Boîtiers</a>
+          <a href="composants.html" class="footer-category-link">Composants</a>
+          <a href="accessoires.html" class="footer-category-link">Accessoires PC</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">🎧 Audio & Vidéo</h3>
+        
+          <a href="audio-hifi.html" class="footer-category-link">Casques</a>
+          <a href="audio-hifi.html" class="footer-category-link">Enceintes</a>
+          <a href="photo-camescope.html" class="footer-category-link">Caméras</a>
+          <a href="tv-home-cinema.html" class="footer-category-link">Téléviseurs</a>
+          <a href="audio-hifi.html" class="footer-category-link">Barres de son</a>
+          <a href="#" class="footer-category-link">Microphones</a>
+          <a href="#" class="footer-category-link">Éclairage studio</a>
+          <a href="#" class="footer-category-link">Trépieds</a>
+          <a href="photo-camescope.html" class="footer-category-link">Objectifs</a>
+          <a href="accessoires.html" class="footer-category-link">Accessoires audio</a>
         </div>
 
       </div>
@@ -3771,27 +4215,27 @@
         <ul class="footer-nav-list">
 
           <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Categories</h2>
+            <h2 class="nav-title">Catégories Populaires</h2>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Fashion</a>
+            <a href="#" class="footer-nav-link">Mode</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Electronic</a>
+            <a href="#" class="footer-nav-link">Électronique</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Cosmetic</a>
+            <a href="#" class="footer-nav-link">Cosmétique</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Health</a>
+            <a href="#" class="footer-nav-link">Santé</a>
           </li>
 
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Watches</a>
+            <a href="#" class="footer-nav-link">Montres</a>
           </li>
 
         </ul>
@@ -3799,27 +4243,27 @@
         <ul class="footer-nav-list">
         
           <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
+            <h2 class="nav-title">Produits</h2>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
+            <a href="#" class="footer-nav-link">Prix cassés</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
+            <a href="#" class="footer-nav-link">Nouveaux produits</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
+            <a href="#" class="footer-nav-link">Meilleures ventes</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
+            <a href="#" class="footer-nav-link">Contactez-nous</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
+            <a href="#" class="footer-nav-link">Plan du site</a>
           </li>
         
         </ul>
@@ -3827,27 +4271,27 @@
         <ul class="footer-nav-list">
         
           <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
+            <h2 class="nav-title">Notre Entreprise</h2>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Delivery</a>
+            <a href="#" class="footer-nav-link">Livraison</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Legal Notice</a>
+            <a href="#" class="footer-nav-link">Mention légale</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Terms and conditions</a>
+            <a href="#" class="footer-nav-link">Conditions générales</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
+            <a href="#" class="footer-nav-link">À propos</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Secure payment</a>
+            <a href="#" class="footer-nav-link">Paiement sécurisé</a>
           </li>
         
         </ul>
@@ -3859,23 +4303,23 @@
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
+            <a href="#" class="footer-nav-link">Prix cassés</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
+            <a href="#" class="footer-nav-link">Nouveaux produits</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
+            <a href="#" class="footer-nav-link">Meilleures ventes</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
+            <a href="#" class="footer-nav-link">Contactez-nous</a>
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
+            <a href="#" class="footer-nav-link">Plan du site</a>
           </li>
         
         </ul>
@@ -3995,6 +4439,137 @@
   <script src="./assets/js/panier.js"></script>
   <script src="./assets/js/panier-integration.js"></script>
   <script src="./assets/js/main-page-product-actions.js"></script>
+  
+  <!-- Newsletter Script -->
+  <script>
+    // Newsletter form handling
+    document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const emailInput = document.getElementById('newsletterEmail');
+      const email = emailInput.value.trim();
+      
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+      if (!email) {
+        showNotification('Veuillez entrer votre adresse e-mail.', 'error');
+        emailInput.focus();
+        return;
+      }
+      
+      if (!emailRegex.test(email)) {
+        showNotification('Veuillez entrer une adresse e-mail valide.', 'error');
+        emailInput.focus();
+        return;
+      }
+      
+      // Simulate newsletter subscription
+      const submitBtn = this.querySelector('.newsletter-btn');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = '<ion-icon name="checkmark-outline"></ion-icon> Inscription en cours...';
+      submitBtn.disabled = true;
+      
+      // Simulate API call
+      setTimeout(() => {
+        // Reset form
+        emailInput.value = '';
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        
+        // Show success notification
+        showNotification('Merci ! Vous êtes maintenant inscrit à notre newsletter.', 'success');
+      }, 2000);
+    });
+    
+    // Notification function
+    function showNotification(message, type = 'info') {
+      // Remove existing notifications
+      const existingNotifications = document.querySelectorAll('.newsletter-notification');
+      existingNotifications.forEach(notif => notif.remove());
+      
+      // Create notification element
+      const notification = document.createElement('div');
+      notification.className = `newsletter-notification newsletter-notification--${type}`;
+      notification.innerHTML = `
+        <div class="notification-content">
+          <ion-icon name="${type === 'success' ? 'checkmark-circle' : type === 'error' ? 'alert-circle' : 'information-circle'}"></ion-icon>
+          <span>${message}</span>
+          <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+      `;
+      
+      // Add styles
+      notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'success' ? '#4CAF50' : type === 'error' ? '#f44336' : '#2196F3'};
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        z-index: 10000;
+        animation: slideInRight 0.3s ease;
+        max-width: 300px;
+      `;
+      
+      // Add to page
+      document.body.appendChild(notification);
+      
+      // Auto remove after 5 seconds
+      setTimeout(() => {
+        if (notification.parentElement) {
+          notification.style.animation = 'slideOutRight 0.3s ease';
+          setTimeout(() => notification.remove(), 300);
+        }
+      }, 5000);
+    }
+    
+    // Add CSS animations
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideInRight {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      
+      @keyframes slideOutRight {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+      
+      .newsletter-notification .notification-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .newsletter-notification .notification-content ion-icon:first-child {
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      
+      .newsletter-notification .notification-close {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0;
+        margin-left: auto;
+      }
+      
+      .newsletter-notification .notification-close:hover {
+        opacity: 0.8;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+
 </body>
 
 </html>

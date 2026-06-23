@@ -6,11 +6,37 @@ const modalCloseBtn = document.querySelector('[data-modal-close]');
 const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 
 // modal function
-const modalCloseFunc = function () { modal.classList.add('closed') }
+const modalCloseFunc = function () { 
+  modal.classList.add('closed');
+  // Update timestamp when user closes the newsletter modal
+  if (modal.querySelector('.newsletter')) {
+    localStorage.setItem(LAST_NEWSLETTER_SHOW_KEY, Date.now().toString());
+  }
+}
 
 // modal eventListener
-modalCloseOverlay.addEventListener('click', modalCloseFunc);
-modalCloseBtn.addEventListener('click', modalCloseFunc);
+if (modalCloseOverlay) {
+  modalCloseOverlay.addEventListener('click', modalCloseFunc);
+}
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', modalCloseFunc);
+}
+
+// Newsletter popup timer - DISABLED
+const NEWSLETTER_INTERVAL = 10 * 60 * 1000; // 10 minutes in milliseconds
+const LAST_NEWSLETTER_SHOW_KEY = 'lastNewsletterShowTime';
+
+function shouldShowNewsletter() {
+  return false; // DISABLED - Never show newsletter modal
+}
+
+function showNewsletterModal() {
+  // DISABLED - Newsletter modal functionality removed
+  console.log('Newsletter modal disabled');
+}
+
+// Auto-show newsletter modal after 3 seconds if conditions are met - DISABLED
+// setTimeout(showNewsletterModal, 3000);
 
 
 

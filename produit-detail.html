@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détail du Produit - NexusStor</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  
+  <!-- CSS SCSS Compilés -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/menu-content-styles.css">
+  <link rel="stylesheet" href="./assets/css/high-tech-mega-menu.css">
+  <link rel="stylesheet" href="./assets/css/product-detail.css">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- Header avec navigation -->
+  <header class="header">
+    <!-- Header content sera copié depuis index.html -->
+  </header>
+
+  <!-- Main Content -->
+  <main class="product-detail-main">
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Fil d'Ariane">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#" id="category-link">Catégorie</a></li>
+        <li class="current" aria-current="page" id="product-title">Nom du Produit</li>
+      </ol>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+      <div class="container">
+        <div class="product-detail-grid">
+          
+          <!-- Gallery Section -->
+          <article class="product-gallery">
+            <figure class="main-image-container">
+              <img 
+                src="" 
+                alt="" 
+                id="main-product-image"
+                class="main-product-image"
+              >
+              <button class="zoom-btn" aria-label="Zoomer sur l'image">
+                <ion-icon name="expand-outline"></ion-icon>
+              </button>
+            </figure>
+            
+            <div class="thumbnail-gallery">
+              <button class="thumbnail active" data-image="">
+                <img src="" alt="" class="thumbnail-image">
+              </button>
+              <!-- Plus de thumbnails seront ajoutés dynamiquement -->
+            </div>
+          </article>
+
+          <!-- Product Info Section -->
+          <article class="product-info">
+            <header class="product-header">
+              <h1 class="product-title" id="product-detail-title">Nom du Produit</h1>
+              <div class="product-rating">
+                <div class="stars" id="product-stars">
+                  <!-- Étoiles générées dynamiquement -->
+                </div>
+                <span class="rating-count" id="rating-count">(0 avis)</span>
+              </div>
+            </header>
+
+            <div class="product-pricing">
+              <div class="price-container">
+                <span class="current-price" id="current-price">0 FCFA</span>
+                <span class="original-price" id="original-price">0 FCFA</span>
+                <span class="discount" id="discount">-0%</span>
+              </div>
+            </div>
+
+            <div class="product-description">
+              <p id="product-description">Description du produit...</p>
+            </div>
+
+            <div class="product-features">
+              <h3>Caractéristiques</h3>
+              <ul id="product-features-list">
+                <!-- Features générées dynamiquement -->
+              </ul>
+            </div>
+
+            <div class="product-seller-info">
+              <div class="seller-info">
+                <h4>Vendeur</h4>
+                <p class="seller-name" id="seller-name">NexusStor</p>
+                <div class="seller-rating">
+                  <span class="rating-stars">★★★★★</span>
+                  <span class="seller-score">4.8/5</span>
+                </div>
+              </div>
+              
+              <div class="stock-info">
+                <span class="stock-status" id="stock-status">En stock</span>
+                <span class="stock-quantity" id="stock-quantity">25 articles disponibles</span>
+              </div>
+            </div>
+
+            <!-- Add to Cart Section -->
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <label for="quantity">Quantité :</label>
+                <div class="quantity-controls">
+                  <button class="quantity-btn" id="decrease-qty" aria-label="Diminuer la quantité">-</button>
+                  <input 
+                    type="number" 
+                    id="quantity" 
+                    value="1" 
+                    min="1" 
+                    max="25"
+                    aria-label="Quantité sélectionnée"
+                  >
+                  <button class="quantity-btn" id="increase-qty" aria-label="Augmenter la quantité">+</button>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button class="add-to-cart-btn" id="add-to-cart-btn">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  Ajouter au panier
+                </button>
+                
+                <button class="wishlist-btn" id="wishlist-btn" aria-label="Ajouter aux favoris">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                
+                <button class="compare-btn" id="compare-btn" aria-label="Comparer">
+                  <ion-icon name="git-compare-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Product Information Tabs -->
+    <section class="product-tabs">
+      <div class="container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="description">Description</button>
+          <button class="tab-btn" data-tab="specifications">Spécifications</button>
+          <button class="tab-btn" data-tab="reviews">Avis (0)</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="description-panel">
+            <h3>Description détaillée</h3>
+            <p id="detailed-description">Description complète du produit...</p>
+          </div>
+
+          <div class="tab-panel" id="specifications-panel">
+            <h3>Spécifications techniques</h3>
+            <table class="specs-table" id="specifications-table">
+              <!-- Spécifications générées dynamiquement -->
+            </table>
+          </div>
+
+          <div class="tab-panel" id="reviews-panel">
+            <h3>Avis clients</h3>
+            <div class="reviews-placeholder">
+              <p>Aucun avis pour le moment. Soyez le premier à Laisser un avis !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fermer">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <button class="lightbox-nav prev" aria-label="Image précédente">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="lightbox-nav next" aria-label="Image suivante">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+      <img src="" alt="" id="lightbox-image">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer content sera copié depuis index.html -->
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/panier.js"></script>
+  <script src="./main-page-product-actions.js"></script>
+  <script src="./assets/js/product-detail.js"></script>
+</body>
+</html>

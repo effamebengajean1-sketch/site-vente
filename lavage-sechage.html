@@ -1040,7 +1040,43 @@
 
   <script src="./assets/js/global-search.js"></script>
   <script src="./assets/js/panier.js"></script>
+  <script src="./assets/js/product-filters.js"></script>
+  <script src="./assets/js/universal-modal.js"></script>
   <script src="./assets/js/panier-integration.js"></script>
-</body>
 
-</html>
+        // Appliance products data for modal
+        const applianceProducts = {
+            "machine-a-laver-lg": {
+                id: "machine-a-laver-lg",
+                title: "Machine à Laver LG 9kg",
+                price: "XAF 485,000",
+                originalPrice: "XAF 620,000", 
+                image: "Projet 1 - MarketPlace/images_electromenager/images/MACHINE A LAVER.jpg",
+                category: "Lavage et séchage",
+                rating: 4,
+                description: "Machine à laver LG 9kg avec technologie AI Direct Drive.",
+                features: ["Capacité 9kg", "Technologie AI", "Efficacité énergétique A+++", "Garantie 5 ans"]
+            },
+            "fer-a-repasser-samsung": {
+                id: "fer-a-repasser-samsung",
+                title: "Fer à Repasser Samsung",
+                price: "XAF 42,500",
+                image: "Projet 1 - MarketPlace/images_electromenager/images/FER A REPASSER.jpg", 
+                category: "Entretien maison",
+                rating: 4,
+                description: "Fer à Repasser Samsung avec technologie anti-calcaire.",
+                features: ["Technologie anti-calcaire", "Sole anti-adhérente", "Vapeur continue", "Garantie 2 ans"]
+            },
+            "ventilateur-bosch": {
+                id: "ventilateur-bosch",
+                title: "Ventilateur de Séchage Bosch", 
+                price: "XAF 68,500",
+                image: "Projet 1 - MarketPlace/images_electromenager/images/VENTILLATEURS.jpg",
+                category: "Climatisation, ventilation",
+                rating: 4,
+                description: "Ventilateur de séchage Bosch pour sèche-linge.",
+                features: ["Technologie Bosch", "Efficacité énergétique", "Installation facile", "Garantie 3 ans"]
+            }
+        };
+        
+        // Initialize modal with appliance products

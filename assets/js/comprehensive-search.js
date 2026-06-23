@@ -17,12 +17,22 @@ class ComprehensiveSearch {
       { slug: 'composants', name: 'Composants', file: 'composants.html' },
       { slug: 'stockage', name: 'Stockage', file: 'stockage.htm' },
       { slug: 'accessoires', name: 'Accessoires', file: 'accessoires.html' },
+      { slug: 'objets-connectes', name: 'Objets connectés', file: 'objets-connectes.html' },
+      { slug: 'audio-hifi', name: 'Audio & Hi-Fi', file: 'audio-hifi.html' },
+      { slug: 'tv-home-cinema', name: 'TV & Home Cinéma', file: 'tv-home-cinema.html' },
       { slug: 'femme', name: 'Femme', file: 'femme.html' },
       { slug: 'homme', name: 'Homme', file: 'homme.html' },
       { slug: 'enfants', name: 'Enfants', file: 'enfants.html' },
       { slug: 'bagages', name: 'Bagages', file: 'bagages.html' },
       { slug: 'lavage-sechage', name: 'Lavage et séchage', file: 'lavage-sechage.html' },
-      { slug: 'froid', name: 'Froid', file: 'froid.html' }
+      { slug: 'froid', name: 'Froid', file: 'froid.html' },
+      { slug: 'cuisson', name: 'Cuisson', file: 'cuisson.html' },
+      { slug: 'climatisation-ventilation', name: 'Climatisation & Ventilation', file: 'climatisation-ventilation.html' },
+      { slug: 'entretien-maison', name: 'Entretien maison', file: 'entretien-maison.html' },
+      { slug: 'beaute-hygiene-sante', name: 'Beauté, hygiène & santé', file: 'beaute-hygiene-sante.html' },
+      { slug: 'salon', name: 'Salon', file: 'salon.html' },
+      { slug: 'luminaire', name: 'Luminaire', file: 'luminaire.html' },
+      { slug: 'rangements', name: 'Rangements', file: 'rangements.html' }
     ];
     
     this.currentResults = [];
@@ -56,6 +66,26 @@ class ComprehensiveSearch {
       console.warn('Could not load high-tech products:', error);
     }
 
+    // Charger les produits de mode depuis fashion-products.json
+    try {
+      const fashionResponse = await fetch('fashion-products.json');
+      if (fashionResponse.ok) {
+        const fashionData = await fashionResponse.json();
+        if (fashionData.fashion && fashionData.fashion.products) {
+          fashionData.fashion.products.forEach(product => {
+            product.category = product.category || 'Mode';
+            product.page = this.getFashionCategoryFile(product.subcategory);
+            if (!product.keywords) {
+              product.keywords = this.generateKeywords(product);
+            }
+            this.products.push(product);
+          });
+        }
+      }
+    } catch (error) {
+      console.warn('Could not load fashion products:', error);
+    }
+
     // Ajouter les produits statiques des pages category
     this.addStaticProducts();
     
@@ -77,6 +107,46 @@ class ComprehensiveSearch {
       'informatique': 'laptops.html'
     };
     return categoryMap[subcategorySlug] || 'index.html';
+  }
+
+  // Obtenir le fichier de catégorie pour les produits de mode
+  getFashionCategoryFile(subcategorySlug) {
+    const categoryMap = {
+      'vestes': 'homme.html',
+      'shorts': 'homme.html',
+      'sportif': 'homme.html',
+      'bottes': 'homme.html',
+      'officiel': 'homme.html',
+      'occasionnel': 'homme.html'
+    };
+    return categoryMap[subcategorySlug] || 'index.html';
+  }
+
+  // Générer des mots-clés pour un produit
+  generateKeywords(product) {
+    const keywords = [];
+    const name = product.name.toLowerCase();
+    
+    // Ajouter des mots du nom
+    keywords.push(...name.split(' ').filter(word => word.length > 2));
+    
+    // Ajouter la catégorie
+    if (product.category) {
+      keywords.push(product.category.toLowerCase());
+    }
+    
+    // Ajouter des mots-clés spécifiques selon le type
+    if (name.includes('chaussure') || name.includes('shoe')) {
+      keywords.push('chaussure', 'shoe', 'footwear');
+    }
+    if (name.includes('veste') || name.includes('jacket')) {
+      keywords.push('veste', 'jacket', 'manteau');
+    }
+    if (name.includes('short')) {
+      keywords.push('short', 'pantalon');
+    }
+    
+    return keywords;
   }
 
   // Ajouter les produits statiques des pages HTML
@@ -695,6 +765,253 @@ class ComprehensiveSearch {
 
     // Ajouter tous les produits au tableau principal
     this.products.push(...laptops, ...phones, ...photo, ...gaming, ...pcFixes, ...accessoires);
+    
+    // Ajouter les produits électroménager
+    this.addElectroProducts();
+    
+    // Ajouter les produits de meubles et maison
+    this.addHomeProducts();
+  }
+
+  // Ajouter les produits électroménager
+  addElectroProducts() {
+    const electroProducts = [
+      // Lavage et séchage
+      {
+        id: 'elec001',
+        name: 'Lave-linge Samsung 8kg',
+        category: 'Lavage',
+        subcategory: 'lavage-sechage',
+        price: '450,000',
+        originalPrice: '550,000',
+        page: 'lavage-sechage.html',
+        image: 'images_electro_menager/lave-linge-1.jpg',
+        keywords: ['lave-linge', 'samsung', 'machine', 'lavage', '8kg'],
+        rating: 4
+      },
+      {
+        id: 'elec002',
+        name: 'Lave-vaisselle Bosch 12 couverts',
+        category: 'Lavage',
+        subcategory: 'lavage-sechage',
+        price: '520,000',
+        originalPrice: '650,000',
+        page: 'lavage-sechage.html',
+        image: 'images_electro_menager/lave-vaisselle-1.jpg',
+        keywords: ['lave-vaisselle', 'bosch', 'vaisselle', '12 couverts'],
+        rating: 5
+      },
+      // Froid
+      {
+        id: 'elec003',
+        name: 'Réfrigérateur LG 350L',
+        category: 'Froid',
+        subcategory: 'froid',
+        price: '680,000',
+        originalPrice: '850,000',
+        page: 'froid.html',
+        image: 'images_electro_menager/refrigerateur-1.jpg',
+        keywords: ['réfrigérateur', 'lg', 'frigo', 'froid', '350l'],
+        rating: 4
+      },
+      {
+        id: 'elec004',
+        name: 'Congélateur Whirlpool 200L',
+        category: 'Froid',
+        subcategory: 'froid',
+        price: '420,000',
+        originalPrice: '520,000',
+        page: 'froid.html',
+        image: 'images_electro_menager/congelateur-1.jpg',
+        keywords: ['congélateur', 'whirlpool', 'freezer', 'froid'],
+        rating: 4
+      },
+      // Cuisson
+      {
+        id: 'elec005',
+        name: 'Cuisinière Mixte Beko 4 feux',
+        category: 'Cuisson',
+        subcategory: 'cuisson',
+        price: '380,000',
+        originalPrice: '480,000',
+        page: 'cuisson.html',
+        image: 'images_electro_menager/cuisiniere-1.jpg',
+        keywords: ['cuisinière', 'beko', 'cuisson', '4 feux', 'four'],
+        rating: 4
+      },
+      {
+        id: 'elec006',
+        name: 'Micro-ondes Samsung 28L',
+        category: 'Cuisson',
+        subcategory: 'cuisson',
+        price: '125,000',
+        originalPrice: '165,000',
+        page: 'cuisson.html',
+        image: 'images_electro_menager/micro-ondes-1.jpg',
+        keywords: ['micro-ondes', 'samsung', 'microwave', '28l'],
+        rating: 4
+      },
+      // Climatisation
+      {
+        id: 'elec007',
+        name: 'Climatiseur Split LG 12000 BTU',
+        category: 'Climatisation',
+        subcategory: 'climatisation-ventilation',
+        price: '520,000',
+        originalPrice: '650,000',
+        page: 'climatisation-ventilation.html',
+        image: 'images_electro_menager/climatiseur-1.jpg',
+        keywords: ['climatiseur', 'lg', 'clim', 'split', '12000 btu', 'air conditionné'],
+        rating: 5
+      },
+      {
+        id: 'elec008',
+        name: 'Ventilateur sur pied Rowenta',
+        category: 'Ventilation',
+        subcategory: 'climatisation-ventilation',
+        price: '45,000',
+        originalPrice: '65,000',
+        page: 'climatisation-ventilation.html',
+        image: 'images_electro_menager/ventilateur-1.jpg',
+        keywords: ['ventilateur', 'rowenta', 'fan', 'sur pied'],
+        rating: 4
+      },
+      // Entretien maison
+      {
+        id: 'elec009',
+        name: 'Aspirateur Dyson V11',
+        category: 'Entretien',
+        subcategory: 'entretien-maison',
+        price: '580,000',
+        originalPrice: '720,000',
+        page: 'entretien-maison.html',
+        image: 'images_electro_menager/aspirateur-1.jpg',
+        keywords: ['aspirateur', 'dyson', 'v11', 'vacuum', 'sans fil'],
+        rating: 5
+      },
+      {
+        id: 'elec010',
+        name: 'Fer à repasser Philips',
+        category: 'Entretien',
+        subcategory: 'entretien-maison',
+        price: '35,000',
+        originalPrice: '48,000',
+        page: 'entretien-maison.html',
+        image: 'images_electro_menager/fer-repasser-1.jpg',
+        keywords: ['fer à repasser', 'philips', 'iron', 'repassage'],
+        rating: 4
+      },
+      // Beauté et hygiène
+      {
+        id: 'elec011',
+        name: 'Sèche-cheveux Remington',
+        category: 'Beauté',
+        subcategory: 'beaute-hygiene-sante',
+        price: '28,000',
+        originalPrice: '38,000',
+        page: 'beaute-hygiene-sante.html',
+        image: 'images_electro_menager/seche-cheveux-1.jpg',
+        keywords: ['sèche-cheveux', 'remington', 'hair dryer', 'coiffure'],
+        rating: 4
+      },
+      {
+        id: 'elec012',
+        name: 'Tondeuse Philips OneBlade',
+        category: 'Hygiène',
+        subcategory: 'beaute-hygiene-sante',
+        price: '45,000',
+        originalPrice: '58,000',
+        page: 'beaute-hygiene-sante.html',
+        image: 'images_electro_menager/tondeuse-1.jpg',
+        keywords: ['tondeuse', 'philips', 'oneblade', 'rasoir', 'barbe'],
+        rating: 5
+      }
+    ];
+    
+    this.products.push(...electroProducts);
+  }
+
+  // Ajouter les produits de meubles et maison
+  addHomeProducts() {
+    const homeProducts = [
+      // Meubles salon
+      {
+        id: 'home001',
+        name: 'Canapé 3 places en tissu gris',
+        category: 'Salon',
+        subcategory: 'salon',
+        price: '450,000',
+        originalPrice: '580,000',
+        page: 'salon.html',
+        image: 'images_electro_menager/canape-1.jpg',
+        keywords: ['canapé', 'sofa', '3 places', 'tissu', 'gris', 'salon'],
+        rating: 4
+      },
+      {
+        id: 'home002',
+        name: 'Table basse moderne en bois',
+        category: 'Salon',
+        subcategory: 'salon',
+        price: '120,000',
+        originalPrice: '165,000',
+        page: 'salon.html',
+        image: 'images_electro_menager/table-basse-1.jpg',
+        keywords: ['table basse', 'bois', 'moderne', 'salon', 'coffee table'],
+        rating: 4
+      },
+      // Luminaires
+      {
+        id: 'home003',
+        name: 'Lampadaire LED design',
+        category: 'Luminaire',
+        subcategory: 'luminaire',
+        price: '85,000',
+        originalPrice: '115,000',
+        page: 'luminaire.html',
+        image: 'images_electro_menager/lampadaire-1.jpg',
+        keywords: ['lampadaire', 'led', 'design', 'éclairage', 'floor lamp'],
+        rating: 4
+      },
+      {
+        id: 'home004',
+        name: 'Lustre moderne 5 branches',
+        category: 'Luminaire',
+        subcategory: 'luminaire',
+        price: '125,000',
+        originalPrice: '168,000',
+        page: 'luminaire.html',
+        image: 'images_electro_menager/lustre-1.jpg',
+        keywords: ['lustre', 'chandelier', '5 branches', 'moderne', 'éclairage'],
+        rating: 5
+      },
+      // Rangements
+      {
+        id: 'home005',
+        name: 'Armoire 3 portes en bois',
+        category: 'Rangement',
+        subcategory: 'rangements',
+        price: '320,000',
+        originalPrice: '420,000',
+        page: 'rangements.html',
+        image: 'images_electro_menager/armoire-1.jpg',
+        keywords: ['armoire', 'wardrobe', '3 portes', 'bois', 'rangement'],
+        rating: 4
+      },
+      {
+        id: 'home006',
+        name: 'Étagère murale 5 niveaux',
+        category: 'Rangement',
+        subcategory: 'rangements',
+        price: '65,000',
+        originalPrice: '85,000',
+        page: 'rangements.html',
+        image: 'images_electro_menager/etagere-1.jpg',
+        keywords: ['étagère', 'shelf', 'murale', '5 niveaux', 'rangement'],
+        rating: 4
+      }
+    ];
+    
+    this.products.push(...homeProducts);
   }
 
   // Configurer la fonctionnalité de recherche
@@ -878,12 +1195,28 @@ class ComprehensiveSearch {
       'composants': '#6c757d',
       'stockage': '#495057',
       'accessoires': '#e83e8c',
+      'objets-connectes': '#00bcd4',
+      'audio-hifi': '#9c27b0',
+      'tv-home-cinema': '#3f51b5',
       'femme': '#ff69b4',
       'homme': '#007bff',
       'enfants': '#20c997',
       'bagages': '#6f42c1',
       'lavage-sechage': '#ffc107',
-      'froid': '#17a2b8'
+      'froid': '#17a2b8',
+      'cuisson': '#ff5722',
+      'climatisation-ventilation': '#00bcd4',
+      'entretien-maison': '#4caf50',
+      'beaute-hygiene-sante': '#e91e63',
+      'salon': '#795548',
+      'luminaire': '#ffeb3b',
+      'rangements': '#607d8b',
+      'vestes': '#007bff',
+      'shorts': '#28a745',
+      'sportif': '#fd7e14',
+      'bottes': '#6f42c1',
+      'officiel': '#495057',
+      'occasionnel': '#20c997'
     };
     return colors[subcategory] || '#6c757d';
   }

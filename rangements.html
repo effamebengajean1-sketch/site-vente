@@ -162,46 +162,7 @@
     - MODAL
   -->
 
-  <div class="modal" data-modal>
-
-    <div class="modal-close-btn" data-modal-close-btn>
-      <ion-icon name="close-outline"></ion-icon>
-    </div>
-
-    <div class="modal-content">
-      <button class="modal-close-btn" data-modal-close-btn>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>NexusChop</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
+  <!-- Modal removed - Newsletter popup disabled -->
 
 
 
@@ -573,423 +534,253 @@
     - MAIN
   -->
 
-  <main class="main">
+  <main>
 
     <!--
-      - BREADCRUMB
+      - PAGE HEADER
     -->
 
-    <div class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumb-list">
-          <li><a href="index.html" class="breadcrumb-link">Accueil</a></li>
-          <li><span class="breadcrumb-link breadcrumb-current">Rangements</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Page Header -->
     <div class="page-header">
+
       <div class="container">
+
         <h1 class="page-title">Rangements</h1>
         <p class="page-subtitle">Optimisez votre espace avec notre sélection de mobilier de rangement</p>
+
       </div>
+
     </div>
 
     <!--
-      - PRODUCT CONTAINER
+      - PRODUCT GRID
     -->
 
     <div class="product-container">
 
       <div class="container">
 
-        <!--
-          - SIDEBAR
-        -->
+        <div class="product-main">
 
-        <div class="sidebar  has-scrollbar" data-mobile-menu>
+          <h2 class="title">Mobilier de Rangement</h2>
 
-          <div class="sidebar-category">
+          <div class="product-grid">
 
-            <div class="sidebar-top">
-              <h2 class="sidebar-title">Catégories</h2>
+            <div class="showcase">
 
-              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+              <div class="showcase-banner">
+
+                <img src="images meuble/armoire en bois.jpg" alt="Armoire en Bois Massif" width="300" class="product-img default">
+                <img src="images meuble/armoire en bois.jpg" alt="Armoire en Bois Massif" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Armoires</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Armoire en Bois Massif</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 589,000</p>
+                  <del>XAF 720,000</del>
+                </div>
+
+              </div>
+
             </div>
 
-            <ul class="sidebar-menu-category-list">
+            <div class="showcase">
 
-              <li class="sidebar-menu-category">
+              <div class="showcase-banner">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <img src="images meuble/Casiers da rangements.jpg" alt="Casiers de Rangement Modulaires" width="300" class="product-img default">
+                <img src="images meuble/Casiers da rangements.jpg" alt="Casiers de Rangement Modulaires" width="300" class="product-img hover">
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon" width="20" height="20" class="menu-title-img">
+                <p class="showcase-badge angle black">sale</p>
 
-                    <a href="salon.html" class="menu-title">Salon</a>
-                  </div>
+                <div class="showcase-actions">
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                <ul class="sidebar-submenu-category-list">
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="salon.html" class="sidebar-submenu-title">
-                      Salon
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                </ul>
+                </div>
 
-              </li>
+              </div>
 
-              <li class="sidebar-menu-category">
+              <div class="showcase-content">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <a href="#" class="showcase-category">Casiers</a>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Canapé" width="20" height="20" class="menu-title-img">
+                <a href="#">
+                  <h3 class="showcase-title">Casiers de Rangement Modulaires</h3>
+                </a>
 
-                    <a href="canape.html" class="menu-title">Canapé</a>
-                  </div>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                <div class="price-box">
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 458,000</del>
+                </div>
 
-                </button>
+              </div>
 
-                <ul class="sidebar-submenu-category-list">
+            </div>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="canape.html" class="sidebar-submenu-title">
-                      Canapé
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+            <div class="showcase">
 
-                </ul>
+              <div class="showcase-banner">
 
-              </li>
+                <img src="images meuble/classeur de chambre.jpg" alt="Armoire de Chambre Moderne" width="300" class="product-img default">
+                <img src="images meuble/classeur de chambre.jpg" alt="Armoire de Chambre Moderne" width="300" class="product-img hover">
 
-              <li class="sidebar-menu-category">
+                <div class="showcase-actions">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/GAMME DE TELEVISION SMART.jpg" alt="Luminaire" width="20" height="20" class="menu-title-img">
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                    <a href="luminaire.html" class="menu-title">Luminaire</a>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                </button>
+                </div>
 
-                <ul class="sidebar-submenu-category-list">
+              </div>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="luminaire.html" class="sidebar-submenu-title">
-                      Luminaire
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+              <div class="showcase-content">
 
-                </ul>
+                <a href="#" class="showcase-category">Armoires</a>
 
-              </li>
+                <a href="#">
+                  <h3 class="showcase-title">Armoire de Chambre Moderne</h3>
+                </a>
 
-              <li class="sidebar-menu-category">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <div class="price-box">
+                  <p class="price">XAF 589,000</p>
+                  <del>XAF 720,000</del>
+                </div>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Rangements" width="20" height="20" class="menu-title-img">
+              </div>
 
-                    <a href="rangements.html" class="menu-title">Rangements</a>
-                  </div>
+            </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+            <div class="showcase">
 
-                </button>
+              <div class="showcase-banner">
 
-                <ul class="sidebar-submenu-category-list">
+                <img src="images meuble/Bureau complet.jpg" alt="Bureau Complet Gaming" width="300" class="product-img default">
+                <img src="images meuble/Bureau complet.jpg" alt="Bureau Complet Gaming" width="300" class="product-img hover">
 
-                  <li class="sidebar-submenu-category">
-                    <a href="rangements.html" class="sidebar-submenu-title">
-                      Rangements
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+                <p class="showcase-badge angle black">sale</p>
 
-                </ul>
+                <div class="showcase-actions">
 
-              </li>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-            </ul>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-          </div>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-        </div>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
+                </div>
 
+              </div>
 
-        <div class="product-box">
+              <div class="showcase-content">
 
-          <!--
-            - PRODUCT MINIMAL
-          -->
+                <a href="#" class="showcase-category">Bureau</a>
 
-          <div class="product-minimal">
+                <a href="#">
+                  <h3 class="showcase-title">Bureau Complet Gaming</h3>
+                </a>
 
-            <div class="product-showcase">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
 
-              <h3 class="showcase-heading">Mobilier de Rangement</h3>
-
-              <div class="showcase-wrapper has-scrollbar">
-
-                <div class="showcase-container">
-
-                  <div class="showcase">
-
-                    <div class="showcase-banner">
-
-                      <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Armoire Coffre Tout en Un" width="300" class="product-img default">
-                      <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Armoire Coffre Tout en Un" width="300" class="product-img hover">
-
-                      <p class="showcase-badge angle pink">new</p>
-
-                      <div class="showcase-actions">
-
-                        <button class="btn-action" onclick="toggleWishlist('armoire-coffre-tout-un')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="showQuickView('armoire-coffre-tout-un')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="compareProduct('armoire-coffre-tout-un')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'armoire-coffre-tout-un', title: 'Armoire Coffre Tout en Un', price: 85000, image: 'images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg', category: 'Rangements'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-
-                      </div>
-
-                    </div>
-
-                    <div class="showcase-content">
-
-                      <a href="#" class="showcase-category">Armoires</a>
-
-                      <a href="#">
-                        <h3 class="showcase-title">Armoire Coffre Tout en Un</h3>
-                      </a>
-
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-
-                      <div class="price-box">
-                        <p class="price">XAF 85,000</p>
-                        <del>XAF 100,000</del>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="showcase">
-
-                    <div class="showcase-banner">
-
-                      <img src="images_electro_menager/PANIER A LINGE SALLE.jpg" alt="Panier à Linge Salle de Bain" width="300" class="product-img default">
-                      <img src="images_electro_menager/PANIER A LINGE SALLE.jpg" alt="Panier à Linge Salle de Bain" width="300" class="product-img hover">
-
-                      <p class="showcase-badge angle black">sale</p>
-
-                      <div class="showcase-actions">
-
-                        <button class="btn-action" onclick="toggleWishlist('panier-linge-salle')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="showQuickView('panier-linge-salle')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="compareProduct('panier-linge-salle')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'panier-linge-salle', title: 'Panier à Linge Salle de Bain', price: 25000, image: 'images_electro_menager/PANIER A LINGE SALLE.jpg', category: 'Rangements'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-
-                      </div>
-
-                    </div>
-
-                    <div class="showcase-content">
-
-                      <a href="#" class="showcase-category">Paniers</a>
-
-                      <a href="#">
-                        <h3 class="showcase-title">Panier à Linge Salle de Bain</h3>
-                      </a>
-
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-
-                      <div class="price-box">
-                        <p class="price">XAF 25,000</p>
-                        <del>XAF 30,000</del>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="showcase">
-
-                    <div class="showcase-banner">
-
-                      <img src="images_electro_menager/REGULATEUR DE TENSION 500V.jpg" alt="Boîtier de Rangement Électronique" width="300" class="product-img default">
-                      <img src="images_electro_menager/REGULATEUR DE TENSION 500V.jpg" alt="Boîtier de Rangement Électronique" width="300" class="product-img hover">
-
-                      <p class="showcase-badge angle black">sale</p>
-
-                      <div class="showcase-actions">
-
-                        <button class="btn-action" onclick="toggleWishlist('boitier-rangement-electronique')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="showQuickView('boitier-rangement-electronique')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="compareProduct('boitier-rangement-electronique')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'boitier-rangement-electronique', title: 'Boîtier de Rangement Électronique', price: 35000, image: 'images_electro_menager/REGULATEUR DE TENSION 500V.jpg', category: 'Rangements'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-
-                      </div>
-
-                    </div>
-
-                    <div class="showcase-content">
-
-                      <a href="#" class="showcase-category">Boîtiers</a>
-
-                      <a href="#">
-                        <h3 class="showcase-title">Boîtier de Rangement Électronique</h3>
-                      </a>
-
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-
-                      <div class="price-box">
-                        <p class="price">XAF 35,000</p>
-                        <del>XAF 45,000</del>
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                  <div class="showcase">
-
-                    <div class="showcase-banner">
-
-                      <img src="images_electro_menager/PORT TV.jpg" alt="Support et Rangement TV" width="300" class="product-img default">
-                      <img src="images_electro_menager/PORT TV.jpg" alt="Support et Rangement TV" width="300" class="product-img hover">
-
-                      <p class="showcase-badge angle black">sale</p>
-
-                      <div class="showcase-actions">
-
-                        <button class="btn-action" onclick="toggleWishlist('support-rangement-tv')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="showQuickView('support-rangement-tv')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="compareProduct('support-rangement-tv')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
-
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'support-rangement-tv', title: 'Support et Rangement TV', price: 45000, image: 'images_electro_menager/PORT TV.jpg', category: 'Rangements'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
-
-                      </div>
-
-                    </div>
-
-                    <div class="showcase-content">
-
-                      <a href="#" class="showcase-category">Supports</a>
-
-                      <a href="#">
-                        <h3 class="showcase-title">Support et Rangement TV</h3>
-                      </a>
-
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
-
-                      <div class="price-box">
-                        <p class="price">XAF 45,000</p>
-                        <del>XAF 55,000</del>
-                      </div>
-
-                    </div>
-
-                  </div>
-
+                <div class="price-box">
+                  <p class="price">XAF 852,000</p>
+                  <del>XAF 1,178,000</del>
                 </div>
 
               </div>
@@ -1301,6 +1092,62 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./assets/js/product-filters.js"></script>
+  <script src="./assets/js/universal-modal.js"></script>
+
+        // Furniture products data for modal
+        const furnitureProducts = {
+            "canape-fixe-confort": {
+                id: "canape-fixe-confort",
+                title: "Canapé Fixe Confort Premium",
+                price: "XAF 1,300,000",
+                originalPrice: "XAF 1,638,000",
+                image: "images arbre/Canapés fixe.jpg",
+                category: "Canapé",
+                rating: 5,
+                description: "Canapé fixe confort premium avec finition cuir et structure en bois massif.",
+                features: ["Cuir véritable", "Structure bois massif", "Confort premium", "Garantie 5 ans"]
+            },
+            "canape-royale": {
+                id: "canape-royale", 
+                title: "Canapé Royale",
+                price: "XAF 145,000",
+                originalPrice: "XAF 175,000",
+                image: "images_electro_menager/SALON ROYALE.jpg",
+                category: "Canapés",
+                rating: 4,
+                description: "Canapé royal avec design moderne et confort optimal.",
+                features: ["Design moderne", "Confort optimal", "Tissu de qualité", "Garantie 3 ans"]
+            },
+            "fauteuil-relax": {
+                id: "fauteuil-relax",
+                title: "Fauteuil Relax Design",
+                price: "XAF 458,000", 
+                originalPrice: "XAF 589,000",
+                image: "images arbre/fauteuils.jpeg",
+                category: "Fauteuils",
+                rating: 5,
+                description: "Fauteuil relax design avec mécanisme de relaxation.",
+                features: ["Mécanisme relaxation", "Design élégant", "Tissu premium", "Garantie 3 ans"]
+            },
+            "decoration-murale": {
+                id: "decoration-murale",
+                title: "Décoration Murale Art Moderne", 
+                price: "XAF 58,900",
+                originalPrice: "XAF 85,000",
+                image: "images arbre/decoration muraille.jpg",
+                category: "Décoration",
+                rating: 4,
+                description: "Décoration murale art moderne pour intérieur contemporain.",
+                features: ["Art moderne", "Matériaux nobles", "Installation facile", "Design unique"]
+            }
+        };
+        
+        // Initialize modal with furniture products
+        if (window.universalModal) {
+            window.universalModal.setProductsData(furnitureProducts);
+        }
 
 </body>
 

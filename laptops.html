@@ -255,9 +255,9 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn">
+          <button class="action-btn" onclick="window.location.href='panier.html'">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
+            <span class="count cart-count">0</span>
           </button>
 
         </div>
@@ -382,7 +382,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -438,7 +438,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -492,7 +492,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -548,7 +548,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -604,7 +604,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -658,7 +658,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -714,7 +714,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -770,7 +770,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('acer-predator-helios-300')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -876,6 +876,8 @@
     - custom js link
   -->
   <script src="./assets/js/comprehensive-search.js"></script>
+  <script src="./assets/js/product-filters.js"></script>
+  <script src="./assets/js/universal-modal.js"></script>
 
   <!--
     - ionicon link
@@ -883,20 +885,241 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script>
-    // Final correction of syntax issues in the JavaScript code
-    function ajouterAuPanier(product) {
-      const panier = {
-        id: product.id,
-        title: product.title,
-        price: product.price,
-        image: product.image
-      };
 
-      console.log('Produit ajouté au panier:', panier);
-    }
-  </script>
   <script src="./assets/js/panier-integration.js"></script>
+  
+  <!-- Eye button functionality for laptops -->
+  <script>
+    // Define showQuickView function globally
+    window.showQuickView = function(productId) {
+        console.log('showQuickView called with:', productId);
+        
+        // Laptop products data
+        const products = {
+            'acer-predator-helios-300': {
+                id: 'acer-predator-helios-300',
+                title: 'Acer Predator Helios 300',
+                price: 1632000,
+                originalPrice: 1960000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_gaming_acerhelios300_1.jpg',
+                category: 'Gaming',
+                rating: 5,
+                description: 'Acer Predator Helios 300 - Laptop gaming haute performance avec carte graphique dédiée et refroidissement avancé.',
+                features: ['Processeur Intel Core i7', 'Carte graphique GTX 1660 Ti', '16GB RAM DDR4', 'Écran 144Hz', 'Refroidissement Predator']
+            },
+            'hp-pavilion-15': {
+                id: 'hp-pavilion-15',
+                title: 'HP Pavilion 15',
+                price: 785000,
+                originalPrice: 982000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_win_hp_1.jpg',
+                category: 'Bureautique',
+                rating: 4,
+                description: 'HP Pavilion 15 - Laptop polyvalent idéal pour le travail et les tâches quotidiennes.',
+                features: ['Processeur Intel Core i5', '8GB RAM DDR4', 'Écran Full HD', 'Batterie longue durée', 'Design slim']
+            },
+            'dell-inspiron-15-3000': {
+                id: 'dell-inspiron-15-3000',
+                title: 'Dell Inspiron 15 3000',
+                price: 654000,
+                originalPrice: 818000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_win_dellinspiron_1.jpg',
+                category: 'Bureautique',
+                rating: 4,
+                description: 'Dell Inspiron 15 3000 - Laptop fiable pour les tâches bureautiques et le surf web.',
+                features: ['Processeur Intel Core i3', '8GB RAM DDR4', 'Écran 15.6" Full HD', 'Stockage SSD 256GB', 'Clavier rétroéclairé']
+            },
+            'chromebook-14': {
+                id: 'chromebook-14',
+                title: 'Chromebook 14"',
+                price: 458000,
+                originalPrice: 572000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_win_chrom_1.jpg',
+                category: 'Chromebook',
+                rating: 4,
+                description: 'Chromebook 14" - Laptop légères et rapides运行Chrome OS pour une utilisation web optimisée.',
+                features: ['Chrome OS', 'Processeur Intel Celeron', '4GB RAM', 'Écran 14" HD', 'Batterie 12h']
+            },
+            'hp-pavilion-gaming-15': {
+                id: 'hp-pavilion-gaming-15',
+                title: 'HP Pavilion Gaming 15',
+                price: 1144000,
+                originalPrice: 1310000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_gaming_hp15dk1003sf_1.jpg',
+                category: 'Gaming',
+                rating: 4,
+                description: 'HP Pavilion Gaming 15 - Laptop gaming milieu de gamme avec graphics dédiés.',
+                features: ['Processeur AMD Ryzen 5', 'Carte graphique GTX 1650', '8GB RAM DDR4', 'Écran 120Hz', 'Refroidissement optimisé']
+            },
+            'asus-chromebook-flip-c434': {
+                id: 'asus-chromebook-flip-c434',
+                title: 'ASUS Chromebook Flip C434',
+                price: 718000,
+                originalPrice: 851000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_tactile_asusc434ta_1.jpg',
+                category: 'Tactile',
+                rating: 5,
+                description: 'ASUS Chromebook Flip C434 - Chromebook convertible avec écran tactile et charnière 360°.',
+                features: ['Chrome OS tactile', 'Écran 14" Full HD convertible', 'Processeur Intel Core m3', '8GB RAM', 'Charnière 360°']
+            },
+            'lenovo-yoga-7i-14': {
+                id: 'lenovo-yoga-7i-14',
+                title: 'Lenovo Yoga 7i 14"',
+                price: 982000,
+                originalPrice: 1155000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_tactile_len14ITL05_1.jpg',
+                category: 'Tactile',
+                rating: 4,
+                description: 'Lenovo Yoga 7i 14" - Laptop convertible premium avec écran tactile et stylet.',
+                features: ['Processeur Intel Core i5 11ème gen', 'Écran tactile 14" Full HD', '16GB RAM DDR4', 'Stylet actif inclus', 'Charnière 360°']
+            },
+            'lincplus-c3-14': {
+                id: 'lincplus-c3-14',
+                title: 'LincPlus C3 14"',
+                price: 327000,
+                originalPrice: 392000,
+                image: 'Projet 1 - MarketPlace/produits/laptop_win_lincplus_1.jpg',
+                category: 'Budget',
+                rating: 3,
+                description: 'LincPlus C3 14" - Laptop budget économique pour les tâches essentielles.',
+                features: ['Processeur Intel Celeron', '4GB RAM', 'Écran 14" HD', 'Windows 10', 'Prix abordable']
+            }
+        };
+        
+        const product = products[productId];
+        if (!product) {
+            alert('Produit non trouvé');
+            return;
+        }
+        
+        // Create modal HTML
+        const modalHTML = `
+            <div id="quick-view-modal" class="quick-view-modal-overlay" style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10000;
+            ">
+                <div class="quick-view-modal-content" style="
+                    background: white;
+                    border-radius: 10px;
+                    max-width: 800px;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    position: relative;
+                    padding: 20px;
+                ">
+                    <button class="quick-view-close" onclick="closeQuickViewModal()" style="
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        background: none;
+                        border: none;
+                        font-size: 30px;
+                        cursor: pointer;
+                        color: #666;
+                    ">&times;</button>
+                    <div class="quick-view-product" style="display: flex; gap: 20px;">
+                        <div class="quick-view-image">
+                            <img src="${product.image}" alt="${product.title}" style="width: 300px; height: auto; border-radius: 8px;" />
+                        </div>
+                        <div class="quick-view-details" style="flex: 1;">
+                            <h3 style="margin: 0 0 10px 0; color: #333;">${product.title}</h3>
+                            <div class="quick-view-rating" style="color: #ffb400; margin-bottom: 10px;">
+                                ${'★'.repeat(product.rating)}${'☆'.repeat(5 - product.rating)}
+                            </div>
+                            <div class="quick-view-price" style="margin-bottom: 15px;">
+                                <span class="current-price" style="font-size: 24px; font-weight: bold; color: #ff6600; margin-right: 10px;">
+                                    XAF ${product.price.toLocaleString()}
+                                </span>
+                                <span class="original-price" style="text-decoration: line-through; color: #999;">
+                                    XAF ${product.originalPrice.toLocaleString()}
+                                </span>
+                            </div>
+                            <p class="quick-view-description" style="margin-bottom: 15px; line-height: 1.5;">${product.description}</p>
+                            <div class="quick-view-features">
+                                <h4 style="margin-bottom: 10px;">Caractéristiques :</h4>
+                                <ul style="list-style: none; padding: 0;">
+                                    ${product.features.map(feature => `<li style="padding: 5px 0; border-bottom: 1px solid #eee;">${feature}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="quick-view-actions" style="margin-top: 20px; display: flex; gap: 10px;">
+                                <button class="btn btn-primary" onclick="addToCartFromModal('${product.id}')" style="padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; background: #ff6600; color: white;">
+                                    Ajouter au panier
+                                </button>
+                                <button class="btn btn-secondary" onclick="addToFavorites('${product.id}')" style="padding: 12px 24px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; background: #f5f5f5; color: #333;">
+                                    Favoris
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Remove existing modal if any
+        const existingModal = document.getElementById('quick-view-modal');
+        if (existingModal) {
+            existingModal.remove();
+        }
+        
+        // Add modal to body
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+        
+        // Add close functionality
+        document.getElementById('quick-view-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeQuickViewModal();
+            }
+        });
+    };
+    
+    window.closeQuickViewModal = function() {
+        const modal = document.getElementById('quick-view-modal');
+        if (modal) {
+            modal.remove();
+        }
+    };
+    
+    window.addToCartFromModal = function(productId) {
+        const products = {
+            'acer-predator-helios-300': {id: 'acer-predator', title: 'Acer Predator Helios 300', price: 1632000, image: 'Projet 1 - MarketPlace/produits/laptop_gaming_acerhelios300_1.jpg'},
+            'hp-pavilion-15': {id: 'hp-pavilion-15', title: 'HP Pavilion 15', price: 785000, image: 'Projet 1 - MarketPlace/produits/laptop_win_hp_1.jpg'},
+            'dell-inspiron-15-3000': {id: 'dell-inspiron-15', title: 'Dell Inspiron 15 3000', price: 654000, image: 'Projet 1 - MarketPlace/produits/laptop_win_dellinspiron_1.jpg'},
+            'chromebook-14': {id: 'chromebook-14', title: 'Chromebook 14', price: 458000, image: 'Projet 1 - MarketPlace/produits/laptop_win_chrom_1.jpg'},
+            'hp-pavilion-gaming-15': {id: 'hp-pavilion-gaming-15', title: 'HP Pavilion Gaming 15', price: 1144000, image: 'Projet 1 - MarketPlace/produits/laptop_gaming_hp15dk1003sf_1.jpg'},
+            'asus-chromebook-flip-c434': {id: 'asus-chromebook-flip-c434', title: 'ASUS Chromebook Flip C434', price: 718000, image: 'Projet 1 - MarketPlace/produits/laptop_tactile_asusc434ta_1.jpg'},
+            'lenovo-yoga-7i-14': {id: 'lenovo-yoga-7i-14', title: 'Lenovo Yoga 7i 14', price: 982000, image: 'Projet 1 - MarketPlace/produits/laptop_tactile_len14ITL05_1.jpg'},
+            'lincplus-c3-14': {id: 'lincplus-c3-14', title: 'LincPlus C3 14', price: 327000, image: 'Projet 1 - MarketPlace/produits/laptop_win_lincplus_1.jpg'}
+        };
+        
+        const product = products[productId];
+        if (product && typeof ajouterAuPanier === 'function') {
+            ajouterAuPanier(product);
+            alert(product.title + ' ajouté au panier!');
+            closeQuickViewModal();
+        } else {
+            alert('Erreur lors de l\'ajout au panier');
+        }
+    };
+    
+    window.addToFavorites = function(productId) {
+        // Simple favorites functionality - saves to localStorage
+        const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        if (!favorites.includes(productId)) {
+            favorites.push(productId);
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        alert('Produit ajouté aux favoris!');
+        closeQuickViewModal();
+    };
+  </script>
 </body>
 
 </html>

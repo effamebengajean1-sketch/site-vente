@@ -159,59 +159,10 @@
   <div class="overlay" data-overlay></div>
 
   <!--
-    - MODAL
-  -->
-
-  <div class="modal" data-modal>
-
-    <div class="modal-close-btn" data-modal-close-btn>
-      <ion-icon name="close-outline"></ion-icon>
-    </div>
-
-    <div class="modal-content">
-      <button class="modal-close-btn" data-modal-close-btn>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>NexusChop</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <!--
     - HEADER
   -->
 
-  <header class="header">
+  <header>
 
     <div class="header-top">
 
@@ -284,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez salons, canapés, meubles...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un meuble...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -303,7 +254,7 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn">
+          <button class="action-btn" onclick="window.location.href='panier.html'">
             <ion-icon name="bag-handle-outline"></ion-icon>
             <span class="count">0</span>
           </button>
@@ -325,240 +276,19 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Catégories</a>
-
-            <div class="dropdown-panel">
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#" data-mega-menu="high-tech">High-Tech</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="objets-connectes.html" data-subcategory="objets-connectes">Objets connectés</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="audio-hifi.html" data-subcategory="audio-hifi">Audio, Hifi</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="tv-home-cinema.html" data-subcategory="tv-home-cinema">TV, Home Cinéma</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="pc-fixes-ecran.html" data-subcategory="pc-fixes-ecran">PC fixes, écran</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="composants.html" data-subcategory="composants">Composants</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="laptops.html" data-subcategory="laptops">Laptops</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="photo-camescope.html" data-subcategory="photo-camescope">Photo, caméscope</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="jeux-video.html" data-subcategory="jeux-video">Jeux vidéo</a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#" data-mega-menu="electromenager">Electroménager</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="cuisson.html" data-subcategory="cuisson">Cuisson</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="froid.html" data-subcategory="froid">Froid</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="lavage-sechage.html" data-subcategory="lavage-sechage">Lavage et séchage</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="entretien-maison.html" data-subcategory="entretien-maison">Entretien maison</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="beaute-hygiene-sante.html" data-subcategory="beaute-hygiene-sante">Beauté, Hygiène, santé</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="climatisation-ventilation.html" data-subcategory="climatisation-ventilation">Climatisation, ventilation</a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#" data-mega-menu="furniture">Meubles & Décoration</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="salon.html" data-subcategory="salon">Salon</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="canape.html" data-subcategory="canape">Canapé</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="luminaire.html" data-subcategory="luminaire">Luminaire</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="rangements.html" data-subcategory="rangements">Rangements</a>
-                </li>
-
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#" data-mega-menu="fashion">Mode et vêtements</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="homme.html" data-subcategory="homme">Homme</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="femme.html" data-subcategory="femme">Femme</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="enfants.html" data-subcategory="enfants">Enfants</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="bagages.html" data-subcategory="bagages">Bagages</a>
-                </li>
-
-              </ul>
-
-            </div>
-
+            <a href="salon.html" class="menu-title">Salon</a>
           </li>
 
           <li class="menu-category">
-            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="laptops.html">Laptops</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="composants.html">Composants</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="stockage.htm">Stockage</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="accessoires.html">Accessoires</a>
-              </li>
-
-            </ul>
+            <a href="canape.html" class="menu-title">Canapé</a>
           </li>
 
           <li class="menu-category">
-            <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="femme.html">Femme</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="homme.html">Homme</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="enfants.html">Enfants</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="bagages.html">Bagages</a>
-              </li>
-
-            </ul>
+            <a href="luminaire.html" class="menu-title">Luminaire</a>
           </li>
 
           <li class="menu-category">
-            <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="lavage-sechage.html">Lavage et séchage</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="froid.html">Froid</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="cuisson.html">Cuisson</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="entretien-maison.html">Entretien maison</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
-              </li>
-
-            </ul>
-          </li>
-
-          <li class="menu-category">
-            <a href="#furniture" class="menu-title" data-menu="furniture">Meubles & Décoration</a>
-
-            <ul class="dropdown-list">
-
-              <li class="dropdown-item">
-                <a href="salon.html">Salon</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="canape.html">Canapé</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="luminaire.html">Luminaire</a>
-              </li>
-
-              <li class="dropdown-item">
-                <a href="rangements.html">Rangements</a>
-              </li>
-
-            </ul>
+            <a href="rangements.html" class="menu-title">Rangements</a>
           </li>
 
         </ul>
@@ -573,423 +303,917 @@
     - MAIN
   -->
 
-  <main class="main">
+  <main>
 
     <!--
-      - BREADCRUMB
+      - PAGE HEADER
     -->
 
-    <div class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumb-list">
-          <li><a href="index.html" class="breadcrumb-link">Accueil</a></li>
-          <li><span class="breadcrumb-link breadcrumb-current">Salon</span></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Page Header -->
     <div class="page-header">
+
       <div class="container">
+
         <h1 class="page-title">Salon</h1>
         <p class="page-subtitle">Découvrez notre sélection de salons et mobilier de salon</p>
+
       </div>
+
     </div>
 
     <!--
-      - PRODUCT CONTAINER
+      - PRODUCT GRID
     -->
 
     <div class="product-container">
 
       <div class="container">
 
-        <!--
-          - SIDEBAR
-        -->
+        <div class="product-main">
 
-        <div class="sidebar  has-scrollbar" data-mobile-menu>
+          <h2 class="title">Salons & Mobilier</h2>
 
-          <div class="sidebar-category">
+          <div class="product-grid">
 
-            <div class="sidebar-top">
-              <h2 class="sidebar-title">Catégories</h2>
+            <div class="showcase">
 
-              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+              <div class="showcase-banner">
+
+                <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon Royale" width="300" class="product-img default">
+                <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon Royale" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Salons</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Salon Royale</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 125,000</p>
+                  <del>XAF 150,000</del>
+                </div>
+
+              </div>
+
             </div>
 
-            <ul class="sidebar-menu-category-list">
+            <div class="showcase">
 
-              <li class="sidebar-menu-category">
+              <div class="showcase-banner">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Salon de Luxe en Cuir Italien" width="300" class="product-img default">
+                <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Salon de Luxe en Cuir Italien" width="300" class="product-img hover">
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon" width="20" height="20" class="menu-title-img">
+                <p class="showcase-badge angle black">sale</p>
 
-                    <a href="salon.html" class="menu-title">Salon</a>
-                  </div>
+                <div class="showcase-actions">
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                <ul class="sidebar-submenu-category-list">
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="salon.html" class="sidebar-submenu-title">
-                      Salon
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                </ul>
+                </div>
 
-              </li>
+              </div>
 
-              <li class="sidebar-menu-category">
+              <div class="showcase-content">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <a href="#" class="showcase-category">Salons</a>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Canapé" width="20" height="20" class="menu-title-img">
+                <a href="#">
+                  <h3 class="showcase-title">Salon de Luxe en Cuir Italien</h3>
+                </a>
 
-                    <a href="canape.html" class="menu-title">Canapé</a>
-                  </div>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                <div class="price-box">
+                  <p class="price">XAF 200,000</p>
+                </div>
 
-                </button>
+              </div>
 
-                <ul class="sidebar-submenu-category-list">
+            </div>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="canape.html" class="sidebar-submenu-title">
-                      Canapé
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+            <div class="showcase">
 
-                </ul>
+              <div class="showcase-banner">
 
-              </li>
+                <img src="images_electro_menager/SALON A MANGER.jpg" alt="Salon à Manger" width="300" class="product-img default">
+                <img src="images_electro_menager/SALON A MANGER.jpg" alt="Salon à Manger" width="300" class="product-img hover">
 
-              <li class="sidebar-menu-category">
+                <div class="showcase-actions">
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/GAMME DE TELEVISION SMART.jpg" alt="Luminaire" width="20" height="20" class="menu-title-img">
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                    <a href="luminaire.html" class="menu-title">Luminaire</a>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                </button>
+                </div>
 
-                <ul class="sidebar-submenu-category-list">
+              </div>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="luminaire.html" class="sidebar-submenu-title">
-                      Luminaire
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+              <div class="showcase-content">
 
-                </ul>
+                <a href="#" class="showcase-category">Salons</a>
 
-              </li>
+                <a href="#">
+                  <h3 class="showcase-title">Salon à Manger</h3>
+                </a>
 
-              <li class="sidebar-menu-category">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
 
-                <button class="sidebar-accordion-menu" data-accordion-btn>
+                <div class="price-box">
+                  <p class="price">XAF 95,000</p>
+                  <del>XAF 110,000</del>
+                </div>
 
-                  <div class="menu-title-flex">
-                    <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Rangements" width="20" height="20" class="menu-title-img">
+              </div>
 
-                    <a href="rangements.html" class="menu-title">Rangements</a>
-                  </div>
+            </div>
 
-                  <div>
-                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-                  </div>
+            <div class="showcase">
 
-                </button>
+              <div class="showcase-banner">
 
-                <ul class="sidebar-submenu-category-list">
+                <img src="images_electro_menager/TABLE POUR SALLE A MANGER.jpg" alt="Table pour Salle à Manger" width="300" class="product-img default">
+                <img src="images_electro_menager/TABLE POUR SALLE A MANGER.jpg" alt="Table pour Salle à Manger" width="300" class="product-img hover">
 
-                  <li class="sidebar-submenu-category">
-                    <a href="rangements.html" class="sidebar-submenu-title">
-                      Rangements
-                      <span class="stock">(xx)</span>
-                    </a>
-                  </li>
+                <p class="showcase-badge">-15%</p>
 
-                </ul>
+                <div class="showcase-actions">
 
-              </li>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-            </ul>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-          </div>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-        </div>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
+                </div>
 
+              </div>
 
-        <div class="product-box">
+              <div class="showcase-content">
 
-          <!--
-            - PRODUCT MINIMAL
-          -->
+                <a href="#" class="showcase-category">Tables</a>
 
-          <div class="product-minimal">
+                <a href="#">
+                  <h3 class="showcase-title">Table pour Salle à Manger</h3>
+                </a>
 
-            <div class="product-showcase">
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-              <h3 class="showcase-heading">Salons & Mobilier</h3>
+                <div class="price-box">
+                  <p class="price">XAF 65,000</p>
+                </div>
 
-              <div class="showcase-wrapper has-scrollbar">
+              </div>
 
-                <div class="showcase-container">
+            </div>
 
-                  <div class="showcase">
+            <div class="showcase">
 
-                    <div class="showcase-banner">
+              <div class="showcase-banner">
 
-                      <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon Royale" width="300" class="product-img default">
-                      <img src="images_electro_menager/SALON ROYALE.jpg" alt="Salon Royale" width="300" class="product-img hover">
+                <img src="images_electro_menager/TABLE BANCS POUR ENFANT.jpg" alt="Table et Bancs pour Enfant" width="300" class="product-img default">
+                <img src="images_electro_menager/TABLE BANCS POUR ENFANT.jpg" alt="Table et Bancs pour Enfant" width="300" class="product-img hover">
 
-                      <p class="showcase-badge angle pink">new</p>
+                <p class="showcase-badge angle pink">new</p>
 
-                      <div class="showcase-actions">
+                <div class="showcase-actions">
 
-                        <button class="btn-action" onclick="toggleWishlist('salon-royale')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="showQuickView('salon-royale')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="compareProduct('salon-royale')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'salon-royale', title: 'Salon Royale', price: 125000, image: 'images_electro_menager/SALON ROYALE.jpg', category: 'Salon'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                      </div>
+                </div>
 
-                    </div>
+              </div>
 
-                    <div class="showcase-content">
+              <div class="showcase-content">
 
-                      <a href="#" class="showcase-category">Salons</a>
+                <a href="#" class="showcase-category">Enfants</a>
 
-                      <a href="#">
-                        <h3 class="showcase-title">Salon Royale</h3>
-                      </a>
+                <a href="#">
+                  <h3 class="showcase-title">Table et Bancs pour Enfant</h3>
+                </a>
 
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-                      <div class="price-box">
-                        <p class="price">XAF 125,000</p>
-                        <del>XAF 150,000</del>
-                      </div>
+                <div class="price-box">
+                  <p class="price">XAF 45,000</p>
+                  <del>XAF 50,000</del>
+                </div>
 
-                    </div>
+              </div>
 
-                  </div>
+            </div>
 
-                  <div class="showcase">
+            <div class="showcase">
 
-                    <div class="showcase-banner">
+              <div class="showcase-banner">
 
-                      <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Salon de Luxe en Cuir Italien" width="300" class="product-img default">
-                      <img src="images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg" alt="Salon de Luxe en Cuir Italien" width="300" class="product-img hover">
+                <img src="images_electro_menager/CHAISE IMPERIAL.jpg" alt="Chaise Impérial" width="300" class="product-img default">
+                <img src="images_electro_menager/CHAISE IMPERIAL.jpg" alt="Chaise Impérial" width="300" class="product-img hover">
 
-                      <p class="showcase-badge angle black">sale</p>
+                <div class="showcase-actions">
 
-                      <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="toggleWishlist('salon-luxe-cuir')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="showQuickView('salon-luxe-cuir')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="compareProduct('salon-luxe-cuir')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'salon-luxe-cuir', title: 'Salon de Luxe en Cuir Italien', price: 200000, image: 'images_electro_menager/SALON DE LUXE EN CUIRE ITALIEN.jpg', category: 'Salon'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
+                </div>
 
-                      </div>
+              </div>
 
-                    </div>
+              <div class="showcase-content">
 
-                    <div class="showcase-content">
+                <a href="#" class="showcase-category">Chaises</a>
 
-                      <a href="#" class="showcase-category">Salons</a>
+                <a href="#">
+                  <h3 class="showcase-title">Chaise Impérial</h3>
+                </a>
 
-                      <a href="#">
-                        <h3 class="showcase-title">Salon de Luxe en Cuir Italien</h3>
-                      </a>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                      </div>
+                <div class="price-box">
+                  <p class="price">XAF 35,000</p>
+                </div>
 
-                      <div class="price-box">
-                        <p class="price">XAF 200,000</p>
-                        <del>XAF 250,000</del>
-                      </div>
+              </div>
 
-                    </div>
+            </div>
 
-                  </div>
+            <div class="showcase">
 
-                  <div class="showcase">
+              <div class="showcase-banner">
 
-                    <div class="showcase-banner">
+                <img src="images_electro_menager/GAMME DE TABOURET POUR SALON.jpg" alt="Gamme de Tabouret pour Salon" width="300" class="product-img default">
+                <img src="images_electro_menager/GAMME DE TABOURET POUR SALON.jpg" alt="Gamme de Tabouret pour Salon" width="300" class="product-img hover">
 
-                      <img src="images_electro_menager/SALON A MANGER.jpg" alt="Salon à Manger" width="300" class="product-img default">
-                      <img src="images_electro_menager/SALON A MANGER.jpg" alt="Salon à Manger" width="300" class="product-img hover">
+                <div class="showcase-actions">
 
-                      <p class="showcase-badge angle black">sale</p>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                      <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="toggleWishlist('salon-manger')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="showQuickView('salon-manger')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="compareProduct('salon-manger')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
+                </div>
 
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'salon-manger', title: 'Salon à Manger', price: 95000, image: 'images_electro_menager/SALON A MANGER.jpg', category: 'Salon'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
+              </div>
 
-                      </div>
+              <div class="showcase-content">
 
-                    </div>
+                <a href="#" class="showcase-category">Tabourets</a>
 
-                    <div class="showcase-content">
+                <a href="#">
+                  <h3 class="showcase-title">Gamme de Tabouret pour Salon</h3>
+                </a>
 
-                      <a href="#" class="showcase-category">Salons</a>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-                      <a href="#">
-                        <h3 class="showcase-title">Salon à Manger</h3>
-                      </a>
+                <div class="price-box">
+                  <p class="price">XAF 25,000</p>
+                </div>
 
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
+              </div>
 
-                      <div class="price-box">
-                        <p class="price">XAF 95,000</p>
-                        <del>XAF 110,000</del>
-                      </div>
+            </div>
 
-                    </div>
+            <div class="showcase">
 
-                  </div>
+              <div class="showcase-banner">
 
-                  <div class="showcase">
+                <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Armoire Coffre Tout en Un" width="300" class="product-img default">
+                <img src="images_electro_menager/VOTRE ARMOIRE COFFRE TOUT EN UN.jpg" alt="Armoire Coffre Tout en Un" width="300" class="product-img hover">
 
-                    <div class="showcase-banner">
+                <p class="showcase-badge angle black">sale</p>
 
-                      <img src="images_electro_menager/TABLE POUR SALLE A MANGER.jpg" alt="Table pour Salle à Manger" width="300" class="product-img default">
-                      <img src="images_electro_menager/TABLE POUR SALLE A MANGER.jpg" alt="Table pour Salle à Manger" width="300" class="product-img hover">
+                <div class="showcase-actions">
 
-                      <p class="showcase-badge angle black">sale</p>
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
 
-                      <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="toggleWishlist('table-salle-manger')">
-                          <ion-icon name="heart-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="showQuickView('table-salle-manger')">
-                          <ion-icon name="eye-outline"></ion-icon>
-                        </button>
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
 
-                        <button class="btn-action" onclick="compareProduct('table-salle-manger')">
-                          <ion-icon name="repeat-outline"></ion-icon>
-                        </button>
+                </div>
 
-                        <button class="btn-action" onclick="ajouterAuPanier({id: 'table-salle-manger', title: 'Table pour Salle à Manger', price: 65000, image: 'images_electro_menager/TABLE POUR SALLE A MANGER.jpg', category: 'Salon'})">
-                          <ion-icon name="bag-add-outline"></ion-icon>
-                        </button>
+              </div>
 
-                      </div>
+              <div class="showcase-content">
 
-                    </div>
+                <a href="#" class="showcase-category">Armoires</a>
 
-                    <div class="showcase-content">
+                <a href="#">
+                  <h3 class="showcase-title">Armoire Coffre Tout en Un</h3>
+                </a>
 
-                      <a href="#" class="showcase-category">Salons</a>
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
 
-                      <a href="#">
-                        <h3 class="showcase-title">Table pour Salle à Manger</h3>
-                      </a>
+                <div class="price-box">
+                  <p class="price">XAF 85,000</p>
+                  <del>XAF 100,000</del>
+                </div>
 
-                      <div class="showcase-rating">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="star-outline"></ion-icon>
-                      </div>
+              </div>
 
-                      <div class="price-box">
-                        <p class="price">XAF 65,000</p>
-                        <del>XAF 75,000</del>
-                      </div>
+            </div>
 
-                    </div>
+            <div class="showcase">
 
-                  </div>
+              <div class="showcase-banner">
 
+                <img src="images meuble/salon.webp" alt="Salon Complet Moderne" width="300" class="product-img default">
+                <img src="images meuble/salon.webp" alt="Salon Complet Moderne" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">featured</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Salon</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Salon Complet Moderne</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 1,950,000</p>
+                  <del>XAF 2,610,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/Ensembles complets.jpeg" alt="Ensemble Complet Salon Premium" width="300" class="product-img default">
+                <img src="images meuble/Ensembles complets.jpeg" alt="Ensemble Complet Salon Premium" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">premium</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Ensemble</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Ensemble Complet Salon Premium</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 2,294,000</p>
+                  <del>XAF 2,940,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/Tables a manger.jpg" alt="Table à Manger Extensible" width="300" class="product-img default">
+                <img src="images meuble/Tables a manger.jpg" alt="Table à Manger Extensible" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">trending</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Tables à Manger</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Table à Manger Extensible</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 654,000</p>
+                  <del>XAF 851,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/Tables basses.webp" alt="Table Basse Design Moderne" width="300" class="product-img default">
+                <img src="images meuble/Tables basses.webp" alt="Table Basse Design Moderne" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-15%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Tables Basses</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Table Basse Design Moderne</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 458,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/Meuble TV.jpg" alt="Meuble TV Design Élégant" width="300" class="product-img default">
+                <img src="images meuble/Meuble TV.jpg" alt="Meuble TV Design Élégant" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Meuble TV</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Meuble TV Design Élégant</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 523,000</p>
+                  <del>XAF 654,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/bibliothèque.webp" alt="Bibliothèque Moderne 4 Étagères" width="300" class="product-img default">
+                <img src="images meuble/bibliothèque.webp" alt="Bibliothèque Moderne 4 Étagères" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">featured</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Bibliothèque</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Bibliothèque Moderne 4 Étagères</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 391,000</p>
+                  <del>XAF 523,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/buffet.jpg" alt="Buffet Salon Design Moderne" width="300" class="product-img default">
+                <img src="images meuble/buffet.jpg" alt="Buffet Salon Design Moderne" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Buffet</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Buffet Salon Design Moderne</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 458,000</p>
+                  <del>XAF 589,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/fauteuils.jpeg" alt="Fauteuil Relax Confort" width="300" class="product-img default">
+                <img src="images meuble/fauteuils.jpeg" alt="Fauteuil Relax Confort" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">best-seller</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Fauteuils</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Fauteuil Relax Confort</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 458,000</p>
+                  <del>XAF 589,000</del>
                 </div>
 
               </div>
@@ -1010,264 +1234,24 @@
     - FOOTER
   -->
 
-  <footer class="footer">
+  <footer>
 
     <div class="footer-category">
 
       <div class="container">
 
-        <h2 class="footer-category-title">Catalogue de marques</h2>
+        <h2 class="footer-category-title">Meubles & Décoration</h2>
 
         <div class="footer-category-box">
 
-          <h3 class="nav-title">High-Tech</h3>
+          <h3 class="category-box-title">Catégories :</h3>
 
-          <ul class="footer-category-list">
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Smartphone</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Tablette</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Laptop</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Smart TV</a>
-            </li>
-
-          </ul>
+          <a href="salon.html" class="footer-category-link">Salon</a>
+          <a href="canape.html" class="footer-category-link">Canapé</a>
+          <a href="luminaire.html" class="footer-category-link">Luminaire</a>
+          <a href="rangements.html" class="footer-category-link">Rangements</a>
 
         </div>
-
-        <div class="footer-category-box">
-
-          <h3 class="nav-title">Electroménager</h3>
-
-          <ul class="footer-category-list">
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Réfrigérateur</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Machine à laver</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Four</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="#" class="footer-category-link">Aspirateur</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <div class="footer-category-box">
-
-          <h3 class="nav-title">Meubles & Décoration</h3>
-
-          <ul class="footer-category-list">
-
-            <li class="footer-category-item">
-              <a href="salon.html" class="footer-category-link">Salon</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="canape.html" class="footer-category-link">Canapé</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="luminaire.html" class="footer-category-link">Luminaire</a>
-            </li>
-
-            <li class="footer-category-item">
-              <a href="rangements.html" class="footer-category-link">Rangements</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="footer-nav">
-
-      <div class="container">
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="salon.html" class="footer-nav-link">Salon</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="canape.html" class="footer-nav-link">Canapé</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="luminaire.html" class="footer-nav-link">Luminaire</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="rangements.html" class="footer-nav-link">Rangements</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Delivery</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Legal Notice</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Terms and conditions</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
-
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Contact</h2>
-          </li>
-
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14811, USA
-            </address>
-          </li>
-
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
-
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
-          </li>
-
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-nav-list">
-
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
-
-          <li>
-            <ul class="social-link">
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
-        </ul>
 
       </div>
 
@@ -1277,10 +1261,8 @@
 
       <div class="container">
 
-        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
-
         <p class="copyright">
-          Copyright &copy; <a href="#">NexusChop</a> all rights reserved.
+          Copyright &copy; <a href="#">NexusChop</a> tous droits réservés.
         </p>
 
       </div>
@@ -1292,9 +1274,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/high-tech-mega-menu.js"></script>
-  <script src="./assets/js/menu-logic.js"></script>
-  <script src="./assets/js/main-page-product-actions.js"></script>
+  <script src="./assets/js/script.js"></script>
 
   <!--
     - ionicon link
@@ -1302,6 +1282,10 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script src="./assets/js/panier.js"></script>
+  <script src="./assets/js/product-filters.js"></script>
+  <script src="./assets/js/universal-modal.js"></script>
+  <script src="./assets/js/panier-integration.js"></script>
 </body>
 
 </html>

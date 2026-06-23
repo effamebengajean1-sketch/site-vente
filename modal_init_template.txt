@@ -1,0 +1,25 @@
+<!-- Modal initialization template - Copy to each page -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Page-specific products data
+    const pageProducts = {
+        'product-id-1': {
+            id: 'product-id-1',
+            title: 'Product Title',
+            price: 'XXX,XXX',
+            originalPrice: 'XXX,XXX',
+            image: 'image/path.jpg',
+            category: 'Category Name',
+            rating: 5,
+            description: 'Product description...',
+            features: ['Feature 1', 'Feature 2', 'Feature 3']
+        },
+        // Add more products...
+    };
+    
+    // Set products data for universal modal
+    if (window.universalModal) {
+        window.universalModal.setProductsData(pageProducts);
+    }
+});
+</script>

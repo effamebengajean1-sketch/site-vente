@@ -347,6 +347,105 @@ function getProductData(productId) {
             rating: 4,
             description: 'Table salle à manger en bois massif.',
             features: ['Bois massif', 'Capacité 6-8 personnes', 'Finition premium', 'Design intemporel']
+        },
+        'xbox-series-s': {
+            id: 'xbox-series-s',
+            title: 'Console Xbox Series S',
+            price: 491000,
+            originalPrice: 557000,
+            image: 'Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'Console Xbox Series S - Console next-gen compacte avec SSD ultra-rapide et graphiques 1440p jusqu\'à 120 FPS.',
+            features: ['SSD 512GB ultra-rapide', 'Ray tracing matériel', '120 FPS gaming', 'Audio spatial 3D', '4K streaming']
+        },
+        'playstation-4': {
+            id: 'playstation-4',
+            title: 'PlayStation 4',
+            price: 327000,
+            originalPrice: 392000,
+            image: 'Projet 1 - MarketPlace/produits/ps4_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 5,
+            description: 'PlayStation 4 - Console de jeu puissante avec bibliothèque de jeux exclusive.',
+            features: ['Disque dur 1TB', 'Graphismes 1080p', 'PlayStation Store', 'Multijoueur en ligne', 'Remote Play']
+        },
+        'playstation-5': {
+            id: 'playstation-5',
+            title: 'PlayStation 5',
+            price: 850000,
+            originalPrice: 1048000,
+            image: 'Projet 1 - MarketPlace/produits/ps5_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 5,
+            description: 'PlayStation 5 - Console next-gen avec SSD ultra-rapide et graphiques 4K.',
+            features: ['SSD 825GB', 'Ray tracing硬件', 'Audio 3D Tempest', 'Manette DualSense', 'Rétrocompatibilité PS4']
+        },
+        'xbox-one-x': {
+            id: 'xbox-one-x',
+            title: 'Console Xbox One X',
+            price: 392000,
+            originalPrice: 458000,
+            image: 'Projet 1 - MarketPlace/produits/xbox_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'Console Xbox One X - La console la plus puissante de Microsoft avec graphiques 4K.',
+            features: ['4K Ultra HD gaming', '4K Blu-ray player', 'Xbox Game Pass', 'Cross-platform play', 'Backward compatibility']
+        },
+        'ps4-fifa21-bundle': {
+            id: 'ps4-fifa21-bundle',
+            title: 'PlayStation 4 FIFA 21 Bundle',
+            price: 261000,
+            originalPrice: 392000,
+            image: 'Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'Pack PlayStation 4 avec FIFA 21 - Console et jeu dans un bundle exceptionnel.',
+            features: ['PS4 1TB', 'FIFA 21 inclus', 'Manette DualShock 4', 'Casque-micro inclus', 'Guide de démarrage rapide']
+        },
+        'fifa21-ps4': {
+            id: 'fifa21-ps4',
+            title: 'FIFA 21 Jeu PS4',
+            price: 32700,
+            originalPrice: 45800,
+            image: 'Projet 1 - MarketPlace/produits/fifa21_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'FIFA 21 - Le jeu de football le plus réaliste avec nouveaux modes de jeu.',
+            features: ['Moteur Frostbite', 'VOLTA Football', 'Career Mode amélioré', 'Ultimate Team', 'Multijoueur en ligne']
+        },
+        'mario-bros-deluxe': {
+            id: 'mario-bros-deluxe',
+            title: 'Mario Bros Deluxe Switch',
+            price: 26000,
+            originalPrice: 32500,
+            image: 'Projet 1 - MarketPlace/produits/mariobrosdeluxe_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 5,
+            description: 'Super Mario Bros. Deluxe - Le classique réinventé pour Nintendo Switch.',
+            features: ['Mode portable et TV', 'Mode multijoueur local', 'Co-op coopération', 'Niveaux secrets', 'Classement en ligne']
+        },
+        'battlefield-5': {
+            id: 'battlefield-5',
+            title: 'Battlefield 5 PC',
+            price: 39200,
+            originalPrice: 58800,
+            image: 'Projet 1 - MarketPlace/produits/battlefield5_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'Battlefield 5 - FPS militaire immersif avec campagne single-player et multijoueur.',
+            features: ['Campagne War Stories', 'Multijoueur 64 joueurs', 'Battle Royale Firestorm', 'Mode Co-op Combined Arms', 'Destruction réaliste']
+        },
+        'need-for-speed-heat': {
+            id: 'need-for-speed-heat',
+            title: 'Need for Speed Heat',
+            price: 45500,
+            originalPrice: 65400,
+            image: 'Projet 1 - MarketPlace/produits/nfsh_1.jpg',
+            category: 'Jeux vidéo',
+            rating: 4,
+            description: 'Need for Speed Heat - Course de rue légale et illégale dans la ville de Palm City.',
+            features: ['Course de jour légale', 'Course de nuit illégale', 'Garage personnalisation', 'Day/Night cycle', 'Multijoueur en ligne']
         }
     };
     
