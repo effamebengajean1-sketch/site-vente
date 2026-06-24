@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablettes - NexusChop</title>
+  <title>Pc fixes, écran - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -250,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez une tablette...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un PC ou écran...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -269,9 +254,9 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn" onclick="window.location.href='panier.html'">
+          <button class="action-btn">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count cart-count">0</span>
+            <span class="count">0</span>
           </button>
 
         </div>
@@ -360,8 +345,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Tablettes</h1>
-        <p class="page-subtitle">Découvrez notre sélection de tablettes tactiles pour tous les usages</p>
+        <h1 class="page-title">Pc Fixes, Écran</h1>
+        <p class="page-subtitle">Découvrez notre sélection d'ordinateurs fixes, écrans et accessoires PC</p>
 
       </div>
 
@@ -377,7 +362,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Tablettes</h2>
+          <h2 class="title">Pc Fixes, Écran</h2>
 
           <div class="product-grid">
 
@@ -385,8 +370,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/delloptiplex3280_1.jpg" alt="Dell OptiPlex 3280" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/delloptiplex3280_1.jpg" alt="Dell OptiPlex 3280" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -404,7 +389,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-102-9e-gen', title: 'iPad 10.2 9e generation', price: 458000, image: 'Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -414,10 +399,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Ordinateurs fixes</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 10.2 9e génération</h3>
+                  <h3 class="showcase-title">Dell OptiPlex 3280 All-in-One</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -429,8 +414,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 458,000</p>
-                  <del>XAF 539,000</del>
+                  <p class="price">XAF 785,000</p>
+                  <del>XAF 982,000</del>
                 </div>
 
               </div>
@@ -441,8 +426,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/hpelite8300_1.jpg" alt="HP Elite 8300" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/hpelite8300_1.jpg" alt="HP Elite 8300" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -460,7 +445,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-97-apple-pencil', title: 'iPad 9.7 avec Apple Pencil', price: 392000, image: 'Projet 1 - MarketPlace/produits/ipad97_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -470,10 +455,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Ordinateurs fixes</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 9.7 avec Apple Pencil</h3>
+                  <h3 class="showcase-title">HP EliteDesk 8300 SFF</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -485,8 +470,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 523,000</p>
+                  <del>XAF 654,000</del>
                 </div>
 
               </div>
@@ -497,8 +482,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/ecrandell_1.jpg" alt="Écran Dell 24" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ecrandell_1.jpg" alt="Écran Dell 24" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -514,7 +499,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-air-2020', title: 'iPad Air 10.9 2020', price: 851000, image: 'Projet 1 - MarketPlace/produits/ipad202032_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -524,10 +509,232 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Écrans</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad Air 10.9 2020</h3>
+                  <h3 class="showcase-title">Écran Dell 24" Full HD</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 392,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/ecransamsung_1.jpg" alt="Écran Samsung 27" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ecransamsung_1.jpg" alt="Écran Samsung 27" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Écrans</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Écran Samsung 27" 4K</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 654,000</p>
+                  <del>XAF 818,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/ecranlg_1.jpg" alt="Écran LG 32" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ecranlg_1.jpg" alt="Écran LG 32" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Écrans</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Écran LG 32" UltraWide</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 785,000</p>
+                  <del>XAF 982,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/allinone_msipro24x_1.jpg" alt="MSI All-in-One 24" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/allinone_msipro24x_1.jpg" alt="MSI All-in-One 24" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Ordinateurs fixes</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">MSI Pro 24X All-in-One</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 982,000</p>
+                  <del>XAF 1,144,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/allinonehp24_df0102ns_1.jpg" alt="HP All-in-One 24" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/allinonehp24_df0102ns_1.jpg" alt="HP All-in-One 24" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-15%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Ordinateurs fixes</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">HP 24-DF0102NS All-in-One</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -551,8 +758,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/ucthinkcentrem58p_1.jpg" alt="ThinkCentre M58p" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ucthinkcentrem58p_1.jpg" alt="ThinkCentre M58p" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -570,7 +777,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'huawei-matepad-11', title: 'Huawei MatePad 11', price: 392000, image: 'Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -580,232 +787,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Ordinateurs fixes</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Huawei MatePad 11</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle pink">new</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a7', title: 'Samsung Galaxy Tab A7', price: 261000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A7</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 261,000</p>
-                  <del>XAF 327,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'lenovo-tab-p11', title: 'Lenovo Tab P11', price: 327000, image: 'Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Lenovo Tab P11</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 327,000</p>
-                  <del>XAF 392,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-15%</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-s6-lite', title: 'Samsung Galaxy Tab S6 Lite', price: 654000, image: 'Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab S6 Lite</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 654,000</p>
-                  <del>XAF 769,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a-8', title: 'Samsung Galaxy Tab A 8', price: 196000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A 8</h3>
+                  <h3 class="showcase-title">Lenovo ThinkCentre M58p</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -817,8 +802,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 196,000</p>
-                  <del>XAF 261,000</del>
+                  <p class="price">XAF 458,000</p>
+                  <del>XAF 572,000</del>
                 </div>
 
               </div>
@@ -845,19 +830,19 @@
 
       <div class="container">
 
-        <h2 class="footer-category-title">Tablettes</h2>
+        <h2 class="footer-category-title">Pc Fixes, Écran</h2>
 
         <div class="footer-category-box">
 
           <h3 class="category-box-title">Catégories :</h3>
 
-          <a href="#" class="footer-category-link">iPad</a>
-          <a href="#" class="footer-category-link">Tablettes Android</a>
-          <a href="#" class="footer-category-link">Tablettes Huawei</a>
-          <a href="#" class="footer-category-link">Tablettes Samsung</a>
-          <a href="#" class="footer-category-link">Tablettes Lenovo</a>
-          <a href="#" class="footer-category-link">Accessoires tablettes</a>
-          <a href="#" class="footer-category-link">Housse et protecteurs</a>
+          <a href="#" class="footer-category-link">Dell OptiPlex</a>
+          <a href="#" class="footer-category-link">HP EliteDesk</a>
+          <a href="#" class="footer-category-link">MSI All-in-One</a>
+          <a href="#" class="footer-category-link">Écrans Full HD</a>
+          <a href="#" class="footer-category-link">Écrans 4K</a>
+          <a href="#" class="footer-category-link">Écrans UltraWide</a>
+          <a href="#" class="footer-category-link">Accessoires PC</a>
 
         </div>
 
@@ -882,8 +867,11 @@
   <!--
     - custom js link
   -->
+  <script src="./assets/js/comprehensive-search.js"></script>
+  <script src="./assets/js/product-filters.js"></script>
+  <script src="./assets/js/universal-modal.js"></script>
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/panier.js"></script>
+  <script src="assets/js/panier.js"></script>
 
   <!--
     - ionicon link
@@ -892,8 +880,53 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script src="./assets/js/global-search.js"></script>
-  <script src="./assets/js/product-filters.js"></script>
-  <script src="./assets/js/universal-modal.js"></script>
+
+  <script>
+    // Initialize panier globally
+    window.panier = new Panier();
+
+    // Add to cart functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all add to cart buttons
+      const addToCartButtons = document.querySelectorAll('.btn-action ion-icon[name="bag-add-outline"]');
+      
+      if (addToCartButtons.length > 0) {
+        addToCartButtons.forEach((button, index) => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Find the product container
+          const showcase = button.closest('.showcase');
+          if (!showcase) return;
+          
+          // Extract product data
+          const title = showcase.querySelector('.showcase-title')?.textContent || '';
+          const priceText = showcase.querySelector('.price')?.textContent || '';
+          const image = showcase.querySelector('.product-img.default')?.src || '';
+          
+          // Parse price (remove "XAF" and commas)
+          const price = parseInt(priceText.replace(/[^\d]/g, '')) || 0;
+          
+          // Create product object
+          const product = {
+            id: `pc-${index}-${Date.now()}`,
+            title: title,
+            price: price,
+            image: image,
+            category: 'Informatique'
+          };
+          
+          // Add to cart
+          if (window.panier) {
+            window.panier.addItem(product);
+          } else {
+            console.error('Panier not initialized');
+          }
+        });
+      });
+      }
+    });
+  </script>
 </body>
 
 </html>

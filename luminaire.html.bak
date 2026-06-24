@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuisson - NexusChop</title>
+  <title>Luminaire - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -174,10 +159,20 @@
   <div class="overlay" data-overlay></div>
 
   <!--
+    - MODAL
+  -->
+
+  <!-- Modal removed - Newsletter popup disabled -->
+
+
+
+
+
+  <!--
     - HEADER
   -->
 
-  <header>
+  <header class="header">
 
     <div class="header-top">
 
@@ -244,13 +239,13 @@
 
       <div class="container">
 
-        <a href="#" class="header-logo">
+        <a href="index.html" class="header-logo">
           <span class="orange-letter">N</span>exus<span class="orange-letter">C</span>hop
         </a>
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez fours, plaques de cuisson...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez luminaires, éclairage, smart lighting...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -269,9 +264,9 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn" onclick="window.location.href='panier.html'">
+          <button class="action-btn">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count cart-count">0</span>
+            <span class="count">0</span>
           </button>
 
         </div>
@@ -314,47 +309,23 @@
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="jeux-video.html" data-subcategory="jeux-video">Jeux vidéo</a>
+                  <a href="pc-fixes-ecran.html" data-subcategory="pc-fixes-ecran">PC fixes, écran</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="telephonie.html" data-subcategory="telephonie">Téléphonie</a>
+                  <a href="composants.html" data-subcategory="composants">Composants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="laptops.html" data-subcategory="laptops">Laptops</a>
                 </li>
 
                 <li class="panel-list-item">
                   <a href="photo-camescope.html" data-subcategory="photo-camescope">Photo, caméscope</a>
                 </li>
 
-              </ul>
-
-              <ul class="dropdown-panel-list">
-
-                <li class="menu-title">
-                  <a href="#">Informatique</a>
-                </li>
-
                 <li class="panel-list-item">
-                  <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="laptops.html">Laptops</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="tablettes.html">Tablettes</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="composants.html">Composants</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="stockage.htm">Stockage</a>
-                </li>
-
-                <li class="panel-list-item">
-                  <a href="accessoires.html">Accessoires</a>
+                  <a href="jeux-video.html" data-subcategory="jeux-video">Jeux vidéo</a>
                 </li>
 
               </ul>
@@ -362,23 +333,31 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="#">Modes et vêtements</a>
+                  <a href="#" data-mega-menu="electromenager">Electroménager</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="femme.html">Femme</a>
+                  <a href="cuisson.html" data-subcategory="cuisson">Cuisson</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="homme.html">Homme</a>
+                  <a href="froid.html" data-subcategory="froid">Froid</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="enfants.html">Enfants</a>
+                  <a href="lavage-sechage.html" data-subcategory="lavage-sechage">Lavage et séchage</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="bagages.html">Bagages</a>
+                  <a href="entretien-maison.html" data-subcategory="entretien-maison">Entretien maison</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="beaute-hygiene-sante.html" data-subcategory="beaute-hygiene-sante">Beauté, Hygiène, santé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="climatisation-ventilation.html" data-subcategory="climatisation-ventilation">Climatisation, ventilation</a>
                 </li>
 
               </ul>
@@ -386,36 +365,53 @@
               <ul class="dropdown-panel-list">
 
                 <li class="menu-title">
-                  <a href="#">Electroménager</a>
+                  <a href="#" data-mega-menu="furniture">Meubles & Décoration</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="lavage-sechage.html">Lavage et séchage</a>
+                  <a href="salon.html" data-subcategory="salon">Salon</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="froid.html">Froid</a>
+                  <a href="canape.html" data-subcategory="canape">Canapé</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="cuisson.html">Cuisson</a>
+                  <a href="luminaire.html" data-subcategory="luminaire">Luminaire</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="entretien-maison.html">Entretien maison</a>
+                  <a href="rangements.html" data-subcategory="rangements">Rangements</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#" data-mega-menu="fashion">Mode et vêtements</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+                  <a href="homme.html" data-subcategory="homme">Homme</a>
                 </li>
 
                 <li class="panel-list-item">
-                  <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+                  <a href="femme.html" data-subcategory="femme">Femme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="enfants.html" data-subcategory="enfants">Enfants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bagages.html" data-subcategory="bagages">Bagages</a>
                 </li>
 
               </ul>
 
             </div>
+
           </li>
 
           <li class="menu-category">
@@ -502,6 +498,30 @@
             </ul>
           </li>
 
+          <li class="menu-category">
+            <a href="#furniture" class="menu-title" data-menu="furniture">Meubles & Décoration</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="salon.html">Salon</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="canape.html">Canapé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="luminaire.html">Luminaire</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="rangements.html">Rangements</a>
+              </li>
+
+            </ul>
+          </li>
+
         </ul>
 
       </div>
@@ -524,8 +544,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Cuisson</h1>
-        <p class="page-subtitle">Fours, plaques de cuisson, micro-ondes et appareils pour préparer vos repas</p>
+        <h1 class="page-title">Luminaire</h1>
+        <p class="page-subtitle">Découvrez notre sélection d'éclairage intelligent et de luminaires modernes</p>
 
       </div>
 
@@ -541,7 +561,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Appareils de Cuisson</h2>
+          <h2 class="title">Éclairage Intelligent & Luminaires</h2>
 
           <div class="product-grid">
 
@@ -549,64 +569,8 @@
 
               <div class="showcase-banner">
 
-                <img src="categories/cuisson.jpg" alt="Four Samsung" width="300" class="product-img default">
-                <img src="categories/cuisson.jpg" alt="Four Samsung" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Fours</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Four Samsung 70L Multifonction</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 285,000</p>
-                  <del>XAF 380,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/cuisson.png" alt="Micro-ondes LG" width="300" class="product-img default">
-                <img src="categories/cuisson.png" alt="Micro-ondes LG" width="300" class="product-img hover">
+                <img src="images meuble/decoration muraille.jpg" alt="Décoration Murale Art Moderne" width="300" class="product-img default">
+                <img src="images meuble/decoration muraille.jpg" alt="Décoration Murale Art Moderne" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -634,120 +598,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Micro-ondes</a>
+                <a href="#" class="showcase-category">Décoration</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Micro-ondes LG 40L Grill</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 165,000</p>
-                  <del>XAF 220,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/tableinduction.jpg" alt="Plaque induction Bosch" width="300" class="product-img default">
-                <img src="categories/tableinduction.jpg" alt="Plaque induction Bosch" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Plaques induction</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Plaque induction Bosch 3 feux</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 195,000</p>
-                  <del>XAF 260,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/tablecuisson.jpg" alt="Cuisinière Gaz" width="300" class="product-img default">
-                <img src="categories/tablecuisson.jpg" alt="Cuisinière Gaz" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-25%</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Cuisinières</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Cuisinière Gaz 5 feux avec four</h3>
+                  <h3 class="showcase-title">Décoration Murale Art Moderne</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -759,228 +613,174 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 285,000</p>
-                  <del>XAF 380,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/friteuse.jpg" alt="Friteuse Tefal" width="300" class="product-img default">
-                <img src="categories/friteuse.jpg" alt="Friteuse Tefal" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Friteuses</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Friteuse Tefal 1.2L sans huile</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 125,000</p>
-                  <del>XAF 165,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/machcaf.jpg" alt="Multi-cuiseur" width="300" class="product-img default">
-                <img src="categories/machcaf.jpg" alt="Multi-cuiseur" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Multi-cuiseurs</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Multi-cuiseur Moulinex 5L Cookeo</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 195,000</p>
-                  <del>XAF 260,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/cuisson.jpg" alt="Plaque gaz" width="300" class="product-img default">
-                <img src="categories/cuisson.jpg" alt="Plaque gaz" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle pink">new</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Plaques gaz</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Plaque gaz 4 feux Beko</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 145,000</p>
-                  <del>XAF 195,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="categories/cuisson.png" alt="Rice Cooker" width="300" class="product-img default">
-                <img src="categories/cuisson.png" alt="Rice Cooker" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Rice Cooker</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Rice Cooker Xiaomi 3L</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 65,000</p>
+                  <p class="price">XAF 58,900</p>
                   <del>XAF 85,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/pot de fleur.jpg" alt="Pot de Fleur Décoratif" width="300" class="product-img default">
+                <img src="images meuble/pot de fleur.jpg" alt="Pot de Fleur Décoratif" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Décoration</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Pot de Fleur Décoratif</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 32,700</p>
+                  <del>XAF 45,800</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/reveil fixe de salon.jpg" alt="Réveil de Salon Design" width="300" class="product-img default">
+                <img src="images meuble/reveil fixe de salon.jpg" alt="Réveil de Salon Design" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Horloges</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Réveil de Salon Design</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 85,000</p>
+                  <del>XAF 131,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="images meuble/lit.jpg" alt="Lit Double Moderne" width="300" class="product-img default">
+                <img src="images meuble/lit.jpg" alt="Lit Double Moderne" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Chambre</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Lit Double Moderne</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 654,000</p>
+                  <del>XAF 851,000</del>
                 </div>
 
               </div>
@@ -1001,26 +801,264 @@
     - FOOTER
   -->
 
-  <footer>
+  <footer class="footer">
 
     <div class="footer-category">
 
       <div class="container">
 
-        <h2 class="footer-category-title">Cuisson</h2>
+        <h2 class="footer-category-title">Catalogue de marques</h2>
 
         <div class="footer-category-box">
 
-          <h3 class="category-box-title">Catégories :</h3>
+          <h3 class="nav-title">High-Tech</h3>
 
-          <a href="#" class="footer-category-link">Fours</a>
-          <a href="#" class="footer-category-link">Micro-ondes</a>
-          <a href="#" class="footer-category-link">Plaques de cuisson</a>
-          <a href="#" class="footer-category-link">Friteuses</a>
-          <a href="#" class="footer-category-link">Multi-cuiseurs</a>
-          <a href="#" class="footer-category-link">Rice Cookers</a>
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Smartphone</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Tablette</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Laptop</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Smart TV</a>
+            </li>
+
+          </ul>
 
         </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="nav-title">Electroménager</h3>
+
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Réfrigérateur</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Machine à laver</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Four</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="#" class="footer-category-link">Aspirateur</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-category-box">
+
+          <h3 class="nav-title">Meubles & Décoration</h3>
+
+          <ul class="footer-category-list">
+
+            <li class="footer-category-item">
+              <a href="salon.html" class="footer-category-link">Salon</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="canape.html" class="footer-category-link">Canapé</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="luminaire.html" class="footer-category-link">Luminaire</a>
+            </li>
+
+            <li class="footer-category-item">
+              <a href="rangements.html" class="footer-category-link">Rangements</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="salon.html" class="footer-nav-link">Salon</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="canape.html" class="footer-nav-link">Canapé</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="luminaire.html" class="footer-nav-link">Luminaire</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="rangements.html" class="footer-nav-link">Rangements</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14811, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
 
       </div>
 
@@ -1030,8 +1068,10 @@
 
       <div class="container">
 
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
         <p class="copyright">
-          Copyright &copy; <a href="#">NexusChop</a> tous droits réservés.
+          Copyright &copy; <a href="#">NexusChop</a> all rights reserved.
         </p>
 
       </div>
@@ -1043,7 +1083,9 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/high-tech-mega-menu.js"></script>
+  <script src="./assets/js/menu-logic.js"></script>
+  <script src="./assets/js/main-page-product-actions.js"></script>
 
   <!--
     - ionicon link
@@ -1051,11 +1093,62 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <script src="./assets/js/global-search.js"></script>
-  <script src="./assets/js/panier.js"></script>
   <script src="./assets/js/product-filters.js"></script>
   <script src="./assets/js/universal-modal.js"></script>
-  <script src="./assets/js/panier-integration.js"></script>
+
+        // Furniture products data for modal
+        const furnitureProducts = {
+            "canape-fixe-confort": {
+                id: "canape-fixe-confort",
+                title: "Canapé Fixe Confort Premium",
+                price: "XAF 1,300,000",
+                originalPrice: "XAF 1,638,000",
+                image: "images arbre/Canapés fixe.jpg",
+                category: "Canapé",
+                rating: 5,
+                description: "Canapé fixe confort premium avec finition cuir et structure en bois massif.",
+                features: ["Cuir véritable", "Structure bois massif", "Confort premium", "Garantie 5 ans"]
+            },
+            "canape-royale": {
+                id: "canape-royale", 
+                title: "Canapé Royale",
+                price: "XAF 145,000",
+                originalPrice: "XAF 175,000",
+                image: "images_electro_menager/SALON ROYALE.jpg",
+                category: "Canapés",
+                rating: 4,
+                description: "Canapé royal avec design moderne et confort optimal.",
+                features: ["Design moderne", "Confort optimal", "Tissu de qualité", "Garantie 3 ans"]
+            },
+            "fauteuil-relax": {
+                id: "fauteuil-relax",
+                title: "Fauteuil Relax Design",
+                price: "XAF 458,000", 
+                originalPrice: "XAF 589,000",
+                image: "images arbre/fauteuils.jpeg",
+                category: "Fauteuils",
+                rating: 5,
+                description: "Fauteuil relax design avec mécanisme de relaxation.",
+                features: ["Mécanisme relaxation", "Design élégant", "Tissu premium", "Garantie 3 ans"]
+            },
+            "decoration-murale": {
+                id: "decoration-murale",
+                title: "Décoration Murale Art Moderne", 
+                price: "XAF 58,900",
+                originalPrice: "XAF 85,000",
+                image: "images arbre/decoration muraille.jpg",
+                category: "Décoration",
+                rating: 4,
+                description: "Décoration murale art moderne pour intérieur contemporain.",
+                features: ["Art moderne", "Matériaux nobles", "Installation facile", "Design unique"]
+            }
+        };
+        
+        // Initialize modal with furniture products
+        if (window.universalModal) {
+            window.universalModal.setProductsData(furnitureProducts);
+        }
+
 </body>
 
 </html>

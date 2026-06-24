@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablettes - NexusChop</title>
+  <title>Cuisson - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -250,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez une tablette...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez fours, plaques de cuisson...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -327,15 +312,179 @@
 
               </ul>
 
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Informatique</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="laptops.html">Laptops</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="tablettes.html">Tablettes</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="composants.html">Composants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="stockage.htm">Stockage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="accessoires.html">Accessoires</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Modes et vêtements</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="femme.html">Femme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="homme.html">Homme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="enfants.html">Enfants</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="bagages.html">Bagages</a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electroménager</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="lavage-sechage.html">Lavage et séchage</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="froid.html">Froid</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="cuisson.html">Cuisson</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="entretien-maison.html">Entretien maison</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+                </li>
+
+              </ul>
+
             </div>
           </li>
 
           <li class="menu-category">
-            <a href="laptops.html" class="menu-title">Laptops</a>
+            <a href="#informatique" class="menu-title" data-menu="informatique">Informatique</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="pc-fixes-ecran.html">Pc fixes, écran</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="laptops.html">Laptops</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="composants.html">Composants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="stockage.htm">Stockage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="accessoires.html">Accessoires</a>
+              </li>
+
+            </ul>
           </li>
 
           <li class="menu-category">
-            <a href="pc-fixes-ecran.html" class="menu-title">Pc fixes, écran</a>
+            <a href="#modes-vetements" class="menu-title" data-menu="modes-vetements">Modes et vêtements</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="femme.html">Femme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="homme.html">Homme</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="enfants.html">Enfants</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="bagages.html">Bagages</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#electromenager" class="menu-title" data-menu="electromenager">Electroménager</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="lavage-sechage.html">Lavage et séchage</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="froid.html">Froid</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="cuisson.html">Cuisson</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="entretien-maison.html">Entretien maison</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="beaute-hygiene-sante.html">Beauté, Hygiène, santé</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="climatisation-ventilation.html">Climatisation, ventilation</a>
+              </li>
+
+            </ul>
           </li>
 
         </ul>
@@ -360,8 +509,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Tablettes</h1>
-        <p class="page-subtitle">Découvrez notre sélection de tablettes tactiles pour tous les usages</p>
+        <h1 class="page-title">Cuisson</h1>
+        <p class="page-subtitle">Fours, plaques de cuisson, micro-ondes et appareils pour préparer vos repas</p>
 
       </div>
 
@@ -377,7 +526,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Tablettes</h2>
+          <h2 class="title">Appareils de Cuisson</h2>
 
           <div class="product-grid">
 
@@ -385,8 +534,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img hover">
+                <img src="categories/cuisson.jpg" alt="Four Samsung" width="300" class="product-img default">
+                <img src="categories/cuisson.jpg" alt="Four Samsung" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -404,7 +553,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-102-9e-gen', title: 'iPad 10.2 9e generation', price: 458000, image: 'Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -414,10 +563,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Fours</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 10.2 9e génération</h3>
+                  <h3 class="showcase-title">Four Samsung 70L Multifonction</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -429,8 +578,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 458,000</p>
-                  <del>XAF 539,000</del>
+                  <p class="price">XAF 285,000</p>
+                  <del>XAF 380,000</del>
                 </div>
 
               </div>
@@ -441,8 +590,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img hover">
+                <img src="categories/cuisson.png" alt="Micro-ondes LG" width="300" class="product-img default">
+                <img src="categories/cuisson.png" alt="Micro-ondes LG" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -460,7 +609,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-97-apple-pencil', title: 'iPad 9.7 avec Apple Pencil', price: 392000, image: 'Projet 1 - MarketPlace/produits/ipad97_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -470,10 +619,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Micro-ondes</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 9.7 avec Apple Pencil</h3>
+                  <h3 class="showcase-title">Micro-ondes LG 40L Grill</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -485,8 +634,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 165,000</p>
+                  <del>XAF 220,000</del>
                 </div>
 
               </div>
@@ -497,8 +646,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img hover">
+                <img src="categories/tableinduction.jpg" alt="Plaque induction Bosch" width="300" class="product-img default">
+                <img src="categories/tableinduction.jpg" alt="Plaque induction Bosch" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -514,7 +663,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-air-2020', title: 'iPad Air 10.9 2020', price: 851000, image: 'Projet 1 - MarketPlace/produits/ipad202032_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -524,10 +673,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Plaques induction</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad Air 10.9 2020</h3>
+                  <h3 class="showcase-title">Plaque induction Bosch 3 feux</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -539,8 +688,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 851,000</p>
-                  <del>XAF 1,001,000</del>
+                  <p class="price">XAF 195,000</p>
+                  <del>XAF 260,000</del>
                 </div>
 
               </div>
@@ -551,8 +700,64 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img hover">
+                <img src="categories/tablecuisson.jpg" alt="Cuisinière Gaz" width="300" class="product-img default">
+                <img src="categories/tablecuisson.jpg" alt="Cuisinière Gaz" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-25%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Cuisinières</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Cuisinière Gaz 5 feux avec four</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 285,000</p>
+                  <del>XAF 380,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/friteuse.jpg" alt="Friteuse Tefal" width="300" class="product-img default">
+                <img src="categories/friteuse.jpg" alt="Friteuse Tefal" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -570,7 +775,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'huawei-matepad-11', title: 'Huawei MatePad 11', price: 392000, image: 'Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -580,10 +785,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Friteuses</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Huawei MatePad 11</h3>
+                  <h3 class="showcase-title">Friteuse Tefal 1.2L sans huile</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -591,12 +796,12 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 125,000</p>
+                  <del>XAF 165,000</del>
                 </div>
 
               </div>
@@ -607,8 +812,62 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img hover">
+                <img src="categories/machcaf.jpg" alt="Multi-cuiseur" width="300" class="product-img default">
+                <img src="categories/machcaf.jpg" alt="Multi-cuiseur" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Multi-cuiseurs</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Multi-cuiseur Moulinex 5L Cookeo</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 195,000</p>
+                  <del>XAF 260,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="categories/cuisson.jpg" alt="Plaque gaz" width="300" class="product-img default">
+                <img src="categories/cuisson.jpg" alt="Plaque gaz" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -626,7 +885,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a7', title: 'Samsung Galaxy Tab A7', price: 261000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -636,10 +895,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Plaques gaz</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A7</h3>
+                  <h3 class="showcase-title">Plaque gaz 4 feux Beko</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -651,8 +910,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 261,000</p>
-                  <del>XAF 327,000</del>
+                  <p class="price">XAF 145,000</p>
+                  <del>XAF 195,000</del>
                 </div>
 
               </div>
@@ -663,8 +922,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img hover">
+                <img src="categories/cuisson.png" alt="Rice Cooker" width="300" class="product-img default">
+                <img src="categories/cuisson.png" alt="Rice Cooker" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -680,7 +939,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'lenovo-tab-p11', title: 'Lenovo Tab P11', price: 327000, image: 'Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -690,135 +949,23 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Rice Cooker</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Lenovo Tab P11</h3>
+                  <h3 class="showcase-title">Rice Cooker Xiaomi 3L</h3>
                 </a>
 
                 <div class="showcase-rating">
                   <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 327,000</p>
-                  <del>XAF 392,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-15%</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-s6-lite', title: 'Samsung Galaxy Tab S6 Lite', price: 654000, image: 'Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab S6 Lite</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 654,000</p>
-                  <del>XAF 769,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a-8', title: 'Samsung Galaxy Tab A 8', price: 196000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A 8</h3>
-                </a>
-
-                <div class="showcase-rating">
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 196,000</p>
-                  <del>XAF 261,000</del>
+                  <p class="price">XAF 65,000</p>
+                  <del>XAF 85,000</del>
                 </div>
 
               </div>
@@ -845,19 +992,18 @@
 
       <div class="container">
 
-        <h2 class="footer-category-title">Tablettes</h2>
+        <h2 class="footer-category-title">Cuisson</h2>
 
         <div class="footer-category-box">
 
           <h3 class="category-box-title">Catégories :</h3>
 
-          <a href="#" class="footer-category-link">iPad</a>
-          <a href="#" class="footer-category-link">Tablettes Android</a>
-          <a href="#" class="footer-category-link">Tablettes Huawei</a>
-          <a href="#" class="footer-category-link">Tablettes Samsung</a>
-          <a href="#" class="footer-category-link">Tablettes Lenovo</a>
-          <a href="#" class="footer-category-link">Accessoires tablettes</a>
-          <a href="#" class="footer-category-link">Housse et protecteurs</a>
+          <a href="#" class="footer-category-link">Fours</a>
+          <a href="#" class="footer-category-link">Micro-ondes</a>
+          <a href="#" class="footer-category-link">Plaques de cuisson</a>
+          <a href="#" class="footer-category-link">Friteuses</a>
+          <a href="#" class="footer-category-link">Multi-cuiseurs</a>
+          <a href="#" class="footer-category-link">Rice Cookers</a>
 
         </div>
 
@@ -883,7 +1029,6 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/panier.js"></script>
 
   <!--
     - ionicon link
@@ -892,8 +1037,10 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script src="./assets/js/global-search.js"></script>
+  <script src="./assets/js/panier.js"></script>
   <script src="./assets/js/product-filters.js"></script>
   <script src="./assets/js/universal-modal.js"></script>
+  <script src="./assets/js/panier-integration.js"></script>
 </body>
 
 </html>

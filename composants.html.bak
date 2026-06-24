@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablettes - NexusChop</title>
+  <title>Composants - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -250,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez une tablette...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un composant...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -360,8 +345,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Tablettes</h1>
-        <p class="page-subtitle">Découvrez notre sélection de tablettes tactiles pour tous les usages</p>
+        <h1 class="page-title">Composants</h1>
+        <p class="page-subtitle">Découvrez nos composants informatiques pour assembler et upgrader votre PC</p>
 
       </div>
 
@@ -377,7 +362,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Tablettes</h2>
+          <h2 class="title">Composants</h2>
 
           <div class="product-grid">
 
@@ -385,8 +370,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/processeur_intel11700k_1.jpg" alt="Intel Core i7-11700K" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/processeur_intel11700k_1.jpg" alt="Intel Core i7-11700K" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -404,7 +389,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-102-9e-gen', title: 'iPad 10.2 9e generation', price: 458000, image: 'Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -414,10 +399,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Processeurs</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 10.2 9e génération</h3>
+                  <h3 class="showcase-title">Intel Core i7-11700K</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -429,8 +414,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 458,000</p>
-                  <del>XAF 539,000</del>
+                  <p class="price">XAF 392,000</p>
+                  <del>XAF 458,000</del>
                 </div>
 
               </div>
@@ -441,8 +426,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/i7-11700K.jpg" alt="Intel Core i7" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/i7-11700K.jpg" alt="Intel Core i7" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -460,7 +445,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-97-apple-pencil', title: 'iPad 9.7 avec Apple Pencil', price: 392000, image: 'Projet 1 - MarketPlace/produits/ipad97_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -470,10 +455,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Processeurs</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 9.7 avec Apple Pencil</h3>
+                  <h3 class="showcase-title">Intel Core i7-10700K</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -485,8 +470,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 392,000</del>
                 </div>
 
               </div>
@@ -497,8 +482,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/i5-11600K.jpg" alt="Intel Core i5" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/i5-11600K.jpg" alt="Intel Core i5" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -514,7 +499,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-air-2020', title: 'iPad Air 10.9 2020', price: 851000, image: 'Projet 1 - MarketPlace/produits/ipad202032_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -524,122 +509,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Processeurs</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad Air 10.9 2020</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 851,000</p>
-                  <del>XAF 1,001,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'huawei-matepad-11', title: 'Huawei MatePad 11', price: 392000, image: 'Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Huawei MatePad 11</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle pink">new</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a7', title: 'Samsung Galaxy Tab A7', price: 261000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A7</h3>
+                  <h3 class="showcase-title">Intel Core i5-11600K</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -663,118 +536,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'lenovo-tab-p11', title: 'Lenovo Tab P11', price: 327000, image: 'Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Lenovo Tab P11</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 327,000</p>
-                  <del>XAF 392,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-15%</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-s6-lite', title: 'Samsung Galaxy Tab S6 Lite', price: 654000, image: 'Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab S6 Lite</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 654,000</p>
-                  <del>XAF 769,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/i5-10600K.jpg" alt="Intel Core i5-10600K" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/i5-10600K.jpg" alt="Intel Core i5-10600K" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -792,7 +555,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a-8', title: 'Samsung Galaxy Tab A 8', price: 196000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -802,10 +565,232 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Processeurs</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A 8</h3>
+                  <h3 class="showcase-title">Intel Core i5-10600K</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 228,000</p>
+                  <del>XAF 261,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/pcgamer_memory_1.jpg" alt="Mémoire RAM" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/pcgamer_memory_1.jpg" alt="Mémoire RAM" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle pink">new</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Mémoire</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Kit Mémoire RAM 16GB DDR4</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 98,000</p>
+                  <del>XAF 130,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/minipcsei8_1.jpg" alt="Mini PC" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/minipcsei8_1.jpg" alt="Mini PC" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Mini PC</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Mini PC Intel i5-8259U</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 392,000</p>
+                  <del>XAF 458,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/minipcum700_1.jpg" alt="Mini PC Intel" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/minipcum700_1.jpg" alt="Mini PC Intel" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-15%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Mini PC</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Mini PC Intel i5-7200U</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 385,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/pcgaming_cerbere_1.jpg" alt="PC Gaming" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/pcgaming_cerbere_1.jpg" alt="PC Gaming" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">PC Gaming</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">PC Gaming Cérbère RTX 3060</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -817,8 +802,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 196,000</p>
-                  <del>XAF 261,000</del>
+                  <p class="price">XAF 1,632,000</p>
+                  <del>XAF 1,960,000</del>
                 </div>
 
               </div>
@@ -845,19 +830,19 @@
 
       <div class="container">
 
-        <h2 class="footer-category-title">Tablettes</h2>
+        <h2 class="footer-category-title">Composants</h2>
 
         <div class="footer-category-box">
 
           <h3 class="category-box-title">Catégories :</h3>
 
-          <a href="#" class="footer-category-link">iPad</a>
-          <a href="#" class="footer-category-link">Tablettes Android</a>
-          <a href="#" class="footer-category-link">Tablettes Huawei</a>
-          <a href="#" class="footer-category-link">Tablettes Samsung</a>
-          <a href="#" class="footer-category-link">Tablettes Lenovo</a>
-          <a href="#" class="footer-category-link">Accessoires tablettes</a>
-          <a href="#" class="footer-category-link">Housse et protecteurs</a>
+          <a href="#" class="footer-category-link">Processeurs Intel</a>
+          <a href="#" class="footer-category-link">Mémoire RAM</a>
+          <a href="#" class="footer-category-link">Mini PC</a>
+          <a href="#" class="footer-category-link">Cartes graphiques</a>
+          <a href="#" class="footer-category-link">Cartes mères</a>
+          <a href="#" class="footer-category-link">Alimentations</a>
+          <a href="#" class="footer-category-link">Refroidissement</a>
 
         </div>
 
@@ -883,7 +868,6 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/panier.js"></script>
 
   <!--
     - ionicon link
@@ -892,8 +876,10 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script src="./assets/js/global-search.js"></script>
+  <script src="./assets/js/panier.js"></script>
   <script src="./assets/js/product-filters.js"></script>
   <script src="./assets/js/universal-modal.js"></script>
+  <script src="./assets/js/panier-integration.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablettes - NexusChop</title>
+  <title>Jeux vidéo - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -250,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez une tablette...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un jeu vidéo...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -360,8 +345,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Tablettes</h1>
-        <p class="page-subtitle">Découvrez notre sélection de tablettes tactiles pour tous les usages</p>
+        <h1 class="page-title">Jeux Vidéo</h1>
+        <p class="page-subtitle">Découvrez notre sélection de consoles, jeux et accessoires gaming</p>
 
       </div>
 
@@ -377,7 +362,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Tablettes</h2>
+          <h2 class="title">Jeux Vidéo</h2>
 
           <div class="product-grid">
 
@@ -385,8 +370,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg" alt="Console Xbox Series S" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg" alt="Console Xbox Series S" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -396,7 +381,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('xbox-series-s')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -404,7 +389,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-102-9e-gen', title: 'iPad 10.2 9e generation', price: 458000, image: 'Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'xbox-series-s', title: 'Console Xbox Series S', price: 491000, image: 'Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -414,176 +399,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Consoles</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 10.2 9e génération</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 458,000</p>
-                  <del>XAF 539,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle pink">new</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-97-apple-pencil', title: 'iPad 9.7 avec Apple Pencil', price: 392000, image: 'Projet 1 - MarketPlace/produits/ipad97_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">iPad</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">iPad 9.7 avec Apple Pencil</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-air-2020', title: 'iPad Air 10.9 2020', price: 851000, image: 'Projet 1 - MarketPlace/produits/ipad202032_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">iPad</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">iPad Air 10.9 2020</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 851,000</p>
-                  <del>XAF 1,001,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'huawei-matepad-11', title: 'Huawei MatePad 11', price: 392000, image: 'Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Huawei MatePad 11</h3>
+                  <h3 class="showcase-title">Console Xbox Series S</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -595,8 +414,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 491,000</p>
+                  <del>XAF 557,000</del>
                 </div>
 
               </div>
@@ -607,8 +426,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/ps4_1.jpg" alt="PlayStation 4" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ps4_1.jpg" alt="PlayStation 4" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -618,7 +437,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('playstation-4')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -626,7 +445,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a7', title: 'Samsung Galaxy Tab A7', price: 261000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'playstation-4', title: 'PlayStation 4', price: 327000, image: 'Projet 1 - MarketPlace/produits/ps4_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -636,64 +455,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Consoles</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A7</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 261,000</p>
-                  <del>XAF 327,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img hover">
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'lenovo-tab-p11', title: 'Lenovo Tab P11', price: 327000, image: 'Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Lenovo Tab P11</h3>
+                  <h3 class="showcase-title">PlayStation 4</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -717,10 +482,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-15%</p>
+                <img src="Projet 1 - MarketPlace/produits/ps5_1.jpg" alt="PlayStation 5" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ps5_1.jpg" alt="PlayStation 5" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -728,7 +491,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('playstation-5')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -736,7 +499,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-s6-lite', title: 'Samsung Galaxy Tab S6 Lite', price: 654000, image: 'Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'playstation-5', title: 'PlayStation 5', price: 850000, image: 'Projet 1 - MarketPlace/produits/ps5_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -746,10 +509,66 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Consoles</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab S6 Lite</h3>
+                  <h3 class="showcase-title">PlayStation 5</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 850,000</p>
+                  <del>XAF 1,048,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/xbox_1.jpg" alt="Console Xbox" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/xbox_1.jpg" alt="Console Xbox" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="showQuickView('xbox-one-x')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'xbox-one-x', title: 'Console Xbox One X', price: 392000, image: 'Projet 1 - MarketPlace/produits/xbox_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Consoles</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Console Xbox One X</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -761,8 +580,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 654,000</p>
-                  <del>XAF 769,000</del>
+                  <p class="price">XAF 392,000</p>
+                  <del>XAF 458,000</del>
                 </div>
 
               </div>
@@ -773,10 +592,10 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg" alt="FIFA 21 PS4" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg" alt="FIFA 21 PS4" width="300" class="product-img hover">
 
-                <p class="showcase-badge angle black">sale</p>
+                <p class="showcase-badge angle pink">new</p>
 
                 <div class="showcase-actions">
 
@@ -784,7 +603,7 @@
                     <ion-icon name="heart-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action">
+                  <button class="btn-action" onclick="showQuickView('ps4-fifa21-bundle')">
                     <ion-icon name="eye-outline"></ion-icon>
                   </button>
 
@@ -792,7 +611,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a-8', title: 'Samsung Galaxy Tab A 8', price: 196000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ps4-fifa21-bundle', title: 'PlayStation 4 FIFA 21 Bundle', price: 261000, image: 'Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -802,23 +621,243 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Jeux</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A 8</h3>
+                  <h3 class="showcase-title">PlayStation 4 FIFA 21 Bundle</h3>
                 </a>
 
                 <div class="showcase-rating">
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 261,000</p>
+                  <del>XAF 392,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/fifa21_1.jpg" alt="FIFA 21 Game" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/fifa21_1.jpg" alt="FIFA 21 Game" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="showQuickView('fifa21-ps4')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'fifa21-ps4', title: 'FIFA 21 Jeu PS4', price: 32700, image: 'Projet 1 - MarketPlace/produits/fifa21_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Jeux</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">FIFA 21 Jeu PS4</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-outline"></ion-icon>
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 196,000</p>
-                  <del>XAF 261,000</del>
+                  <p class="price">XAF 32,700</p>
+                  <del>XAF 45,800</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/mariobrosdeluxe_1.jpg" alt="Mario Bros Deluxe" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/mariobrosdeluxe_1.jpg" alt="Mario Bros Deluxe" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-20%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="showQuickView('mario-bros-deluxe')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'mario-bros-deluxe', title: 'Mario Bros Deluxe Switch', price: 26000, image: 'Projet 1 - MarketPlace/produits/mariobrosdeluxe_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Jeux</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Mario Bros Deluxe Switch</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 26,000</p>
+                  <del>XAF 32,500</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/battlefield5_1.jpg" alt="Battlefield 5" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/battlefield5_1.jpg" alt="Battlefield 5" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="showQuickView('battlefield-5')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'battlefield-5', title: 'Battlefield 5 PC', price: 39200, image: 'Projet 1 - MarketPlace/produits/battlefield5_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Jeux</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Battlefield 5 PC</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 39,200</p>
+                  <del>XAF 58,800</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/nfsh_1.jpg" alt="Need for Speed Heat" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/nfsh_1.jpg" alt="Need for Speed Heat" width="300" class="product-img hover">
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="showQuickView('need-for-speed-heat')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'need-for-speed-heat', title: 'Need for Speed Heat', price: 45500, image: 'Projet 1 - MarketPlace/produits/nfsh_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Jeux</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Need for Speed Heat</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 45,500</p>
+                  <del>XAF 65,400</del>
                 </div>
 
               </div>
@@ -845,19 +884,19 @@
 
       <div class="container">
 
-        <h2 class="footer-category-title">Tablettes</h2>
+        <h2 class="footer-category-title">Jeux Vidéo</h2>
 
         <div class="footer-category-box">
 
           <h3 class="category-box-title">Catégories :</h3>
 
-          <a href="#" class="footer-category-link">iPad</a>
-          <a href="#" class="footer-category-link">Tablettes Android</a>
-          <a href="#" class="footer-category-link">Tablettes Huawei</a>
-          <a href="#" class="footer-category-link">Tablettes Samsung</a>
-          <a href="#" class="footer-category-link">Tablettes Lenovo</a>
-          <a href="#" class="footer-category-link">Accessoires tablettes</a>
-          <a href="#" class="footer-category-link">Housse et protecteurs</a>
+          <a href="#" class="footer-category-link">Consoles PlayStation</a>
+          <a href="#" class="footer-category-link">Consoles Xbox</a>
+          <a href="#" class="footer-category-link">Jeux PS4</a>
+          <a href="#" class="footer-category-link">Jeux Xbox</a>
+          <a href="#" class="footer-category-link">Jeux PC</a>
+          <a href="#" class="footer-category-link">Accessoires Gaming</a>
+          <a href="#" class="footer-category-link">Bundles Consoles</a>
 
         </div>
 
@@ -884,6 +923,7 @@
   -->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/panier.js"></script>
+  <script src="./assets/js/main-page-product-actions.js"></script>
 
   <!--
     - ionicon link
@@ -894,6 +934,117 @@
   <script src="./assets/js/global-search.js"></script>
   <script src="./assets/js/product-filters.js"></script>
   <script src="./assets/js/universal-modal.js"></script>
+  
+  <!-- Inline script to expose functions globally immediately -->
+  <script>
+    // Gaming products data for universal modal
+    const gamingProducts = {
+            'xbox-series-s': {
+                id: 'xbox-series-s',
+                title: 'Console Xbox Series S',
+                price: 491000,
+                originalPrice: 557000,
+                image: 'Projet 1 - MarketPlace/produits/xbox_assassincreed_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'Console Xbox Series S - Console next-gen compacte avec SSD ultra-rapide et graphiques 1440p jusqu\'à 120 FPS.',
+                features: ['SSD 512GB ultra-rapide', 'Ray tracing matériel', '120 FPS gaming', 'Audio spatial 3D', '4K streaming']
+            },
+            'playstation-4': {
+                id: 'playstation-4',
+                title: 'PlayStation 4',
+                price: 327000,
+                originalPrice: 392000,
+                image: 'Projet 1 - MarketPlace/produits/ps4_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 5,
+                description: 'PlayStation 4 - Console de jeu puissante avec bibliothèque de jeux exclusive.',
+                features: ['Disque dur 1TB', 'Graphismes 1080p', 'PlayStation Store', 'Multijoueur en ligne', 'Remote Play']
+            },
+            'playstation-5': {
+                id: 'playstation-5',
+                title: 'PlayStation 5',
+                price: 850000,
+                originalPrice: 1048000,
+                image: 'Projet 1 - MarketPlace/produits/ps5_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 5,
+                description: 'PlayStation 5 - Console next-gen avec SSD ultra-rapide et graphiques 4K.',
+                features: ['SSD 825GB', 'Ray tracing matériel', 'Audio 3D Tempest', 'Manette DualSense', 'Rétrocompatibilité PS4']
+            },
+            'xbox-one-x': {
+                id: 'xbox-one-x',
+                title: 'Console Xbox One X',
+                price: 392000,
+                originalPrice: 458000,
+                image: 'Projet 1 - MarketPlace/produits/xbox_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'Console Xbox One X - La console la plus puissante de Microsoft avec graphiques 4K.',
+                features: ['4K Ultra HD gaming', '4K Blu-ray player', 'Xbox Game Pass', 'Cross-platform play', 'Backward compatibility']
+            },
+            'ps4-fifa21-bundle': {
+                id: 'ps4-fifa21-bundle',
+                title: 'PlayStation 4 FIFA 21 Bundle',
+                price: 261000,
+                originalPrice: 392000,
+                image: 'Projet 1 - MarketPlace/produits/ps4_fifa21_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'Pack PlayStation 4 avec FIFA 21 - Console et jeu dans un bundle exceptionnel.',
+                features: ['PS4 1TB', 'FIFA 21 inclus', 'Manette DualShock 4', 'Casque-micro inclus', 'Guide de démarrage rapide']
+            },
+            'fifa21-ps4': {
+                id: 'fifa21-ps4',
+                title: 'FIFA 21 Jeu PS4',
+                price: 32700,
+                originalPrice: 45800,
+                image: 'Projet 1 - MarketPlace/produits/fifa21_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'FIFA 21 - Le jeu de football le plus réaliste avec nouveaux modes de jeu.',
+                features: ['Moteur Frostbite', 'VOLTA Football', 'Career Mode amélioré', 'Ultimate Team', 'Multijoueur en ligne']
+            },
+            'mario-bros-deluxe': {
+                id: 'mario-bros-deluxe',
+                title: 'Mario Bros Deluxe Switch',
+                price: 26000,
+                originalPrice: 32500,
+                image: 'Projet 1 - MarketPlace/produits/mariobrosdeluxe_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 5,
+                description: 'Super Mario Bros. Deluxe - Le classique réinventé pour Nintendo Switch.',
+                features: ['Mode portable et TV', 'Mode multijoueur local', 'Co-op coopération', 'Niveaux secrets', 'Classement en ligne']
+            },
+            'battlefield-5': {
+                id: 'battlefield-5',
+                title: 'Battlefield 5 PC',
+                price: 39200,
+                originalPrice: 58800,
+                image: 'Projet 1 - MarketPlace/produits/battlefield5_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'Battlefield 5 - FPS militaire immersif avec campagne single-player et multijoueur.',
+                features: ['Campagne War Stories', 'Multijoueur 64 joueurs', 'Battle Royale Firestorm', 'Mode Co-op Combined Arms', 'Destruction réaliste']
+            },
+            'need-for-speed-heat': {
+                id: 'need-for-speed-heat',
+                title: 'Need for Speed Heat',
+                price: 45500,
+                originalPrice: 65400,
+                image: 'Projet 1 - MarketPlace/produits/nfsh_1.jpg',
+                category: 'Jeux vidéo',
+                rating: 4,
+                description: 'Need for Speed Heat - Course de rue légale et illégale dans la ville de Palm City.',
+                features: ['Course de jour légale', 'Course de nuit illégale', 'Garage personnalisation', 'Day/Night cycle', 'Multijoueur en ligne']
+            }
+        };
+        
+        // Initialize modal with gaming products
+        if (window.universalModal) {
+            window.universalModal.setProductsData(gamingProducts);
+        }
+  </script>
 </body>
 
 </html>

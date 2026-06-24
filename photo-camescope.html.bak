@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tablettes - NexusChop</title>
+  <title>Photo, caméscope - NexusChop</title>
 
   <!--
     - favicon
@@ -74,7 +74,7 @@
     
     /* Page header styling */
     .page-header {
-      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       padding: 60px 0;
       text-align: center;
@@ -152,21 +152,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://effa.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://cdn.matomo.cloud/effa.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 
 <body>
@@ -250,7 +235,7 @@
 
         <div class="header-search-container">
 
-          <input type="search" name="search" class="search-field" placeholder="Recherchez une tablette...">
+          <input type="search" name="search" class="search-field" placeholder="Recherchez un appareil photo...">
 
           <button class="search-btn">
             <ion-icon name="search-outline"></ion-icon>
@@ -360,8 +345,8 @@
 
       <div class="container">
 
-        <h1 class="page-title">Tablettes</h1>
-        <p class="page-subtitle">Découvrez notre sélection de tablettes tactiles pour tous les usages</p>
+        <h1 class="page-title">Photo, Caméscope</h1>
+        <p class="page-subtitle">Découvrez notre sélection d'appareils photo, caméscopes et accessoires photo</p>
 
       </div>
 
@@ -377,7 +362,7 @@
 
         <div class="product-main">
 
-          <h2 class="title">Tablettes</h2>
+          <h2 class="title">Photo, Caméscope</h2>
 
           <div class="product-grid">
 
@@ -385,8 +370,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg" alt="iPad 10.2" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/canoneosm6mark2_1.jpg" alt="Canon EOS M6 Mark II" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/canoneosm6mark2_1.jpg" alt="Canon EOS M6 Mark II" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -404,7 +389,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-102-9e-gen', title: 'iPad 10.2 9e generation', price: 458000, image: 'Projet 1 - MarketPlace/produits/ehp_ipad102_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'sony-alpha-zv-e10', title: 'Sony Alpha ZV-E10', price: 1472000, image: 'Projet 1 - MarketPlace/produits/sonyalphazve10_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -414,10 +399,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Appareils photo</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 10.2 9e génération</h3>
+                  <h3 class="showcase-title">Canon EOS M6 Mark II</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -429,8 +414,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 458,000</p>
-                  <del>XAF 539,000</del>
+                  <p class="price">XAF 1,632,000</p>
+                  <del>XAF 1,960,000</del>
                 </div>
 
               </div>
@@ -441,8 +426,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad97_1.jpg" alt="iPad 9.7" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/sonyalphazve10_1.jpg" alt="Sony Alpha ZV-E10" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/sonyalphazve10_1.jpg" alt="Sony Alpha ZV-E10" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -460,7 +445,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-97-apple-pencil', title: 'iPad 9.7 avec Apple Pencil', price: 392000, image: 'Projet 1 - MarketPlace/produits/ipad97_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'canon-eos-m6-mark2', title: 'Canon EOS M6 Mark II', price: 1632000, image: 'Projet 1 - MarketPlace/produits/canoneosm6mark2_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -470,10 +455,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Appareils photo</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad 9.7 avec Apple Pencil</h3>
+                  <h3 class="showcase-title">Sony Alpha ZV-E10</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -485,8 +470,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 1,472,000</p>
+                  <del>XAF 1,792,000</del>
                 </div>
 
               </div>
@@ -497,8 +482,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ipad202032_1.jpg" alt="iPad Air 2020" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/panasoniclumixf4_1.jpg" alt="Panasonic Lumix FZ4" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/panasoniclumixf4_1.jpg" alt="Panasonic Lumix FZ4" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -514,7 +499,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'ipad-air-2020', title: 'iPad Air 10.9 2020', price: 851000, image: 'Projet 1 - MarketPlace/produits/ipad202032_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'panasonic-lumix-fz4', title: 'Panasonic Lumix FZ4 Bridge', price: 982000, image: 'Projet 1 - MarketPlace/produits/panasoniclumixf4_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -524,10 +509,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">iPad</a>
+                <a href="#" class="showcase-category">Appareils photo</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">iPad Air 10.9 2020</h3>
+                  <h3 class="showcase-title">Panasonic Lumix FZ4 Bridge</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -539,8 +524,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 851,000</p>
-                  <del>XAF 1,001,000</del>
+                  <p class="price">XAF 982,000</p>
+                  <del>XAF 1,178,400</del>
                 </div>
 
               </div>
@@ -551,8 +536,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg" alt="Huawei MatePad 11" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/reflexpentaxk70_1.jpg" alt="Pentax K-70" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/reflexpentaxk70_1.jpg" alt="Pentax K-70" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle black">sale</p>
 
@@ -570,7 +555,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'huawei-matepad-11', title: 'Huawei MatePad 11', price: 392000, image: 'Projet 1 - MarketPlace/produits/ta_huawei_matepad11_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'pentax-k70', title: 'Pentax K-70 + Objectif 18-135mm', price: 1142000, image: 'Projet 1 - MarketPlace/produits/reflexpentaxk70_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -580,10 +565,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Reflex</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Huawei MatePad 11</h3>
+                  <h3 class="showcase-title">Pentax K-70 + Objectif 18-135mm</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -595,8 +580,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 392,000</p>
-                  <del>XAF 458,000</del>
+                  <p class="price">XAF 1,142,000</p>
+                  <del>XAF 1,437,000</del>
                 </div>
 
               </div>
@@ -607,8 +592,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A7" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/camescopeagfa_1.jpg" alt="Caméscope Agfa" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/camescopeagfa_1.jpg" alt="Caméscope Agfa" width="300" class="product-img hover">
 
                 <p class="showcase-badge angle pink">new</p>
 
@@ -626,7 +611,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a7', title: 'Samsung Galaxy Tab A7', price: 261000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'camescope-agfa-4k', title: 'Caméscope Agfa 4K', price: 327000, image: 'Projet 1 - MarketPlace/produits/camescopeagfa_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -636,10 +621,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Caméscopes</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A7</h3>
+                  <h3 class="showcase-title">Caméscope Agfa 4K</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -651,8 +636,8 @@
                 </div>
 
                 <div class="price-box">
-                  <p class="price">XAF 261,000</p>
-                  <del>XAF 327,000</del>
+                  <p class="price">XAF 327,000</p>
+                  <del>XAF 458,000</del>
                 </div>
 
               </div>
@@ -663,8 +648,8 @@
 
               <div class="showcase-banner">
 
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg" alt="Lenovo Tab P11" width="300" class="product-img hover">
+                <img src="Projet 1 - MarketPlace/produits/cameraactionher08_1.jpg" alt="Caméra Action Hero 8" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/cameraactionher08_1.jpg" alt="Caméra Action Hero 8" width="300" class="product-img hover">
 
                 <div class="showcase-actions">
 
@@ -680,7 +665,7 @@
                     <ion-icon name="repeat-outline"></ion-icon>
                   </button>
 
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'lenovo-tab-p11', title: 'Lenovo Tab P11', price: 327000, image: 'Projet 1 - MarketPlace/produits/ta_lenovo_p11_1.jpg'})" title="Ajouter au panier">
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'camera-action-hero-8', title: 'Caméra Action Hero 8', price: 785000, image: 'Projet 1 - MarketPlace/produits/cameraactionher08_1.jpg'})" title="Ajouter au panier">
                     <ion-icon name="bag-add-outline"></ion-icon>
                   </button>
 
@@ -690,10 +675,10 @@
 
               <div class="showcase-content">
 
-                <a href="#" class="showcase-category">Android</a>
+                <a href="#" class="showcase-category">Caméras d'action</a>
 
                 <a href="#">
-                  <h3 class="showcase-title">Lenovo Tab P11</h3>
+                  <h3 class="showcase-title">Caméra Action Hero 8</h3>
                 </a>
 
                 <div class="showcase-rating">
@@ -702,123 +687,123 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 785,000</p>
+                  <del>XAF 982,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/cameraetancheip_1.jpg" alt="Caméra Étanche IP" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/cameraetancheip_1.jpg" alt="Caméra Étanche IP" width="300" class="product-img hover">
+
+                <p class="showcase-badge">-20%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'camera-etanche-ip68', title: 'Caméra Étanche IP68', price: 196000, image: 'Projet 1 - MarketPlace/produits/cameraetancheip_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Caméras d'action</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Caméra Étanche IP68</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">XAF 196,000</p>
+                  <del>XAF 245,000</del>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="Projet 1 - MarketPlace/produits/canonpowershota2200_1.jpg" alt="Canon PowerShot A2200" width="300" class="product-img default">
+                <img src="Projet 1 - MarketPlace/produits/canonpowershota2200_1.jpg" alt="Canon PowerShot A2200" width="300" class="product-img hover">
+
+                <p class="showcase-badge angle black">sale</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action" onclick="ajouterAuPanier({id: 'canon-powershot-a2200', title: 'Canon PowerShot A2200', price: 327000, image: 'Projet 1 - MarketPlace/produits/canonpowershota2200_1.jpg'})" title="Ajouter au panier">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">Compacts</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Canon PowerShot A2200</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
                 </div>
 
                 <div class="price-box">
                   <p class="price">XAF 327,000</p>
                   <del>XAF 392,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg" alt="Galaxy Tab S6 Lite" width="300" class="product-img hover">
-
-                <p class="showcase-badge">-15%</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-s6-lite', title: 'Samsung Galaxy Tab S6 Lite', price: 654000, image: 'Projet 1 - MarketPlace/produits/ehp-sgs297_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab S6 Lite</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 654,000</p>
-                  <del>XAF 769,000</del>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="showcase">
-
-              <div class="showcase-banner">
-
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img default">
-                <img src="Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg" alt="Samsung Galaxy Tab A" width="300" class="product-img hover">
-
-                <p class="showcase-badge angle black">sale</p>
-
-                <div class="showcase-actions">
-
-                  <button class="btn-action">
-                    <ion-icon name="heart-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action">
-                    <ion-icon name="repeat-outline"></ion-icon>
-                  </button>
-
-                  <button class="btn-action" onclick="ajouterAuPanier({id: 'samsung-galaxy-tab-a-8', title: 'Samsung Galaxy Tab A 8', price: 196000, image: 'Projet 1 - MarketPlace/produits/ta_sg_a7_1.jpg'})" title="Ajouter au panier">
-                    <ion-icon name="bag-add-outline"></ion-icon>
-                  </button>
-
-                </div>
-
-              </div>
-
-              <div class="showcase-content">
-
-                <a href="#" class="showcase-category">Android</a>
-
-                <a href="#">
-                  <h3 class="showcase-title">Samsung Galaxy Tab A 8</h3>
-                </a>
-
-                <div class="showcase-rating">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-
-                <div class="price-box">
-                  <p class="price">XAF 196,000</p>
-                  <del>XAF 261,000</del>
                 </div>
 
               </div>
@@ -845,19 +830,19 @@
 
       <div class="container">
 
-        <h2 class="footer-category-title">Tablettes</h2>
+        <h2 class="footer-category-title">Photo, Caméscope</h2>
 
         <div class="footer-category-box">
 
           <h3 class="category-box-title">Catégories :</h3>
 
-          <a href="#" class="footer-category-link">iPad</a>
-          <a href="#" class="footer-category-link">Tablettes Android</a>
-          <a href="#" class="footer-category-link">Tablettes Huawei</a>
-          <a href="#" class="footer-category-link">Tablettes Samsung</a>
-          <a href="#" class="footer-category-link">Tablettes Lenovo</a>
-          <a href="#" class="footer-category-link">Accessoires tablettes</a>
-          <a href="#" class="footer-category-link">Housse et protecteurs</a>
+          <a href="#" class="footer-category-link">Appareils photo Canon</a>
+          <a href="#" class="footer-category-link">Appareils photo Sony</a>
+          <a href="#" class="footer-category-link">Reflex numériques</a>
+          <a href="#" class="footer-category-link">Caméscopes 4K</a>
+          <a href="#" class="footer-category-link">Caméras d'action</a>
+          <a href="#" class="footer-category-link">Compacts numériques</a>
+          <a href="#" class="footer-category-link">Accessoires photo</a>
 
         </div>
 
